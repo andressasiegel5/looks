@@ -12,9 +12,13 @@ para o ChatGPT criar imagens. Converse sempre em português.
 - Antes de errar de novo, veja `looks/_descartados/README.md`.
 
 ## Ao receber um pedido de looks
-1. Leia `guarda-roupa/pecas.md`. A peça âncora vem do acervo (✅). **Varie**: ela quer ver outros tipos de peça,
-   não só as que já tem. Use no máximo 1–2 looks com outras peças do acervo e complete com inspirações
-   variadas (blazer, suéter por cima, saia jeans, trench, camurça, risca de giz, calça marinheiro...).
+1. Leia `guarda-roupa/pecas.md`. **Só a peça âncora vem do acervo.** Não reutilize outras peças dela
+   (nem a saia, nem a jaqueta, nem a listrada) a menos que ela peça. Proponha peças novas que combinem.
+   Não repita tipos de peça das rodadas anteriores (veja `prompts/`): varie categorias, comprimentos,
+   tecidos, acessórios e cabelo (coque, rabo baixo, solto liso).
+   Repertório Kendall/Hailey: office siren (saia lápis + meia-calça fina + óculos de grau), baggy jeans
+   arrastando + regata, peça jogada nos ombros sobre vestido de malha, minissaia + meia-calça opaca,
+   camisa listrada azul, bermuda de alfaiataria longa, cinto de corrente, mini bolsa, óculos pequenos.
 2. Leia os `README.md` de `looks/` para não repetir combinações já feitas e para seguir os looks marcados com ⭐.
 3. Parta de `prompts/modelo-base.md`, modelo **C) Street style** (padrão) e descreva cada peça com cor, tecido e modelagem do catálogo.
 4. Salve o prompt em `prompts/AAAA-MM-DD-<tema>.md` e mostre o bloco pronto para copiar na resposta.
