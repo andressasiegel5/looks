@@ -29,6 +29,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLU-07 | Regata de cetim | Preta | Alças finas, brilho suave | ❓ |
 | BLU-08 | Blusa sem manga | Bege / nude | Malha, gola redonda | ❓ |
 | BLU-09 | Malha manga curta | Cinza mescla | Gola redonda | ❓ |
+| BLU-10 | Camiseta listrada manga longa | Vermelho e off-white | 100% algodão (Massimo Dutti), listras horizontais finas, gola careca vermelha lisa, caimento ajustado | ✅ |
 | CAM-01 | Camisa social | Branca | Algodão, manga longa (usar dobrada ou com nó na cintura) | ❓ |
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
