@@ -8,7 +8,8 @@ para o ChatGPT criar imagens. Converse sempre em português.
 2. Leia os `README.md` de `looks/` para não repetir combinações já feitas e para seguir os looks marcados com ⭐.
 3. Parta de `prompts/modelo-base.md` (grade de 15 ou look único) e descreva cada peça com cor, tecido e modelagem do catálogo.
 4. Salve o prompt em `prompts/AAAA-MM-DD-<tema>.md` e mostre o bloco pronto para copiar na resposta.
-5. Foco: trabalho (escritório). Considere clima/ocasião se ela informar.
+5. **Sem sapatos no acervo por enquanto**: não escolha sapato; no prompt peça "sapato simples e discreto, em tom neutro".
+6. Foco: trabalho (escritório). Considere clima/ocasião se ela informar.
 
 ## Ao cadastrar peças
 - Adicione na tabela da categoria certa em `guarda-roupa/pecas.md`, com o próximo código livre.

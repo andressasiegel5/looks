@@ -50,21 +50,8 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 
 ## Sapatos
 
-| Código | Peça | Cor | Detalhes | Status |
-|---|---|---|---|---|
-| SAP-01 | Scarpin | Nude | Salto médio, bico fino | ❓ |
-| SAP-02 | Scarpin | Preto | Salto médio, bico fino | ❓ |
-| SAP-03 | Scarpin | Vinho | Salto fino | ❓ |
-| SAP-04 | Bota cano curto | Preta | Salto bloco | ❓ |
-| SAP-05 | Bota cano médio | Marrom escuro | Salto bloco | ❓ |
-| SAP-06 | Mocassim | Marrom | Couro | ❓ |
-| SAP-07 | Mocassim | Preto | Couro | ❓ |
-| SAP-08 | Mule | Bege / nude | Salto bloco | ❓ |
-| SAP-09 | Sandália de tiras | Preta | Salto fino | ❓ |
-| SAP-10 | Sandália / mule | Caramelo | Salto bloco | ❓ |
-| SAP-11 | Tênis | Branco | Couro, minimalista | ❓ |
-| SAP-12 | Scarpin | Marrom chocolate | Salto médio, bico fino | ❓ |
-| SAP-13 | Sandália de tiras | Nude | Salto bloco baixo | ❓ |
+Fora do acervo por enquanto: os sapatos das imagens geradas não são meus.
+Os prompts pedem "sapato simples e discreto, em tom neutro".
 
 ## Acessórios
 

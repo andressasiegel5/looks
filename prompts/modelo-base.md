@@ -24,10 +24,11 @@ PEÇA FIXA (aparece em todos os looks, sempre idêntica):
 [descrição da peça âncora, copiada de guarda-roupa/pecas.md]
 
 LOOKS (da esquerda para a direita, de cima para baixo):
-1. "[Legenda]" — [parte de cima] + [terceira peça] + [cinto/acessório] + [sapato]
+1. "[Legenda]" — [parte de cima] + [terceira peça] + [cinto/acessório]
 2. ...
 15. ...
 
+Em todos os looks, sapato simples e discreto em tom neutro (não é o foco).
 Todas as roupas devem ser exatamente as descritas, sem acrescentar estampas ou peças extras.
 O texto das legendas deve estar escrito corretamente, com acentos.
 ```
@@ -37,7 +38,7 @@ O texto das legendas deve estar escrito corretamente, com acentos.
 ```
 Fotografia de moda realista em estúdio, fundo liso bege-acinzentado, luz suave.
 Uma mulher em pé, de frente, corpo inteiro do queixo aos pés, formato vertical 2:3.
-Ela veste: [peça 1], [peça 2], [peça 3], [sapato], [acessórios].
+Ela veste: [peça 1], [peça 2], [peça 3], [acessórios], sapato simples e discreto em tom neutro.
 Ocasião: [trabalho / reunião / happy hour].
 Sem texto na imagem. Roupas exatamente como descritas, sem peças extras.
 ```

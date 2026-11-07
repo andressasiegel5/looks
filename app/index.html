@@ -186,19 +186,6 @@ const PIECES = [
   P("JAQ-01","terceira","Jaqueta jeans","azul escuro","clássica"),
   P("CAS-01","terceira","Casaco longo","camelo","lã, abaixo do joelho"),
   P("TRE-01","terceira","Trench coat","bege","clássico com faixa"),
-  P("SAP-01","sapato","Scarpin","nude","salto médio, bico fino"),
-  P("SAP-02","sapato","Scarpin","preto","salto médio, bico fino"),
-  P("SAP-03","sapato","Scarpin","vinho","salto fino"),
-  P("SAP-04","sapato","Bota cano curto","preta","salto bloco"),
-  P("SAP-05","sapato","Bota cano médio","marrom escuro","salto bloco"),
-  P("SAP-06","sapato","Mocassim","marrom","couro"),
-  P("SAP-07","sapato","Mocassim","preto","couro"),
-  P("SAP-08","sapato","Mule","bege / nude","salto bloco"),
-  P("SAP-09","sapato","Sandália de tiras","preta","salto fino"),
-  P("SAP-10","sapato","Mule","caramelo","salto bloco"),
-  P("SAP-11","sapato","Tênis","branco","couro, minimalista"),
-  P("SAP-12","sapato","Scarpin","marrom chocolate","salto médio, bico fino"),
-  P("SAP-13","sapato","Sandália de tiras","nude","salto bloco baixo"),
   P("ACE-01","acessorio","Cinto fino","caramelo","fivela dourada"),
   P("ACE-02","acessorio","Cinto fino","preto","fivela dourada"),
   P("ACE-03","acessorio","Brinco de argola","dourado","tamanho médio"),
@@ -206,21 +193,21 @@ const PIECES = [
 const BY = Object.fromEntries(PIECES.map(p => [p.code, p]));
 const L = (id, nome, pecas) => ({ id, nome, pecas, colecao: "Saia creme · rodada 1", img: `img/looks/${id}.jpg` });
 const LOOKS = [
-  L("c1-01","Clássico executivo",["BLA-01","CAM-04","SAI-01","SAP-01"]),
-  L("c1-02","Contraste escuro",["BLU-01","ACE-02","SAI-01","SAP-04"]),
-  L("c1-03","Monocromático claro",["BLA-02","BLU-08","SAI-01","SAP-08"]),
-  L("c1-04","Vinho",["BLU-02","ACE-01","SAI-01","SAP-03"]),
-  L("c1-05","Casual de sexta",["JAQ-01","BLU-06","SAI-01","SAP-11"]),
-  L("c1-06","Reunião importante",["COL-01","CAM-02","SAI-01","SAP-06"]),
-  L("c1-07","Verde oliva",["BLU-03","ACE-01","SAI-01","SAP-10"]),
-  L("c1-08","Marinho elegante",["BLA-03","CAM-03","SAI-01","SAP-02"]),
-  L("c1-09","Inverno",["CAS-01","BLU-09","SAI-01","SAP-05"]),
-  L("c1-10","Trench coat",["TRE-01","BLU-07","SAI-01","SAP-07"]),
-  L("c1-11","Minimalista P&B",["BLU-05","ACE-02","SAI-01","SAP-09"]),
-  L("c1-12","Cardigã",["CAR-01","ACE-01","SAI-01","SAP-12"]),
-  L("c1-13","Camisa branca",["CAM-01","SAI-01","SAP-13"]),
-  L("c1-14","Terracota",["BLU-04","ACE-01","SAI-01","SAP-10"]),
-  L("c1-15","Noite pós-trabalho",["BLA-04","BLU-07","SAI-01","SAP-09","ACE-03"]),
+  L("c1-01","Clássico executivo",["BLA-01","CAM-04","SAI-01"]),
+  L("c1-02","Contraste escuro",["BLU-01","ACE-02","SAI-01"]),
+  L("c1-03","Monocromático claro",["BLA-02","BLU-08","SAI-01"]),
+  L("c1-04","Vinho",["BLU-02","ACE-01","SAI-01"]),
+  L("c1-05","Casual de sexta",["JAQ-01","BLU-06","SAI-01"]),
+  L("c1-06","Reunião importante",["COL-01","CAM-02","SAI-01"]),
+  L("c1-07","Verde oliva",["BLU-03","ACE-01","SAI-01"]),
+  L("c1-08","Marinho elegante",["BLA-03","CAM-03","SAI-01"]),
+  L("c1-09","Inverno",["CAS-01","BLU-09","SAI-01"]),
+  L("c1-10","Trench coat",["TRE-01","BLU-07","SAI-01"]),
+  L("c1-11","Minimalista P&B",["BLU-05","ACE-02","SAI-01"]),
+  L("c1-12","Cardigã",["CAR-01","ACE-01","SAI-01"]),
+  L("c1-13","Camisa branca",["CAM-01","SAI-01"]),
+  L("c1-14","Terracota",["BLU-04","ACE-01","SAI-01"]),
+  L("c1-15","Noite pós-trabalho",["BLA-04","BLU-07","SAI-01","ACE-03"]),
 ];
 
 // ---------- Estado ----------
@@ -340,16 +327,14 @@ function pool(cat) {
 }
 function generate(lockCode) {
   const lock = lockCode ? BY[lockCode] : null;
-  const take = (cat, fallback) => lock && lock.cat === cat ? lock : (fallback ?? pick(pool(cat)));
   const bottom = lock && ["saia","calca"].includes(lock.cat) ? lock : pick([...pool("saia"), ...pool("calca")]);
   let layer = lock?.cat === "terceira" ? lock : (Math.random() < 0.55 ? pick(pool("terceira")) : null);
   let top = lock?.cat === "top" ? lock : pick(pool("top").filter(t => layer?.code !== "COL-01" || t.code.startsWith("CAM")));
   if (layer?.code === "COL-01" && !top.code.startsWith("CAM") && lock?.cat === "top") layer = null;
-  const shoe = take("sapato");
-  const out = [top, layer, bottom, shoe].filter(Boolean);
-  const darkShoe = /preto|preta/.test(shoe.cor);
+  const out = [top, layer, bottom].filter(Boolean);
+  const escuro = /preto|preta/.test(top.cor + (layer?.cor || ""));
   if (lock?.cat === "acessorio") out.push(lock);
-  else if (!LONG.includes(layer?.code) && Math.random() < 0.45) out.push(BY[darkShoe ? "ACE-02" : "ACE-01"]);
+  else if (!LONG.includes(layer?.code) && Math.random() < 0.45) out.push(BY[escuro ? "ACE-02" : "ACE-01"]);
   if (lock?.code !== "ACE-03" && Math.random() < 0.2) out.push(BY["ACE-03"]);
   const codes = [...new Set(out.map(p => p.code))];
   if (lockCode && !codes.includes(lockCode)) codes.push(lockCode);
@@ -361,6 +346,7 @@ function promptFor(codes) {
 Uma mulher em pé, de frente, braços relaxados, corpo inteiro do queixo aos pés, formato vertical 2:3.
 Ela veste exatamente:
 ${desc}
+- sapato simples e discreto, em tom neutro (não é o foco do look)
 Ocasião: trabalho em escritório.
 Sem texto na imagem. Roupas exatamente como descritas, sem estampas nem peças extras.`;
 }
