@@ -15,3 +15,5 @@ Prompt: [prompt](../../prompts/2026-11-07-calca-cinza-hm-street-style.md).
 | 6 | Cinza, blazer e acetinada | BLA-05, CAM-05, Bolsa preta estruturada | |
 
 O look4 foi tirado do app: a polo saiu verde, diferente da polo real.
+
+O look 5 também foi tirado do app: a blusa de renda saiu com gola alta, diferente da real.

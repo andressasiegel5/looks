@@ -15,3 +15,5 @@ Prompt: [prompt](../../prompts/2026-11-07-calca-offwhite-hm-street-style.md).
 | 6 | Off-white e pistache | BLU-11, Bolsa de palha | |
 
 O look6 foi tirado do app: a polo saiu verde, diferente da polo real.
+
+O look 3 também foi tirado do app: a blusa de renda saiu com gola alta, diferente da real.
