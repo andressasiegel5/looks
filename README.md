@@ -59,3 +59,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Camisa acetinada preta (Shoulder) — street style](prompts/2026-11-07-camisa-acetinada-preta-street-style.md)
 - [Polo de tricô com botões preta (Shoulder) — street style](prompts/2026-11-07-polo-botoes-preta-street-style.md)
 - [Blusa preta com renda (Anne Fernandes) — street style](prompts/2026-11-07-blusa-renda-preta-street-style.md)
+- [Blusa Wingsuit branca (Insider) — street style](prompts/2026-11-07-blusa-wingsuit-branca-street-style.md)

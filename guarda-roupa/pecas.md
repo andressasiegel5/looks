@@ -33,6 +33,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLU-11 | Polo de tricô manga curta "Erica Candy" | Verde pistache (listras candy) | Brooksfield Donna. Tricô fino com listras horizontais coloridas em tons suaves (verde pistache e off-white), gola polo, botões dourados, caimento ajustado, tam. P | ✅ |
 | BLU-12 | Polo de tricô com botões (Shoulder) | Preta | Tricô canelado justo, gola polo, decote em V profundo com fileira de botõezinhos metálicos, manga curta até o cotovelo, 51% viscose 49% poliamida, tam. M | ✅ |
 | BLU-13 | Blusa com renda (Anne Fernandes) | Preta | Manga curta, gola alta, ajustada, com detalhes de renda (detalhes a confirmar) | ✅ |
+| BLU-14 | Blusa Wingsuit (Insider) | Branca | Tecido TECHSTURE (poliamida, viscose, elastano), **modelagem ampla**, manga morcego longa justa no punho, gola alta. Pede parte de baixo reta ou justa | ✅ |
 | CAM-01 | Camisa social | Branca | Algodão, manga longa (usar dobrada ou com nó na cintura) | ❓ |
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
