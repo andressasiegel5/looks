@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Jaqueta bomber preta — street style, 6 looks](looks/2026-11-jaqueta-bomber-street/) ✨
 - [Saia creme em camadas — 15 looks](looks/2026-11-saia-creme-camadas/)
 
 ## Prompts prontos

@@ -193,8 +193,15 @@ const PIECES = [
   P("ACE-03","acessorio","Brinco de argola","dourado","tamanho médio"),
 ];
 const BY = Object.fromEntries(PIECES.map(p => [p.code, p]));
-const L = (id, nome, pecas) => ({ id, nome, pecas, colecao: "Saia creme · rodada 1", img: `img/looks/${id}.jpg` });
+const L = (id, nome, pecas, colecao = "Saia creme · rodada 1", extras = []) => ({ id, nome, pecas, extras, colecao, img: `img/looks/${id}.jpg` });
+const ST = "Jaqueta bomber · street style";
 const LOOKS = [
+  L("c2-01","Jeans e baby tee",["JAQ-02","ACE-02","ACE-03"],ST,["Baby tee branca","Jeans reto azul médio","Bolsa baguete preta","Óculos escuros"]),
+  L("c2-02","Total black",["JAQ-02","ACE-03"],ST,["Gola alta preta fina","Calça de alfaiataria preta longa","Bolsa preta pequena","Óculos escuros"]),
+  L("c2-03","Cinza mescla",["JAQ-02","ACE-02","ACE-03"],ST,["Regata canelada branca","Calça de alfaiataria cinza mescla","Bolsa marrom de ombro","Óculos escuros"]),
+  L("c2-04","Slip skirt",["JAQ-02","ACE-03"],ST,["Gola alta preta fina","Saia midi de cetim preta","Óculos escuros"]),
+  L("c2-05","Preto e chocolate",["JAQ-02","ACE-03"],ST,["Baby tee chocolate","Calça de alfaiataria chocolate","Bolsa preta","Óculos tartaruga"]),
+  L("c2-06","Off-white",["JAQ-02","ACE-02","ACE-03"],ST,["Regata canelada preta","Calça de alfaiataria off-white","Bolsa preta pequena","Óculos escuros"]),
   L("c1-01","Clássico executivo",["BLA-01","CAM-04","SAI-01"]),
   L("c1-02","Contraste escuro",["BLU-01","ACE-02","SAI-01"]),
   L("c1-03","Monocromático claro",["BLA-02","BLU-08","SAI-01"]),
@@ -238,7 +245,7 @@ function lookCard(l) {
   return `<button class="card" type="button" data-look="${l.id}">
     <img src="${l.img}" alt="${esc(l.nome)}" loading="lazy">
     ${fav ? `<span class="fav-badge" aria-label="Favorito">★</span>` : ""}
-    <span class="cap"><span class="look-name">${esc(l.nome)}</span><span class="mono tag">${l.pecas.length} peças</span></span>
+    <span class="cap"><span class="look-name">${esc(l.nome)}</span><span class="mono tag">${l.pecas.length + l.extras.length} peças</span></span>
   </button>`;
 }
 function renderLooks() {
@@ -297,7 +304,7 @@ function showLook(id) {
     <div class="split"><img src="${l.img}" alt="${esc(l.nome)}">
       <div class="stack">
         <div class="label">Peças deste look</div>
-        <div class="pieces-row">${l.pecas.map(c => mini(c)).join("")}</div>
+        <div class="pieces-row">${l.pecas.map(c => mini(c)).join("")}${l.extras.map(x => `<div class="mini ghost"><span><span class="mono">NÃO CADASTRADA</span>${esc(x)}</span></div>`).join("")}</div>
         <div class="note">${usos.length ? `Usado ${usos.length}× · última vez em ${new Date(usos[usos.length-1] + "T12:00").toLocaleDateString("pt-BR")}` : "Ainda não usado."}</div>
         ${state.db ? `<div class="actions">
           <button class="btn" type="button" data-fav="${id}" aria-pressed="${!!f.favorito}">${f.favorito ? "★ Favorito" : "☆ Favoritar"}</button>
@@ -358,14 +365,13 @@ const BAIXO_GENERICO = "calça reta de alfaiataria de cintura alta, em tom neutr
 const semBaixo = codes => !codes.some(c => isBottom(BY[c]));
 function promptFor(codes) {
   const desc = codes.map(c => { const p = BY[c]; return `- ${p.nome.toLowerCase()} ${p.cor} (${p.det})`; }).join("\n");
-  return `Fotografia de moda realista em estúdio, fundo liso bege-acinzentado, luz suave e difusa.
-Uma mulher magra e esguia, 1,68 m, cerca de 56 kg, cintura fina e marcada, pernas longas e finas, cabelo castanho acobreado.
-Pose natural de foto de look do dia: corpo levemente em 3/4, uma mão no bolso ou na cintura. Corpo inteiro do queixo aos pés, formato vertical 2:3.
+  return `Foto vertical 2:3 no estilo de street style de modelo fora do trabalho, anos 90 minimalista, tirada de longe com lente 50 mm, luz natural de manhã, calçada de cidade com prédios claros desfocados ao fundo. Cores naturais, levemente quentes, granulado sutil de filme.
+Uma mulher magra e esguia, 1,68 m, cerca de 56 kg, cintura fina e marcada, pernas longas e finas. Cabelo castanho acobreado puxado para trás num coque baixo liso e polido, óculos escuros pequenos pretos. Andando na calçada naturalmente, corpo inteiro visível.
 Ela veste exatamente:
 ${desc}${semBaixo(codes) ? "\n- " + BAIXO_GENERICO : ""}
 - sapato simples e discreto, em tom neutro (não é o foco do look)
 ${codes.some(c => AMPLAS.includes(c)) ? "Só a peça oversized é larga, de propósito. Todas as outras peças são do tamanho certo do corpo magro dela, ajustadas na cintura; a blusa fica por dentro e a peça larga fica aberta.\n" : ""}Ocasião: trabalho em escritório.
-Sem texto na imagem. Roupas exatamente como descritas, sem estampas nem peças extras.`;
+Sem texto, sem logotipos. Roupas exatamente como descritas, sem estampas nem peças extras.`;
 }
 function sameLook(codes) {
   const key = s => [...s].filter(c => !c.startsWith("ACE")).sort().join();
