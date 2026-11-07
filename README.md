@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Saia slip animal print — com as suas blusas, 6 looks](looks/2026-11-saia-slip-animal-print/) ✨
 - [Blusa Wingsuit branca — street style, 6 looks](looks/2026-11-blusa-wingsuit-branca/) ✨
 - [Blusa preta com renda — street style, 6 looks](looks/2026-11-blusa-renda-preta/) ✨
 - [Polo de tricô com botões preta — street style, 6 looks](looks/2026-11-polo-botoes-preta/) ✨
@@ -61,3 +62,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Polo de tricô com botões preta (Shoulder) — street style](prompts/2026-11-07-polo-botoes-preta-street-style.md)
 - [Blusa preta com renda (Anne Fernandes) — street style](prompts/2026-11-07-blusa-renda-preta-street-style.md)
 - [Blusa Wingsuit branca (Insider) — street style](prompts/2026-11-07-blusa-wingsuit-branca-street-style.md)
+- [Saia slip animal print (H&M) — street style](prompts/2026-11-07-saia-slip-animal-print-street-style.md)
