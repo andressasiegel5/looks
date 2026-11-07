@@ -4,7 +4,7 @@ Este repositório é o acervo de roupas da Andressa e serve para gerar prompts d
 para o ChatGPT criar imagens. Converse sempre em português.
 
 ## Perfil (sempre no prompt)
-- Mulher magra e esguia, 1,68 m, ~56 kg, cintura fina, cabelo castanho acobreado. Sempre descrever o corpo da modelo assim.
+- Mulher magra e esguia, 1,68 m, ~56 kg, cintura fina, cabelo castanho acobreado (no prompt reforçar: "castanho médio com reflexos cobre, não preto nem castanho escuro"; o ChatGPT tende a escurecer). Sempre descrever o corpo da modelo assim.
 - Peça oversized é estilo: dizer que **só aquela peça** é larga e o resto é do tamanho certo e ajustado.
 - Preferir pose natural de "look do dia" (3/4, mão no bolso ou na cintura), não de frente rígida.
 - Grades menores (9 looks, 3×3) saem com mais qualidade que 15.

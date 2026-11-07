@@ -18,7 +18,7 @@ prédios claros desfocados ao fundo. Cores naturais, levemente quentes, granulad
 
 A MODELO (a mesma em todas as fotos):
 Mulher magra e esguia, 1,68 m, cerca de 56 kg, ombros estreitos, cintura fina, pernas longas.
-Cabelo castanho acobreado, puxado para trás num coque baixo liso e polido. Rosto cortado na
+Cabelo castanho acobreado (castanho médio com reflexos cobre, NÃO preto nem castanho escuro), puxado para trás num coque baixo liso e polido. Rosto cortado na
 altura do nariz ou coberto pelos óculos escuros. Andando na calçada, naturalmente, como se
 não soubesse que está sendo fotografada; corpo inteiro visível.
 
