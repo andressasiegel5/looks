@@ -1,6 +1,6 @@
 # Blusa preta com renda (Anne Fernandes) — street style
 
-Peça âncora: **BLU-13**. Prompt: [blusa de renda](../../prompts/2026-11-07-blusa-renda-preta-street-style.md).
+Peça âncora: **BLU-13**. Imagem regerada pela API com a blusa correta (gola de camisa, renda só nos ombros e mangas). Prompt: [blusa de renda](../../prompts/2026-11-07-blusa-renda-preta-street-style.md).
 
 ![Grade com 6 looks](grade-6-looks.png)
 
