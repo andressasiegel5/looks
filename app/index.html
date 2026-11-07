@@ -21,6 +21,7 @@
 }
 :root[data-theme="dark"] { --bg: #121212; --dot: #2C2C2A; --surface: #1C1C1B; --ink: #F1F0EC; --muted: #9A9993; --line: #2E2E2C; --on-ink: #121212; --heart: #F06A7A; color-scheme: dark; }
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 body {
   background-color: var(--bg);
   color: var(--ink); font-family: var(--font); font-size: 15px; line-height: 1.45;
@@ -158,6 +159,9 @@ dialog::backdrop { background: rgb(10 10 10 / .5); }
     <div class="wrap" style="gap:14px">
       <h2>favoritos</h2>
       <div class="grid" id="favGrid"></div>
+      <h2 style="margin-top:8px">wishlist</h2>
+      <p class="sub" style="margin-top:-8px">looks que você quer montar e as peças que faltam</p>
+      <div class="list" id="wishList"></div>
       <h2 style="margin-top:8px">ideias para gerar</h2>
       <div class="list" id="ideasList"></div>
     </div>
@@ -181,7 +185,7 @@ dialog::backdrop { background: rgb(10 10 10 / .5); }
   <a href="#pecas" data-tab="pecas">peças</a>
 </div></nav>
 
-<div class="selbar" id="selbar" hidden><span id="selCount">0 selecionados</span><button class="btn small danger" type="button" id="selRemove">remover</button></div>
+<div class="selbar" id="selbar" hidden><span id="selCount">0 selecionados</span><button class="btn small dark" type="button" id="selWish">♡ wishlist</button><button class="btn small danger" type="button" id="selRemove">remover</button></div>
 <dialog id="sheet" aria-labelledby="sheetTitle"><div class="sheet" id="sheetBody"></div></dialog>
 <div class="toast" id="toast" hidden></div>
 
@@ -436,9 +440,20 @@ function renderLooks() {
   $("looksGrid").innerHTML = list.map(tile).join("");
   $("selToggle").textContent = state.sel ? "cancelar" : "selecionar";
   $("selbar").hidden = !state.sel || !location.hash.startsWith("#looks");
-  if (state.sel) { $("selCount").textContent = `${state.sel.size} selecionado${state.sel.size === 1 ? "" : "s"}`; $("selRemove").disabled = !state.sel.size; $("selRemove").textContent = state.sel.size ? `remover (${state.sel.size})` : "remover"; }
+  if (state.sel) { $("selCount").textContent = `${state.sel.size} selecionado${state.sel.size === 1 ? "" : "s"}`; $("selRemove").disabled = !state.sel.size; $("selWish").disabled = !state.sel.size; $("selRemove").textContent = state.sel.size ? `remover (${state.sel.size})` : "remover"; }
+}
+const faltam = l => [...l.pecas.filter(c => BY[c] && !isMine(BY[c]) && BY[c].cat !== "acessorio").map(c => BY[c].nome + " " + BY[c].cor), ...garmentExtras(l)];
+function renderWish() {
+  const list = LOOKS.filter(l => visivel(l) && state.favs[l.id]?.wishlist);
+  $("wishList").innerHTML = list.length ? list.map(l => { const f = faltam(l); return `<div class="card">
+      <div style="display:flex;gap:12px;align-items:flex-start"><button class="tile" type="button" data-look="${l.id}" style="width:96px;flex:none"><img src="${l.img}" alt=""></button>
+      <div style="min-width:0;display:flex;flex-direction:column;gap:6px"><h3>${esc(l.nome)}</h3>
+      ${f.length ? `<span class="sub" style="margin:0">falta: ${f.map(esc).join(", ")}</span>` : `<span class="sub" style="margin:0">você já tem tudo 🎉</span>`}
+      <div class="actions"><button class="btn small" type="button" data-unwish="${l.id}">tirar da wishlist</button></div></div></div></div>`; }).join("")
+    : `<p class="empty">Na aba looks, toque em “selecionar”, marque os looks e depois em “♡ wishlist”.</p>`;
 }
 function renderFavs() {
+  renderWish();
   const list = LOOKS.filter(l => isFav(l.id) && visivel(l));
   $("favGrid").innerHTML = list.length ? list.map(tile).join("") : `<p class="empty" style="grid-column:1/-1">Toque no ♡ de um look para guardar aqui.</p>`;
   if (!state.db) { $("ideasList").innerHTML = `<p class="empty">Para salvar ideias, abra esta página logada no claude.ai.</p>`; return; }
@@ -574,6 +589,13 @@ document.addEventListener("click", async e => {
   if (el.id === "seeLook") { const l = current(); return l && showLook(l.id); }
   if (el.id === "drawNew") return showGenerated();
   if (el.id === "selToggle") { if (!state.db && !state.sel) return toast("Abra logada no claude.ai para remover looks"); state.sel = state.sel ? null : new Set(); return renderLooks(); }
+  if (el.id === "selWish") {
+    const ids = [...(state.sel || [])]; if (!ids.length) return; el.disabled = true;
+    for (const id of ids) await setLook(id, { wishlist: true });
+    state.sel = null; renderLooks(); renderFavs();
+    return toast(`${ids.length} na wishlist (aba favoritos)`);
+  }
+  if (d.unwish) { await setLook(d.unwish, { wishlist: false }); renderFavs(); return toast("Tirado da wishlist"); }
   if (el.id === "selRemove") {
     const ids = [...(state.sel || [])]; if (!ids.length) return;
     el.disabled = true;
