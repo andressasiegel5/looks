@@ -49,3 +49,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Jaqueta bomber preta — street style (v3)](prompts/2026-11-07-jaqueta-bomber-preta-street-style-v3.md)
 - [Camiseta listrada vermelha — street style](prompts/2026-11-07-camiseta-listrada-vermelha-street-style.md)
 - [Camiseta listrada vermelha — rodada 2 (peças variadas)](prompts/2026-11-07-camiseta-listrada-rodada-2.md)
+- [Blazer preto trespassado (Zara) — street style](prompts/2026-11-07-blazer-preto-trespassado-street-style.md)

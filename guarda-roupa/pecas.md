@@ -43,6 +43,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLA-02 | Blazer longo | Bege areia | Alfaiataria, oversized | ❓ |
 | BLA-03 | Blazer | Azul marinho | Alfaiataria acinturada | ❓ |
 | BLA-04 | Blazer | Preto | Alfaiataria, usado aberto | ❓ |
+| BLA-05 | Blazer trespassado | Preto | Zara. Alfaiataria acinturada (tamanho certo), lapela pontuda, 6 botões dourados com brasão, ombros estruturados, bolsos com lapela, comprimento no quadril | ✅ |
 | COL-01 | Colete de alfaiataria | Cinza | Abotoado | ❓ |
 | CAR-01 | Cardigã | Marrom chocolate | Tricô fino, botões | ❓ |
 | JAQ-01 | Jaqueta jeans | Azul escuro | Clássica | ❓ |
