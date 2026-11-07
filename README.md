@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Camiseta listrada vermelha — street style, 6 looks](looks/2026-11-camiseta-listrada-street/)
 - [Jaqueta bomber preta — street style, 6 looks](looks/2026-11-jaqueta-bomber-street/) ✨
 - [Saia creme em camadas — 15 looks](looks/2026-11-saia-creme-camadas/)
 
@@ -46,3 +47,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Jaqueta bomber preta — 9 looks (v2)](prompts/2026-11-07-jaqueta-bomber-preta-9-looks-v2.md)
 - [Jaqueta bomber preta — street style (v3)](prompts/2026-11-07-jaqueta-bomber-preta-street-style-v3.md)
 - [Camiseta listrada vermelha — street style](prompts/2026-11-07-camiseta-listrada-vermelha-street-style.md)
+- [Camiseta listrada vermelha — rodada 2 (peças variadas)](prompts/2026-11-07-camiseta-listrada-rodada-2.md)

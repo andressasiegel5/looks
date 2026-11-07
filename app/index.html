@@ -196,7 +196,14 @@ const PIECES = [
 const BY = Object.fromEntries(PIECES.map(p => [p.code, p]));
 const L = (id, nome, pecas, colecao = "Saia creme · rodada 1", extras = []) => ({ id, nome, pecas, extras, colecao, img: `img/looks/${id}.jpg` });
 const ST = "Jaqueta bomber · street style";
+const CL = "Camiseta listrada · street style";
 const LOOKS = [
+  L("c3-01","Listrada e saia creme",["BLU-10","SAI-01","ACE-01","ACE-03"],CL,["Bolsa caramelo"]),
+  L("c3-02","Listrada com a bomber",["BLU-10","JAQ-02","ACE-02","ACE-03"],CL,["Jeans reto azul médio","Bolsa baguete preta","Óculos escuros"]),
+  L("c3-03","Listrada e alfaiataria preta",["BLU-10","ACE-02","ACE-03"],CL,["Calça de alfaiataria preta","Bolsa preta pequena"]),
+  L("c3-04","Listrada e jeans claro",["BLU-10","ACE-03"],CL,["Jeans reto lavagem clara","Cinto marrom","Bolsa de couro marrom","Óculos tartaruga"]),
+  L("c3-05","Listrada e off-white",["BLU-10","ACE-03"],CL,["Calça de alfaiataria off-white","Suéter off-white nos ombros","Bolsa preta pequena"]),
+  L("c3-06","Listrada e cetim",["BLU-10","ACE-03"],CL,["Saia midi de cetim preta","Bolsa preta","Óculos escuros"]),
   L("c2-01","Jeans e baby tee",["JAQ-02","ACE-02","ACE-03"],ST,["Baby tee branca","Jeans reto azul médio","Bolsa baguete preta","Óculos escuros"]),
   L("c2-02","Total black",["JAQ-02","ACE-03"],ST,["Gola alta preta fina","Calça de alfaiataria preta longa","Bolsa preta pequena","Óculos escuros"]),
   L("c2-03","Cinza mescla",["JAQ-02","ACE-02","ACE-03"],ST,["Regata canelada branca","Calça de alfaiataria cinza mescla","Bolsa marrom de ombro","Óculos escuros"]),
