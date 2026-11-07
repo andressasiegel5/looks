@@ -42,3 +42,10 @@ Faça commit e push depois de cada alteração.
 - Publicada em https://claude.ai/artifact/4aKopUPTGpFVxXRU8AG6q4 a partir de `app/index.html` (imagens em `app/img/`).
 - Os dados `PIECES` e `LOOKS` dentro de `app/index.html` espelham `guarda-roupa/pecas.md` e `looks/`. Ao cadastrar peça ou coleção nova, atualize os dois, gere os recortes em `app/img/` e republique no mesmo URL (Artifact com `url`, `root: app`).
 - O banco da página guarda o que ela marca: coleção `looks` (`favorito`, `usos` = datas) e coleção `ideias` (combinações salvas para gerar, com `pecas` e `prompt`). Leia esses dados com ArtifactData antes de montar prompts novos.
+
+## Gerar imagens automaticamente (API da OpenAI)
+- A chave está salva no ambiente para `api.openai.com` (o proxy injeta; nunca pedir a chave no chat).
+- `python3 scripts/gerar_imagem.py prompts/ARQUIVO.md looks/AAAA-MM-tema/grade-6-looks.png`
+  (modelo padrão gpt-image-2, 1536x1024, qualidade medium). Depois: recortar os 6 looks em `app/img/looks/`,
+  criar o README da coleção, adicionar em `LOOKS`, rodar `build_prompts.py`, republicar e fazer commit.
+- Cada geração custa dinheiro dela: gere uma vez; só repita se a imagem vier com erro claro.
