@@ -47,7 +47,7 @@ h2 { font-size: 24px; line-height: 1.1; }
 /* hero */
 .hero { position: relative; display: flex; justify-content: center; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
 .hero-img { -webkit-user-drag: none; }
-.hero-img { width: min(100%, 380px); aspect-ratio: 4 / 5; object-fit: cover; object-position: center 30%; border-radius: 22px; display: block; background: var(--surface); }
+.hero-img { width: min(100%, 380px); aspect-ratio: 4 / 5; object-fit: cover; object-position: center 30%; border-radius: 22px; display: block; background: transparent; will-change: transform; }
 .controls { display: flex; justify-content: center; align-items: center; gap: 22px; margin-top: 14px; }
 .ctrl { width: 52px; height: 52px; border-radius: 50%; border: none; background: var(--surface); display: grid; place-items: center; font-size: 30px; line-height: 1; padding-bottom: 3px; }
 .ctrl.fav { width: 60px; height: 60px; background: var(--ink); color: var(--on-ink); font-size: 24px; }
@@ -412,6 +412,7 @@ function renderHero() {
       <button class="ctrl" type="button" id="next" aria-label="Próximo look">›</button>
     </div>
     <div class="hero-cap" style="margin-top:10px"><strong>${esc(l.nome)}</strong><span>${state.pos + 1} de ${state.order.length}</span></div>`;
+  preloadAround();
   const garments = l.pecas.filter(c => BY[c] && BY[c].cat !== "acessorio");
   const acc = l.pecas.filter(c => BY[c] && BY[c].cat === "acessorio");
   $("rail").innerHTML = [...garments.map(pieceCard), ...l.extras.map(ghostCard), ...acc.map(pieceCard)].join("");
@@ -557,8 +558,8 @@ document.addEventListener("click", async e => {
   if ("close" in d) return sheet.close();
   if (d.mood) { state.mood = d.mood; resetOrder(); renderMoodChips(); return renderHero(); }
   if (d.mode) { state.mode = d.mode; try { localStorage.setItem("mode", d.mode); } catch {} resetOrder(); renderMoodChips(); return renderHero(); }
-  if (el.id === "prev") { const n = Math.max(1, state.order.length); state.pos = (state.pos - 1 + n) % n; return renderHero(); }
-  if (el.id === "next") { state.pos = (state.pos + 1) % Math.max(1, state.order.length); return renderHero(); }
+  if (el.id === "prev") return go(-1);
+  if (el.id === "next") return go(1);
   if (el.id === "seeLook") { const l = current(); return l && showLook(l.id); }
   if (el.id === "drawNew") return showGenerated();
   if (d.lmood) { state.looksMood = d.lmood; return renderLooks(); }
@@ -581,21 +582,45 @@ document.addEventListener("click", async e => {
   if (d.delidea) { try { await state.db.doc(`ideias/${d.delidea}`).delete(); toast("Ideia removida"); } catch { toast("Não consegui remover."); } return; }
 });
 // Arrastar a foto: para a esquerda avança, para a direita volta
+const preloaded = new Set();
+function preloadAround() {
+  const n = state.order.length; if (!n) return;
+  for (const k of [1, -1, 2]) { const l = LOOKS.find(x => x.id === state.order[(state.pos + k + n) % n]); if (l && !preloaded.has(l.img)) { const im = new Image(); im.src = l.img; preloaded.add(l.img); } }
+}
+function go(step) {
+  const n = Math.max(1, state.order.length); const i = document.querySelector(".hero-img");
+  const nextPos = (state.pos + step + n) % n; const l = LOOKS.find(x => x.id === state.order[nextPos]);
+  const swap = () => { state.pos = nextPos; renderHero();
+    const ni = document.querySelector(".hero-img"); if (!ni) return;
+    ni.style.transition = "none"; ni.style.transform = `translateX(${step * 40}px)`; ni.style.opacity = "0";
+    requestAnimationFrame(() => requestAnimationFrame(() => { ni.style.transition = "transform .22s ease, opacity .22s ease"; ni.style.transform = ""; ni.style.opacity = ""; }));
+  };
+  if (!i || !l) return swap();
+  i.style.transition = "transform .18s ease, opacity .18s ease";
+  i.style.transform = `translateX(${-step * 120}%) rotate(${-step * 6}deg)`; i.style.opacity = "0";
+  const pre = new Image(); let done = false; const fin = () => { if (!done) { done = true; swap(); } };
+  pre.onload = pre.onerror = () => setTimeout(fin, 120); pre.src = l.img; setTimeout(fin, 900);
+}
 (() => {
-  const h = $("hero"); let x0 = null, y0 = 0, dx = 0;
+  const h = $("hero"); let x0 = null, y0 = 0, dx = 0, horiz = null;
   const img = () => h.querySelector(".hero-img");
-  h.addEventListener("pointerdown", e => { if (!img() || !e.target.closest(".hero")) return; x0 = e.clientX; y0 = e.clientY; dx = 0; });
-  h.addEventListener("pointermove", e => {
-    if (x0 === null) return; dx = e.clientX - x0;
-    if (Math.abs(dx) > Math.abs(e.clientY - y0)) { const i = img(); i.style.transition = "none"; i.style.transform = `translateX(${dx}px) rotate(${dx / 40}deg)`; i.style.opacity = String(1 - Math.min(Math.abs(dx) / 400, .4)); }
-  });
+  const start = (x, y) => { if (!img()) return; x0 = x; y0 = y; dx = 0; horiz = null; };
+  const move = (x, y, ev) => {
+    if (x0 === null) return; dx = x - x0; const dy = y - y0;
+    if (horiz === null && (Math.abs(dx) > 8 || Math.abs(dy) > 8)) horiz = Math.abs(dx) > Math.abs(dy);
+    if (!horiz) return; if (ev && ev.cancelable) ev.preventDefault();
+    const i = img(); i.style.transition = "none"; i.style.transform = `translateX(${dx}px) rotate(${dx / 40}deg)`;
+  };
   const end = () => {
     if (x0 === null) return; x0 = null; const i = img();
-    const n = Math.max(1, state.order.length);
-    if (Math.abs(dx) > 60) { state.pos = dx < 0 ? (state.pos + 1) % n : (state.pos - 1 + n) % n; return renderHero(); }
-    if (i) { i.style.transition = "transform .2s ease, opacity .2s ease"; i.style.transform = ""; i.style.opacity = ""; }
+    if (horiz && Math.abs(dx) > 50) return go(dx < 0 ? 1 : -1);
+    if (i) { i.style.transition = "transform .2s ease"; i.style.transform = ""; }
   };
-  h.addEventListener("pointerup", end); h.addEventListener("pointercancel", end); h.addEventListener("pointerleave", end);
+  h.addEventListener("touchstart", e => start(e.touches[0].clientX, e.touches[0].clientY), { passive: true });
+  h.addEventListener("touchmove", e => move(e.touches[0].clientX, e.touches[0].clientY, e), { passive: false });
+  h.addEventListener("touchend", end); h.addEventListener("touchcancel", end);
+  h.addEventListener("mousedown", e => { e.preventDefault(); start(e.clientX, e.clientY); });
+  addEventListener("mousemove", e => move(e.clientX, e.clientY)); addEventListener("mouseup", end);
 })();
 $("onlyMine").addEventListener("change", e => { state.onlyMine = e.target.checked; try { localStorage.setItem("onlyMine", state.onlyMine ? "1" : "0"); } catch {} });
 sheet.addEventListener("click", e => { if (e.target === sheet) sheet.close(); });
