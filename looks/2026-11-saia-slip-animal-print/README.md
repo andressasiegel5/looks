@@ -13,3 +13,5 @@ Prompt: [saia slip animal print](../../prompts/2026-11-07-saia-slip-animal-print
 | 4 | Bomber | Gola alta preta + jaqueta bomber (JAQ-02) | |
 | 5 | Camisa acetinada | Camisa acetinada preta (CAM-05) + colar dourado | |
 | 6 | Polo pistache | Polo Erica Candy (BLU-11) + bolsa de palha | |
+
+O look6 foi tirado do app: a polo saiu verde, diferente da polo real.

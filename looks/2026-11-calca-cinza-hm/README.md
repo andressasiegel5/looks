@@ -13,3 +13,5 @@ Prompt: [prompt](../../prompts/2026-11-07-calca-cinza-hm-street-style.md).
 | 4 | Cinza e pistache | BLU-11, ACE-01, Bolsa de palha | |
 | 5 | Cinza e renda | BLU-13, ACE-03, Bolsa preta pequena | |
 | 6 | Cinza, blazer e acetinada | BLA-05, CAM-05, Bolsa preta estruturada | |
+
+O look4 foi tirado do app: a polo saiu verde, diferente da polo real.

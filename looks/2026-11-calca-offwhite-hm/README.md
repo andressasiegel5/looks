@@ -13,3 +13,5 @@ Prompt: [prompt](../../prompts/2026-11-07-calca-offwhite-hm-street-style.md).
 | 4 | Off-white e camisa acetinada | CAM-05, Colar dourado | |
 | 5 | Off-white e blazer | BLA-05, Regata preta, Bolsa preta | |
 | 6 | Off-white e pistache | BLU-11, Bolsa de palha | |
+
+O look6 foi tirado do app: a polo saiu verde, diferente da polo real.
