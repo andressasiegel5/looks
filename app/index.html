@@ -104,6 +104,7 @@ dialog::backdrop { background: rgb(20 18 17 / .55); }
 .mini img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; }
 .mini span { display: block; padding: 5px 7px 7px; font-size: 12px; line-height: 1.25; }
 .mini .mono { display: block; color: var(--muted); padding: 0; }
+.mini.ghost { border-style: dashed; display: grid; align-content: end; min-height: 140px; color: var(--muted); }
 .mini.locked { outline: 2px solid var(--accent); outline-offset: -2px; }
 .prompt { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 12px; font-family: var(--font-mono); font-size: 12px; white-space: pre-wrap; max-height: 220px; overflow: auto; margin: 0; }
 .note { font-size: 13px; color: var(--muted); }
@@ -184,7 +185,7 @@ const PIECES = [
   P("COL-01","terceira","Colete de alfaiataria","cinza","abotoado"),
   P("CAR-01","terceira","Cardigã","marrom chocolate","tricô fino com botões"),
   P("JAQ-01","terceira","Jaqueta jeans","azul escuro","clássica"),
-  P("JAQ-02","terceira","Jaqueta bomber curta","preta","tecido aveludado tipo suede, gola careca, punhos e barra em ribana, zíper e botões de pressão prateados, bolsos com lapela, comprimento na cintura", true),
+  P("JAQ-02","terceira","Jaqueta bomber curta","preta","modelagem ampla (oversized), tecido aveludado tipo suede, gola careca, punhos e barra em ribana, zíper e botões de pressão prateados, bolsos com lapela, comprimento na cintura", true),
   P("CAS-01","terceira","Casaco longo","camelo","lã, abaixo do joelho"),
   P("TRE-01","terceira","Trench coat","bege","clássico com faixa"),
   P("ACE-01","acessorio","Cinto fino","caramelo","fivela dourada"),
@@ -326,10 +327,22 @@ function pool(cat) {
   const mine = all.filter(p => p.tenho);
   return state.onlyMine && mine.length ? mine : all;
 }
+// Proporção: peça ampla em cima pede parte de baixo reta/ajustada (nada de volume)
+const AMPLAS = ["JAQ-02"];
+const COM_VOLUME = ["SAI-01"];
+const isBottom = p => p && ["saia","calca"].includes(p.cat);
 function generate(lockCode) {
   const lock = lockCode ? BY[lockCode] : null;
-  const bottom = lock && ["saia","calca"].includes(lock.cat) ? lock : pick([...pool("saia"), ...pool("calca")]);
-  let layer = lock?.cat === "terceira" ? lock : (Math.random() < 0.55 ? pick(pool("terceira")) : null);
+  let layer = lock?.cat === "terceira" ? lock : null;
+  let bottom = isBottom(lock) ? lock : null;
+  if (!bottom) {
+    const opts = [...pool("saia"), ...pool("calca")].filter(b => !(AMPLAS.includes(layer?.code) && COM_VOLUME.includes(b.code)));
+    bottom = opts.length ? pick(opts) : null;
+  }
+  if (!layer && Math.random() < 0.55) {
+    const opts = pool("terceira").filter(l => !(COM_VOLUME.includes(bottom?.code) && AMPLAS.includes(l.code)));
+    layer = opts.length ? pick(opts) : null;
+  }
   let top = lock?.cat === "top" ? lock : pick(pool("top").filter(t => layer?.code !== "COL-01" || t.code.startsWith("CAM")));
   if (layer?.code === "COL-01" && !top.code.startsWith("CAM") && lock?.cat === "top") layer = null;
   const out = [top, layer, bottom].filter(Boolean);
@@ -341,12 +354,14 @@ function generate(lockCode) {
   if (lockCode && !codes.includes(lockCode)) codes.push(lockCode);
   return codes;
 }
+const BAIXO_GENERICO = "calça reta de alfaiataria de cintura alta, em tom neutro, caimento ajustado e sem volume";
+const semBaixo = codes => !codes.some(c => isBottom(BY[c]));
 function promptFor(codes) {
   const desc = codes.map(c => { const p = BY[c]; return `- ${p.nome.toLowerCase()} ${p.cor} (${p.det})`; }).join("\n");
   return `Fotografia de moda realista em estúdio, fundo liso bege-acinzentado, luz suave e difusa.
 Uma mulher em pé, de frente, braços relaxados, corpo inteiro do queixo aos pés, formato vertical 2:3.
 Ela veste exatamente:
-${desc}
+${desc}${semBaixo(codes) ? "\n- " + BAIXO_GENERICO : ""}
 - sapato simples e discreto, em tom neutro (não é o foco do look)
 Ocasião: trabalho em escritório.
 Sem texto na imagem. Roupas exatamente como descritas, sem estampas nem peças extras.`;
@@ -361,7 +376,8 @@ function showGenerated(lockCode) {
   current = { codes, lockCode };
   const hit = sameLook(codes);
   openSheet(`${head("Combinação nova", lockCode ? "Montado com " + lockCode : "Sorteio")}
-    <div class="pieces-row">${codes.map(c => mini(c, c === lockCode)).join("")}</div>
+    <div class="pieces-row">${codes.map(c => mini(c, c === lockCode)).join("")}${semBaixo(codes) ? `<div class="mini ghost"><span><span class="mono">A CADASTRAR</span>Calça reta, sem volume</span></div>` : ""}</div>
+    ${semBaixo(codes) ? `<p class="note" style="margin:0">Essa peça é ampla e pede uma parte de baixo reta ou ajustada. Você ainda não tem nenhuma cadastrada, então o prompt sugere uma calça reta neutra.</p>` : ""}
     <p class="note ${hit ? "hit" : ""}" style="margin:0">${hit ? `Você já tem foto dessa combinação: “${esc(hit.nome)}”.` : "Ainda não tem foto dessa combinação. Copie o prompt e cole no ChatGPT para ver como fica."}</p>
     <div class="label">Prompt para o ChatGPT</div>
     <pre class="prompt" id="promptText">${esc(promptFor(codes))}</pre>
