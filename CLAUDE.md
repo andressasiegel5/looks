@@ -8,6 +8,7 @@ para o ChatGPT criar imagens. Converse sempre em português.
 - Peça oversized é estilo: dizer que **só aquela peça** é larga e o resto é do tamanho certo e ajustado.
 - Preferir pose natural de "look do dia" (3/4, mão no bolso ou na cintura), não de frente rígida.
 - Grades menores (9 looks, 3×3) saem com mais qualidade que 15.
+- **Estilo que ela gosta**: street style de modelo fora do trabalho (referências: Hailey Bieber, Kendall Jenner). Foto andando na rua, não catálogo de estúdio. Não colocar nomes de celebridades no prompt; descrever a estética.
 - Antes de errar de novo, veja `looks/_descartados/README.md`.
 
 ## Ao receber um pedido de looks
