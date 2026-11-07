@@ -8,7 +8,7 @@ Crie uma única imagem com uma grade de 6 fotos (2 linhas × 3 colunas), separad
 
 A MODELO (a mesma em todas as fotos): Mulher magra e esguia, 1,68 m, cerca de 56 kg, ombros estreitos, cintura fina, pernas longas. Cabelo castanho acobreado (castanho médio com reflexos cobre, NÃO preto nem castanho escuro). Rosto cortado na altura do nariz ou coberto pelos óculos. Andando na calçada, naturalmente, como se não soubesse que está sendo fotografada; corpo inteiro visível.
 
-PEÇA FIXA (idêntica em todos os looks): Saia midi slip de cetim fluido, corte enviesado rente ao corpo, cintura alta, comprimento até o meio da canela, estampa animal miúda de manchinhas pretas sobre fundo bege claro.
+PEÇA FIXA (idêntica em todos os looks): Saia midi slip de cetim fluido, corte enviesado rente ao corpo, cintura alta, comprimento até o meio da canela, estampa animal muito miúda e densa: risquinhos e pontinhos alongados marrom-escuros, bem pequenos e próximos uns dos outros, sobre fundo creme claro (de longe parece uma textura fina, não manchas grandes de oncinha).
 
 LOOKS:
 1. "Listrada": camiseta de manga longa justa com listras finas horizontais vermelho vivo e off-white e gola careca vermelha, por dentro; argolas douradas; bolsa preta pequena; cabelo em coque baixo liso.
@@ -18,4 +18,4 @@ LOOKS:
 5. "Camisa acetinada": camisa preta acetinada de caimento fluido, manga longa, por dentro com dois botões abertos; colar de corrente dourado fino; cabelo em coque alto liso.
 6. "Polo pistache": polo de tricô de manga curta justa com listras horizontais em verde pistache e off-white e botões dourados, por dentro; bolsa de palha estruturada; óculos escuros tartaruga.
 
-A saia deve ser idêntica em todas as fotos. Em todos os looks, sapato simples e discreto, em tom neutro (não é o foco). Sem texto, sem legendas, sem logotipos. Roupas exatamente como descritas.
+A saia deve ser idêntica em todas as fotos, sempre com a estampa miúda e densa. Em todos os looks, sapato simples e discreto, em tom neutro (não é o foco). Sem texto, sem legendas, sem logotipos. Roupas exatamente como descritas.
