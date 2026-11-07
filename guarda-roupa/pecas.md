@@ -40,6 +40,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLU-13 | Blusa com renda (Anne Fernandes) | Preta | Crepe liso, gola de camisa pontuda em cetim, prega no centro do peito, mangas curtas e ombros de renda floral transparente, barra das mangas em cetim | ✅ |
 | BLU-14 | Blusa Wingsuit (Insider) | Branca | Tecido TECHSTURE (poliamida, viscose, elastano), **modelagem ampla**, manga morcego longa justa no punho, gola alta. Pede parte de baixo reta ou justa | ✅ |
 | BLU-15 | Blusa slim de tricô (Hering) | Marrom chocolate | Tricô canelado justo, manga longa, gola redonda | ✅ |
+| BLU-16 | Blusa de tule transparente | Preta | Tule fino transparente, justa, manga longa, gola média alta. Usar sempre com top/regata preta por baixo (estampa a confirmar) | ✅ |
 | CAM-01 | Camisa social | Branca | Algodão, manga longa (usar dobrada ou com nó na cintura) | ❓ |
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
