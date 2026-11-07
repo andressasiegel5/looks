@@ -82,6 +82,12 @@ h2 { font-size: 24px; line-height: 1.1; }
 .tile .t b { font-size: 14px; font-weight: 600; text-transform: lowercase; line-height: 1.25; }
 .tile .t small { color: var(--muted); font-size: 12px; }
 .tile .fav { position: absolute; top: 8px; right: 8px; width: 30px; height: 30px; border-radius: 50%; background: var(--surface); color: var(--heart); display: grid; place-items: center; font-size: 14px; }
+.tile.sel { box-shadow: 0 0 0 3px var(--ink) inset; }
+.tile.sel img { opacity: .75; }
+.tile .check { position: absolute; top: 8px; left: 8px; width: 26px; height: 26px; border-radius: 50%; border: 2px solid #fff; background: rgb(0 0 0 / .25); display: grid; place-items: center; color: #fff; font-size: 14px; font-weight: 700; }
+.tile.sel .check { background: var(--ink); border-color: var(--ink); color: var(--on-ink); }
+.selbar { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(var(--nav-h) + 18px + env(safe-area-inset-bottom, 0px)); z-index: 30; display: flex; gap: 8px; align-items: center; background: var(--surface); border-radius: 999px; padding: 6px 6px 6px 16px; box-shadow: 0 8px 30px -8px rgb(0 0 0 / .35), 0 0 0 1px var(--line) inset; white-space: nowrap; }
+.btn.danger { background: #C8323F; color: #fff; box-shadow: none; }
 .badge { font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
 .badge.ok { color: var(--ink); }
 .toggle { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 13px; }
@@ -142,7 +148,7 @@ dialog::backdrop { background: rgb(10 10 10 / .5); }
 
   <section id="view-looks" hidden>
     <div class="wrap" style="gap:14px">
-      <div class="row"><h2>looks</h2><button class="btn small dark" type="button" id="drawNew">↻ combinação nova</button></div>
+      <div class="row"><h2>looks</h2><div class="actions"><button class="btn small" type="button" id="selToggle">selecionar</button><button class="btn small dark" type="button" id="drawNew">↻ combinação nova</button></div></div>
       <div class="chips" id="looksChips"></div>
       <div class="grid" id="looksGrid"></div>
     </div>
@@ -175,6 +181,7 @@ dialog::backdrop { background: rgb(10 10 10 / .5); }
   <a href="#pecas" data-tab="pecas">peças</a>
 </div></nav>
 
+<div class="selbar" id="selbar" hidden><span id="selCount">0 selecionados</span><button class="btn small danger" type="button" id="selRemove">remover</button></div>
 <dialog id="sheet" aria-labelledby="sheetTitle"><div class="sheet" id="sheetBody"></div></dialog>
 <div class="toast" id="toast" hidden></div>
 
@@ -369,10 +376,12 @@ try { const v = localStorage.getItem("mode"); if (v) state.mode = v; } catch {}
 $("onlyMine").checked = state.onlyMine;
 function toast(msg) { const t = $("toast"); t.textContent = msg; t.hidden = false; clearTimeout(toast.h); toast.h = setTimeout(() => t.hidden = true, 2200); }
 const isFav = id => !!state.favs[id]?.favorito;
+const visivel = l => !state.favs[l.id]?.oculto;
+state.sel = null;
 
 // ---------- Mood (tela principal) ----------
 function moodList() {
-  return LOOKS.filter(l => (state.mood === "todos" || l.moods.has(state.mood)) && (state.mode === "mine" ? l.mine : !l.mine));
+  return LOOKS.filter(l => visivel(l) && (state.mood === "todos" || l.moods.has(state.mood)) && (state.mode === "mine" ? l.mine : !l.mine));
 }
 function shuffle(a) { a = [...a]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 function resetOrder() {
@@ -416,17 +425,21 @@ function renderHero() {
 
 // ---------- Looks ----------
 function tile(l) {
-  return `<button class="tile" type="button" data-look="${l.id}"><img src="${l.img}" alt="" loading="lazy">
+  const sel = state.sel && state.sel.has(l.id);
+  return `<button class="tile ${sel ? "sel" : ""}" type="button" data-look="${l.id}"><img src="${l.img}" alt="" loading="lazy">${state.sel ? `<span class="check">${sel ? "✓" : ""}</span>` : ""}
     ${isFav(l.id) ? `<span class="fav">♥</span>` : ""}
     <span class="t"><b>${esc(l.nome)}</b><small>${l.mine ? "só peças suas" : "com sugestões"}</small></span></button>`;
 }
 function renderLooks() {
   $("looksChips").innerHTML = MOODS.map(([k, t]) => `<button class="chip" type="button" data-lmood="${k}" aria-pressed="${state.looksMood === k}">${t}</button>`).join("");
-  const list = LOOKS.filter(l => state.looksMood === "todos" || l.moods.has(state.looksMood));
+  const list = LOOKS.filter(l => visivel(l) && (state.looksMood === "todos" || l.moods.has(state.looksMood)));
   $("looksGrid").innerHTML = list.map(tile).join("");
+  $("selToggle").textContent = state.sel ? "cancelar" : "selecionar";
+  $("selbar").hidden = !state.sel || !location.hash.startsWith("#looks");
+  if (state.sel) { $("selCount").textContent = `${state.sel.size} selecionado${state.sel.size === 1 ? "" : "s"}`; $("selRemove").disabled = !state.sel.size; $("selRemove").textContent = state.sel.size ? `remover (${state.sel.size})` : "remover"; }
 }
 function renderFavs() {
-  const list = LOOKS.filter(l => isFav(l.id));
+  const list = LOOKS.filter(l => isFav(l.id) && visivel(l));
   $("favGrid").innerHTML = list.length ? list.map(tile).join("") : `<p class="empty" style="grid-column:1/-1">Toque no ♡ de um look para guardar aqui.</p>`;
   if (!state.db) { $("ideasList").innerHTML = `<p class="empty">Para salvar ideias, abra esta página logada no claude.ai.</p>`; return; }
   $("ideasList").innerHTML = state.ideas.length ? state.ideas.map(i => `<div class="card">
@@ -474,7 +487,7 @@ function combosFor(p) {
   return [];
 }
 function showPiece(code) {
-  const p = BY[code]; const looks = LOOKS.filter(l => l.pecas.includes(code)); const cs = combosFor(p);
+  const p = BY[code]; const looks = LOOKS.filter(l => visivel(l) && l.pecas.includes(code)); const cs = combosFor(p);
   openSheet(`${head(p.nome + " " + p.cor, code + " · " + CATS[p.cat])}<img class="big" src="${p.img}" alt="">
     <div>${esc(p.det)}</div><div>${status(p)}</div>
     <div class="actions"><button class="btn dark" type="button" data-gen="${code}">↻ montar look com esta peça</button></div>
@@ -546,6 +559,8 @@ function route() {
   TABS.forEach(t => $("view-" + t).hidden = t !== tab);
   document.querySelectorAll("nav.bar a").forEach(a => a.setAttribute("aria-current", a.dataset.tab === tab ? "page" : "false"));
   scrollTo(0, 0);
+  if (tab !== "looks" && state.sel) { state.sel = null; renderLooks(); }
+  $("selbar").hidden = !state.sel || tab !== "looks";
 }
 addEventListener("hashchange", route);
 
@@ -558,9 +573,17 @@ document.addEventListener("click", async e => {
   if (el.id === "next") return go(1);
   if (el.id === "seeLook") { const l = current(); return l && showLook(l.id); }
   if (el.id === "drawNew") return showGenerated();
+  if (el.id === "selToggle") { if (!state.db && !state.sel) return toast("Abra logada no claude.ai para remover looks"); state.sel = state.sel ? null : new Set(); return renderLooks(); }
+  if (el.id === "selRemove") {
+    const ids = [...(state.sel || [])]; if (!ids.length) return;
+    el.disabled = true;
+    for (const id of ids) await setLook(id, { oculto: true, ocultoEm: todayISO() });
+    state.sel = null; resetOrder(); renderHero(); renderLooks(); renderFavs();
+    return toast(`${ids.length} look${ids.length === 1 ? "" : "s"} removido${ids.length === 1 ? "" : "s"}`);
+  }
   if (d.lmood) { state.looksMood = d.lmood; return renderLooks(); }
   if (d.cat) { state.cat = d.cat; return renderPieces(); }
-  if (d.look) return showLook(d.look);
+  if (d.look) { if (state.sel) { state.sel.has(d.look) ? state.sel.delete(d.look) : state.sel.add(d.look); return renderLooks(); } return showLook(d.look); }
   if (d.piece) return showPiece(d.piece);
   if (d.gen) return showGenerated(d.gen);
   if ("regen" in d) return showGenerated(gen?.lockCode);

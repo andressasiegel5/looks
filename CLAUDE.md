@@ -43,6 +43,8 @@ Faça commit e push depois de cada alteração.
 - Moods são automáticos por palavras-chave (função `moodsOf`); "meu armário" = looks cujas roupas são todas dela (`tenho`), acessórios não contam.
 - Publicada em https://claude.ai/artifact/4aKopUPTGpFVxXRU8AG6q4 a partir de `app/index.html` (imagens em `app/img/`).
 - Os dados `PIECES` e `LOOKS` dentro de `app/index.html` espelham `guarda-roupa/pecas.md` e `looks/`. Ao cadastrar peça ou coleção nova, atualize os dois, gere os recortes em `app/img/` e republique no mesmo URL (Artifact com `url`, `root: app`).
+- Aba looks tem "selecionar" (estilo Google Fotos): os looks que ela remove ganham `oculto: true` em `looks/<id>` no banco e somem do app.
+  Quando ela pedir para "remover de vez", leia com ArtifactData os docs com `oculto: true` e apague esses looks de `LOOKS` (e anote no README da coleção).
 - O banco da página guarda o que ela marca: coleção `looks` (`favorito`, `usos` = datas) e coleção `ideias` (combinações salvas para gerar, com `pecas` e `prompt`). Leia esses dados com ArtifactData antes de montar prompts novos.
 
 ## Gerar imagens automaticamente (API da OpenAI)
