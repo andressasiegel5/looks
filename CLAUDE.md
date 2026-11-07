@@ -22,7 +22,7 @@ para o ChatGPT criar imagens. Converse sempre em português.
 2. Leia os `README.md` de `looks/` para não repetir combinações já feitas e para seguir os looks marcados com ⭐.
 3. Parta de `prompts/modelo-base.md`, modelo **C) Street style** (padrão) e descreva cada peça com cor, tecido e modelagem do catálogo.
 4. Salve o prompt em `prompts/AAAA-MM-DD-<tema>.md` (texto após "Prompt pronto para colar:"), linke no README, rode
-   `python3 app/build_prompts.py` e republique a página: ela copia com um toque na aba **Prompts**.
+   `python3 app/build_prompts.py` (a aba Prompts foi removida do app a pedido dela; os prompts ficam só no repositório).
    Na resposta, mostre o prompt **dentro de um bloco de código** (```), que tem botão de copiar na conversa.
 5. **Sem sapatos no acervo por enquanto**: não escolha sapato; no prompt peça "sapato simples e discreto, em tom neutro".
 6. **Proporção**: peça ampla em cima (ex.: JAQ-02) pede parte de baixo reta ou ajustada; nunca com peça de volume (ex.: SAI-01). Na página isso fica nas listas `AMPLAS` e `COM_VOLUME`.
@@ -55,5 +55,6 @@ Faça commit e push depois de cada alteração.
 ## Foto dela (modelo = ela)
 - Foto de referência em `.privado/referencia-andressa.jpg` (fora do git; não existe em sessões novas: pedir a foto de novo se faltar).
 - Gerar com `--ref .privado/referencia-andressa.jpg --tamanho 1024x1536` para look único em fundo claro (estilo do app).
-  O prompt começa com "Use a mulher da foto de referência como modelo..." (ver `.privado/teste-look-unico.md`).
+  O prompt começa com "Use a mulher da foto de referência como modelo..." e SEMPRE pede proporções realistas
+  (altura ≈ 8 cabeças, cabeça pequena, câmera afastada, lente 85 mm): sem isso ela sai "cabeçuda".
 - Imagens com o rosto dela vão em `app/img/eu/` (fora do git) e entram no app com `img: "img/eu/..."`.

@@ -163,13 +163,6 @@ dialog::backdrop { background: rgb(10 10 10 / .5); }
     </div>
   </section>
 
-  <section id="view-prompts" hidden>
-    <div class="wrap" style="gap:14px">
-      <h2>prompts</h2>
-      <p class="sub" style="margin-top:-8px">toque em copiar e cole no chatgpt. os que ainda não viraram imagem vêm primeiro.</p>
-      <div class="list" id="promptsList"></div>
-    </div>
-  </section>
 </div>
 
 <nav class="bar" aria-label="Seções"><div class="in">
@@ -177,7 +170,6 @@ dialog::backdrop { background: rgb(10 10 10 / .5); }
   <a href="#looks" data-tab="looks">looks</a>
   <a href="#favoritos" data-tab="favoritos">favoritos</a>
   <a href="#pecas" data-tab="pecas">peças</a>
-  <a href="#prompts" data-tab="prompts">prompts</a>
 </div></nav>
 
 <dialog id="sheet" aria-labelledby="sheetTitle"><div class="sheet" id="sheetBody"></div></dialog>
@@ -548,7 +540,7 @@ async function initDb() {
 }
 
 // ---------- Navegação ----------
-const TABS = ["mood","looks","favoritos","pecas","prompts"];
+const TABS = ["mood","looks","favoritos","pecas"];
 function route() {
   const tab = TABS.includes(location.hash.slice(1)) ? location.hash.slice(1) : "mood";
   TABS.forEach(t => $("view-" + t).hidden = t !== tab);
@@ -587,5 +579,5 @@ document.addEventListener("click", async e => {
 $("onlyMine").addEventListener("change", e => { state.onlyMine = e.target.checked; try { localStorage.setItem("onlyMine", state.onlyMine ? "1" : "0"); } catch {} });
 sheet.addEventListener("click", e => { if (e.target === sheet) sheet.close(); });
 
-resetOrder(); renderMoodChips(); renderHero(); renderLooks(); renderFavs(); renderPieces(); renderPrompts(); route(); initDb();
+resetOrder(); renderMoodChips(); renderHero(); renderLooks(); renderFavs(); renderPieces(); route(); initDb();
 </script>
