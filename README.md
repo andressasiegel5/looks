@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Coletes preto curto e creme — com as suas peças, 6 looks](looks/2026-11-coletes-preto-e-creme/) ✨
 - [Blusa de tricô marrom — com as suas peças, 6 looks](looks/2026-11-blusa-trico-marrom/) ✨
 - [Calça de alfaiataria cinza mescla (H&M) — com as suas blusas, 6 looks](looks/2026-11-calca-cinza-hm/) ✨
 - [Calça wide leg off-white (H&M) — com as suas blusas, 6 looks](looks/2026-11-calca-offwhite-hm/) ✨
@@ -69,3 +70,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Calça wide leg off-white (H&M) — street style](prompts/2026-11-07-calca-offwhite-hm-street-style.md)
 - [Calça de alfaiataria cinza mescla (H&M) — street style](prompts/2026-11-07-calca-cinza-hm-street-style.md)
 - [Blusa slim de tricô marrom (Hering) — street style](prompts/2026-11-07-blusa-trico-marrom-street-style.md)
+- [Coletes preto curto e creme — street style](prompts/2026-11-07-coletes-preto-e-creme-street-style.md)

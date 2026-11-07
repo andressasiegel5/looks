@@ -56,6 +56,8 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLA-04 | Blazer | Preto | Alfaiataria, usado aberto | ❓ |
 | BLA-05 | Blazer trespassado | Preto | Zara. Alfaiataria acinturada (tamanho certo), lapela pontuda, 6 botões dourados com brasão, ombros estruturados, bolsos com lapela, comprimento no quadril | ✅ |
 | COL-01 | Colete de alfaiataria | Cinza | Abotoado | ❓ |
+| COL-02 | Colete de alfaiataria curto | Preto | Decote V, botões, termina um pouco ACIMA da cintura | ✅ |
+| COL-03 | Colete de alfaiataria | Creme | Decote V, botões, termina um pouco ABAIXO da cintura | ✅ |
 | CAR-01 | Cardigã | Marrom chocolate | Tricô fino, botões | ❓ |
 | JAQ-01 | Jaqueta jeans | Azul escuro | Clássica | ❓ |
 | JAQ-02 | Jaqueta bomber curta | Preta | Tam. G, **modelagem ampla**: usar com parte de baixo reta/ajustada (não combina com SAI-01). Tecido aveludado (tipo suede/veludo), gola careca, punhos e barra em ribana, zíper central + botões de pressão prateados, bolsos com lapela na frente, comprimento na cintura | ✅ |
