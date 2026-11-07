@@ -42,4 +42,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 ## Prompts prontos
 
 - [Saia creme — 15 looks novos (rodada 2)](prompts/2026-11-07-saia-creme-15-looks-novos.md)
-- [Jaqueta bomber preta — 15 looks](prompts/2026-11-07-jaqueta-bomber-preta-15-looks.md)
+- [Jaqueta bomber preta — 9 looks (v2)](prompts/2026-11-07-jaqueta-bomber-preta-9-looks-v2.md)

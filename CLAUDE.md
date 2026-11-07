@@ -3,6 +3,13 @@
 Este repositório é o acervo de roupas da Andressa e serve para gerar prompts de looks
 para o ChatGPT criar imagens. Converse sempre em português.
 
+## Perfil (sempre no prompt)
+- Mulher magra e esguia, ~56 kg, cintura fina. Sempre descrever o corpo da modelo assim.
+- Peça oversized é estilo: dizer que **só aquela peça** é larga e o resto é do tamanho certo e ajustado.
+- Preferir pose natural de "look do dia" (3/4, mão no bolso ou na cintura), não de frente rígida.
+- Grades menores (9 looks, 3×3) saem com mais qualidade que 15.
+- Antes de errar de novo, veja `looks/_descartados/README.md`.
+
 ## Ao receber um pedido de looks
 1. Leia `guarda-roupa/pecas.md` e use **somente** peças cadastradas (prefira ✅; ❓ só se ainda não houver peças ✅ suficientes, e avise).
 2. Leia os `README.md` de `looks/` para não repetir combinações já feitas e para seguir os looks marcados com ⭐.

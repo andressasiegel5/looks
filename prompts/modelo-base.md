@@ -16,8 +16,11 @@ Crie uma única imagem de catálogo de moda em formato paisagem, com uma grade d
 
 ESTILO (igual em todas as fotos):
 - Fotografia de estúdio realista, fundo liso bege-acinzentado, luz suave e difusa.
-- A mesma mulher em todas as fotos, em pé, de frente, braços relaxados ao lado do corpo,
-  enquadramento de corpo inteiro do queixo até os pés (rosto cortado na altura do nariz).
+- A mesma mulher em todas as fotos: magra e esguia, cerca de 56 kg, cintura fina e marcada,
+  pernas finas. Pose natural de foto de look do dia: corpo levemente em 3/4, uma mão no bolso
+  ou na cintura. Corpo inteiro do queixo até os pés (rosto cortado na altura do nariz).
+- Se alguma peça for oversized, deixe claro que só ela é larga; o resto é do tamanho certo
+  do corpo magro da modelo, ajustado na cintura.
 - Embaixo de cada foto, uma legenda curta em português, fonte serifada itálica preta.
 
 PEÇA FIXA (aparece em todos os looks, sempre idêntica):
@@ -37,7 +40,7 @@ O texto das legendas deve estar escrito corretamente, com acentos.
 
 ```
 Fotografia de moda realista em estúdio, fundo liso bege-acinzentado, luz suave.
-Uma mulher em pé, de frente, corpo inteiro do queixo aos pés, formato vertical 2:3.
+Uma mulher magra e esguia (cerca de 56 kg, cintura fina), pose natural em 3/4 com uma mão no bolso, corpo inteiro do queixo aos pés, formato vertical 2:3.
 Ela veste: [peça 1], [peça 2], [peça 3], [acessórios], sapato simples e discreto em tom neutro.
 Ocasião: [trabalho / reunião / happy hour].
 Sem texto na imagem. Roupas exatamente como descritas, sem peças extras.
