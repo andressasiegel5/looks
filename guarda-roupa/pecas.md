@@ -63,6 +63,8 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | SAP-09 | Sandália de tiras | Preta | Salto fino | ❓ |
 | SAP-10 | Sandália / mule | Caramelo | Salto bloco | ❓ |
 | SAP-11 | Tênis | Branco | Couro, minimalista | ❓ |
+| SAP-12 | Scarpin | Marrom chocolate | Salto médio, bico fino | ❓ |
+| SAP-13 | Sandália de tiras | Nude | Salto bloco baixo | ❓ |
 
 ## Acessórios
 

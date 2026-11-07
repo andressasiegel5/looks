@@ -1,0 +1,461 @@
+<title>Looks do Dia</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,400;1,6..96,500&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: guarda-roupa como mural (masonry) + etiquetas de peça com código; ação de sortear sempre no topo */
+:root {
+  --bg: #F2F1EE;
+  --surface: #FFFFFF;
+  --fg: #1E1C1B;
+  --muted: #6E6862;
+  --line: #DEDAD4;
+  --accent: #6B2C42;      /* vinho */
+  --accent-soft: #F1E4E8;
+  --on-accent: #FFFFFF;
+  --star: #B8862E;
+  --font-display: "Bodoni Moda", "Didot", Georgia, serif;
+  --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --radius: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161514; --surface: #211F1E; --fg: #EDE9E4; --muted: #A39C95; --line: #34312E;
+    --accent: #D9A0B4; --accent-soft: #3A2830; --on-accent: #1A1214; --star: #E0B65E;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161514; --surface: #211F1E; --fg: #EDE9E4; --muted: #A39C95; --line: #34312E;
+  --accent: #D9A0B4; --accent-soft: #3A2830; --on-accent: #1A1214; --star: #E0B65E;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font-body); font-size: 15px; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px 48px;
+}
+.wrap { max-width: 1080px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+button { font: inherit; color: inherit; cursor: pointer; }
+button:focus-visible, a:focus-visible, .card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.mono { font-family: var(--font-mono); font-size: 11px; letter-spacing: .04em; }
+
+header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+h1 { font-family: var(--font-display); font-style: italic; font-weight: 400; font-size: clamp(30px, 6vw, 44px); line-height: 1.05; margin: 0; text-wrap: balance; }
+.today { color: var(--muted); }
+
+/* Sortear */
+.draw { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+.draw-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.btn { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 10px 16px; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; }
+.btn:hover { border-color: var(--fg); }
+.btn.primary { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+.btn.primary:hover { filter: brightness(1.08); }
+.btn.small { padding: 6px 12px; font-size: 13px; }
+.btn[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); }
+.toggle { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-size: 13px; }
+.toggle input { accent-color: var(--accent); width: 16px; height: 16px; }
+
+/* Abas */
+nav.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); overflow-x: auto; }
+nav.tabs a { padding: 10px 14px; color: var(--muted); text-decoration: none; font-weight: 500; border-bottom: 2px solid transparent; margin-bottom: -1px; white-space: nowrap; }
+nav.tabs a[aria-current="page"] { color: var(--fg); border-color: var(--accent); }
+.count { font-family: var(--font-mono); font-size: 11px; color: var(--muted); margin-left: 4px; }
+
+.chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip { border: 1px solid var(--line); background: transparent; border-radius: 999px; padding: 5px 12px; font-size: 13px; }
+.chip[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+
+/* Mural (masonry) */
+.board { columns: 4 200px; column-gap: 12px; }
+.board.looks { columns: 5 170px; }
+.sheet .board.looks { columns: 3 120px; }
+.card { break-inside: avoid; margin-bottom: 12px; display: block; width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; padding: 0; position: relative; transition: transform .15s ease; }
+.card:hover { transform: translateY(-2px); }
+.card img { display: block; width: 100%; height: auto; }
+.card .cap { padding: 8px 10px 10px; display: flex; flex-direction: column; gap: 2px; }
+.card .name { font-weight: 500; line-height: 1.3; }
+.card .look-name { font-family: var(--font-display); font-style: italic; font-size: 17px; line-height: 1.2; }
+.tag { display: inline-flex; gap: 6px; align-items: center; color: var(--muted); }
+.status { font-family: var(--font-mono); font-size: 10px; letter-spacing: .05em; text-transform: uppercase; padding: 1px 6px; border-radius: 4px; border: 1px solid var(--line); }
+.status.ok { color: var(--accent); border-color: var(--accent); }
+.fav-badge { position: absolute; top: 8px; right: 8px; background: var(--surface); color: var(--star); border-radius: 999px; width: 28px; height: 28px; display: grid; place-items: center; font-size: 15px; box-shadow: 0 1px 4px rgb(0 0 0 / .15); }
+
+.empty { color: var(--muted); padding: 24px 0; }
+
+/* Painel (dialog) */
+dialog { border: none; padding: 0; background: var(--surface); color: var(--fg); border-radius: 14px; width: min(760px, calc(100vw - 24px)); max-height: calc(100dvh - 32px); box-shadow: 0 20px 60px rgb(0 0 0 / .3); }
+dialog::backdrop { background: rgb(20 18 17 / .55); }
+.sheet { padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+.sheet-head { display: flex; justify-content: space-between; gap: 12px; align-items: start; }
+.sheet h2 { font-family: var(--font-display); font-style: italic; font-weight: 400; font-size: 28px; line-height: 1.1; margin: 0; text-wrap: balance; }
+.close { border: none; background: transparent; font-size: 26px; line-height: 1; padding: 2px 8px; color: var(--muted); }
+.split { display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr); gap: 18px; }
+@media (max-width: 560px) { .split { grid-template-columns: 1fr; } .split > img { max-width: 240px; } }
+.split > img { width: 100%; border-radius: var(--radius); }
+.stack { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.label { font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.pieces-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 10px; }
+.mini { border: 1px solid var(--line); background: var(--bg); border-radius: 8px; padding: 0; overflow: hidden; text-align: left; }
+.mini img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; display: block; }
+.mini span { display: block; padding: 5px 7px 7px; font-size: 12px; line-height: 1.25; }
+.mini .mono { display: block; color: var(--muted); padding: 0; }
+.mini.locked { outline: 2px solid var(--accent); outline-offset: -2px; }
+.prompt { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 12px; font-family: var(--font-mono); font-size: 12px; white-space: pre-wrap; max-height: 220px; overflow: auto; margin: 0; }
+.note { font-size: 13px; color: var(--muted); }
+.note.hit { color: var(--accent); }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--fg); color: var(--bg); padding: 10px 16px; border-radius: 999px; font-size: 14px; z-index: 50; }
+.idea { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px; display: flex; flex-direction: column; gap: 10px; }
+.idea .thumbs { display: flex; gap: 6px; overflow-x: auto; }
+.idea .thumbs img { width: 58px; height: 72px; object-fit: cover; border-radius: 6px; flex: none; }
+.ideas { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+@media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover { transform: none; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Looks do Dia</h1>
+    <span class="today mono" id="today"></span>
+  </header>
+
+  <section class="draw" aria-label="Sortear look">
+    <div class="draw-row">
+      <button class="btn primary" id="drawSaved" type="button">✦ Sortear um look pronto</button>
+      <button class="btn" id="drawNew" type="button">↻ Montar combinação nova</button>
+    </div>
+    <label class="toggle"><input type="checkbox" id="onlyMine"> Usar só peças confirmadas (✅ tenho)</label>
+  </section>
+
+  <nav class="tabs" aria-label="Seções">
+    <a href="#looks" data-tab="looks">Looks<span class="count" id="cLooks"></span></a>
+    <a href="#pecas" data-tab="pecas">Peças<span class="count" id="cPecas"></span></a>
+    <a href="#ideias" data-tab="ideias">Ideias para gerar<span class="count" id="cIdeias"></span></a>
+  </nav>
+
+  <section id="view-looks">
+    <div class="chips" id="lookFilters"></div>
+    <div class="board looks" id="looksBoard" style="margin-top:14px"></div>
+  </section>
+
+  <section id="view-pecas" hidden>
+    <div class="chips" id="catFilters"></div>
+    <div class="board" id="piecesBoard" style="margin-top:14px"></div>
+  </section>
+
+  <section id="view-ideias" hidden>
+    <p class="note" style="margin:0 0 12px">Combinações novas que você salvou. Peça ao Claude: “gera as imagens das ideias salvas” e ele junta tudo num prompt de grade.</p>
+    <div class="ideas" id="ideasList"></div>
+  </section>
+</div>
+
+<dialog id="sheet" aria-labelledby="sheetTitle"><div class="sheet" id="sheetBody"></div></dialog>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+// ---------- Dados (espelham guarda-roupa/pecas.md e looks/) ----------
+const CATS = {
+  saia: "Saias", calca: "Calças", top: "Blusas e camisas", terceira: "Terceira peça", sapato: "Sapatos", acessorio: "Acessórios"
+};
+const P = (code, cat, nome, cor, det, tenho = false) => ({ code, cat, nome, cor, det, tenho, img: `img/pecas/${code}.jpg` });
+const PIECES = [
+  P("SAI-01","saia","Saia midi em camadas","creme / off-white","babados plissados em 5 camadas, tecido leve tipo chiffon, cintura alta, até o meio da canela", true),
+  P("BLU-01","top","Blusa gola alta","preta","malha canelada justa, manga longa"),
+  P("BLU-02","top","Blusa gola alta","vinho","malha justa, manga longa"),
+  P("BLU-03","top","Blusa manga longa","verde oliva","malha fina, gola redonda"),
+  P("BLU-04","top","Blusa de tricô","terracota","tricô fino, gola redonda, manga longa"),
+  P("BLU-05","top","Blusa manga longa","preta","malha fina, gola redonda"),
+  P("BLU-06","top","Camiseta básica","branca","gola redonda"),
+  P("BLU-07","top","Regata de cetim","preta","alças finas, brilho suave"),
+  P("BLU-08","top","Blusa sem manga","bege / nude","malha, gola redonda"),
+  P("BLU-09","top","Malha manga curta","cinza mescla","gola redonda"),
+  P("CAM-01","top","Camisa social","branca","algodão, manga longa"),
+  P("CAM-02","top","Camisa social","azul claro","algodão, manga longa"),
+  P("CAM-03","top","Camisa fluida","azul marinho","gola V, tecido fluido"),
+  P("CAM-04","top","Camisa de seda","off-white","gola aberta"),
+  P("BLA-01","terceira","Blazer","caramelo","alfaiataria, um botão"),
+  P("BLA-02","terceira","Blazer longo","bege areia","alfaiataria oversized"),
+  P("BLA-03","terceira","Blazer","azul marinho","alfaiataria acinturada"),
+  P("BLA-04","terceira","Blazer","preto","alfaiataria, usado aberto"),
+  P("COL-01","terceira","Colete de alfaiataria","cinza","abotoado"),
+  P("CAR-01","terceira","Cardigã","marrom chocolate","tricô fino com botões"),
+  P("JAQ-01","terceira","Jaqueta jeans","azul escuro","clássica"),
+  P("CAS-01","terceira","Casaco longo","camelo","lã, abaixo do joelho"),
+  P("TRE-01","terceira","Trench coat","bege","clássico com faixa"),
+  P("SAP-01","sapato","Scarpin","nude","salto médio, bico fino"),
+  P("SAP-02","sapato","Scarpin","preto","salto médio, bico fino"),
+  P("SAP-03","sapato","Scarpin","vinho","salto fino"),
+  P("SAP-04","sapato","Bota cano curto","preta","salto bloco"),
+  P("SAP-05","sapato","Bota cano médio","marrom escuro","salto bloco"),
+  P("SAP-06","sapato","Mocassim","marrom","couro"),
+  P("SAP-07","sapato","Mocassim","preto","couro"),
+  P("SAP-08","sapato","Mule","bege / nude","salto bloco"),
+  P("SAP-09","sapato","Sandália de tiras","preta","salto fino"),
+  P("SAP-10","sapato","Mule","caramelo","salto bloco"),
+  P("SAP-11","sapato","Tênis","branco","couro, minimalista"),
+  P("SAP-12","sapato","Scarpin","marrom chocolate","salto médio, bico fino"),
+  P("SAP-13","sapato","Sandália de tiras","nude","salto bloco baixo"),
+  P("ACE-01","acessorio","Cinto fino","caramelo","fivela dourada"),
+  P("ACE-02","acessorio","Cinto fino","preto","fivela dourada"),
+  P("ACE-03","acessorio","Brinco de argola","dourado","tamanho médio"),
+];
+const BY = Object.fromEntries(PIECES.map(p => [p.code, p]));
+const L = (id, nome, pecas) => ({ id, nome, pecas, colecao: "Saia creme · rodada 1", img: `img/looks/${id}.jpg` });
+const LOOKS = [
+  L("c1-01","Clássico executivo",["BLA-01","CAM-04","SAI-01","SAP-01"]),
+  L("c1-02","Contraste escuro",["BLU-01","ACE-02","SAI-01","SAP-04"]),
+  L("c1-03","Monocromático claro",["BLA-02","BLU-08","SAI-01","SAP-08"]),
+  L("c1-04","Vinho",["BLU-02","ACE-01","SAI-01","SAP-03"]),
+  L("c1-05","Casual de sexta",["JAQ-01","BLU-06","SAI-01","SAP-11"]),
+  L("c1-06","Reunião importante",["COL-01","CAM-02","SAI-01","SAP-06"]),
+  L("c1-07","Verde oliva",["BLU-03","ACE-01","SAI-01","SAP-10"]),
+  L("c1-08","Marinho elegante",["BLA-03","CAM-03","SAI-01","SAP-02"]),
+  L("c1-09","Inverno",["CAS-01","BLU-09","SAI-01","SAP-05"]),
+  L("c1-10","Trench coat",["TRE-01","BLU-07","SAI-01","SAP-07"]),
+  L("c1-11","Minimalista P&B",["BLU-05","ACE-02","SAI-01","SAP-09"]),
+  L("c1-12","Cardigã",["CAR-01","ACE-01","SAI-01","SAP-12"]),
+  L("c1-13","Camisa branca",["CAM-01","SAI-01","SAP-13"]),
+  L("c1-14","Terracota",["BLU-04","ACE-01","SAI-01","SAP-10"]),
+  L("c1-15","Noite pós-trabalho",["BLA-04","BLU-07","SAI-01","SAP-09","ACE-03"]),
+];
+
+// ---------- Estado ----------
+const state = { lookFilter: "todos", cat: "todas", favs: {}, ideas: [], db: null, onlyMine: false };
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+const pick = arr => arr[Math.floor(Math.random() * arr.length)];
+const todayISO = () => new Date().toLocaleDateString("sv-SE");
+try { state.onlyMine = localStorage.getItem("onlyMine") === "1"; } catch {}
+$("onlyMine").checked = state.onlyMine;
+$("today").textContent = new Date().toLocaleDateString("pt-BR", { weekday: "long", day: "numeric", month: "long" });
+
+function toast(msg) {
+  const t = $("toast"); t.textContent = msg; t.hidden = false;
+  clearTimeout(toast.h); toast.h = setTimeout(() => t.hidden = true, 2200);
+}
+
+// ---------- Render: looks ----------
+function renderLookFilters() {
+  const opts = [["todos","Todos"],["favoritos","★ Favoritos"],["nunca","Ainda não usei"]];
+  $("lookFilters").innerHTML = opts.map(([k, t]) =>
+    `<button class="chip" type="button" data-f="${k}" aria-pressed="${state.lookFilter === k}">${t}</button>`).join("");
+}
+function lookCard(l) {
+  const fav = state.favs[l.id]?.favorito;
+  return `<button class="card" type="button" data-look="${l.id}">
+    <img src="${l.img}" alt="${esc(l.nome)}" loading="lazy">
+    ${fav ? `<span class="fav-badge" aria-label="Favorito">★</span>` : ""}
+    <span class="cap"><span class="look-name">${esc(l.nome)}</span><span class="mono tag">${l.pecas.length} peças</span></span>
+  </button>`;
+}
+function renderLooks() {
+  let list = LOOKS;
+  if (state.lookFilter === "favoritos") list = list.filter(l => state.favs[l.id]?.favorito);
+  if (state.lookFilter === "nunca") list = list.filter(l => !(state.favs[l.id]?.usos || []).length);
+  $("looksBoard").innerHTML = list.length ? list.map(lookCard).join("")
+    : `<p class="empty">${state.lookFilter === "favoritos" ? "Nenhum favorito ainda. Abra um look e toque em ☆ Favoritar." : "Você já usou todos. Hora de gerar looks novos!"}</p>`;
+  $("cLooks").textContent = LOOKS.length;
+}
+
+// ---------- Render: peças ----------
+function renderCatFilters() {
+  const used = ["todas", ...Object.keys(CATS).filter(c => PIECES.some(p => p.cat === c))];
+  $("catFilters").innerHTML = used.map(c =>
+    `<button class="chip" type="button" data-cat="${c}" aria-pressed="${state.cat === c}">${c === "todas" ? "Todas" : CATS[c]}</button>`).join("");
+}
+function renderPieces() {
+  const list = PIECES.filter(p => state.cat === "todas" || p.cat === state.cat);
+  $("piecesBoard").innerHTML = list.map(p => `<button class="card" type="button" data-piece="${p.code}">
+    <img src="${p.img}" alt="${esc(p.nome + " " + p.cor)}" loading="lazy">
+    <span class="cap"><span class="name">${esc(p.nome)}</span>
+      <span class="tag"><span class="mono">${p.code}</span> · ${esc(p.cor)}</span>
+      <span><span class="status ${p.tenho ? "ok" : ""}">${p.tenho ? "tenho" : "a confirmar"}</span></span></span>
+  </button>`).join("");
+  $("cPecas").textContent = PIECES.length;
+}
+
+// ---------- Render: ideias ----------
+function renderIdeas() {
+  $("cIdeias").textContent = state.ideas.length || "";
+  if (!state.db) { $("ideasList").innerHTML = `<p class="empty">Para salvar ideias, abra esta página logado no claude.ai.</p>`; return; }
+  if (!state.ideas.length) { $("ideasList").innerHTML = `<p class="empty">Nenhuma ideia salva. Toque em “Montar combinação nova” e depois em “Salvar ideia”.</p>`; return; }
+  $("ideasList").innerHTML = state.ideas.map(i => `<div class="idea">
+    <div class="thumbs">${i.pecas.map(c => BY[c] ? `<img src="${BY[c].img}" alt="${esc(BY[c].nome)}">` : "").join("")}</div>
+    <div>${i.pecas.map(c => BY[c] ? esc(BY[c].nome + " " + BY[c].cor) : c).join(" · ")}</div>
+    <div class="actions"><span class="mono tag">${esc(i.criadoEm || "")}</span>
+      <button class="btn small" type="button" data-copyidea="${i.id}">Copiar prompt</button>
+      <button class="btn small" type="button" data-delidea="${i.id}">Remover</button></div>
+  </div>`).join("");
+}
+
+// ---------- Painéis ----------
+const sheet = $("sheet");
+function openSheet(html) { $("sheetBody").innerHTML = html; if (!sheet.open) sheet.showModal(); }
+const head = (title, eyebrow) => `<div class="sheet-head"><div><div class="label">${eyebrow}</div><h2 id="sheetTitle">${esc(title)}</h2></div>
+  <button class="close" type="button" data-close aria-label="Fechar">×</button></div>`;
+const mini = (code, locked) => { const p = BY[code]; return `<button class="mini ${locked ? "locked" : ""}" type="button" data-piece="${code}">
+  <img src="${p.img}" alt=""><span><span class="mono">${code}</span>${esc(p.nome)} ${esc(p.cor)}</span></button>`; };
+
+function showLook(id) {
+  const l = LOOKS.find(x => x.id === id);
+  const f = state.favs[id] || {};
+  const usos = f.usos || [];
+  openSheet(`${head(l.nome, l.colecao)}
+    <div class="split"><img src="${l.img}" alt="${esc(l.nome)}">
+      <div class="stack">
+        <div class="label">Peças deste look</div>
+        <div class="pieces-row">${l.pecas.map(c => mini(c)).join("")}</div>
+        <div class="note">${usos.length ? `Usado ${usos.length}× · última vez em ${new Date(usos[usos.length-1] + "T12:00").toLocaleDateString("pt-BR")}` : "Ainda não usado."}</div>
+        ${state.db ? `<div class="actions">
+          <button class="btn" type="button" data-fav="${id}" aria-pressed="${!!f.favorito}">${f.favorito ? "★ Favorito" : "☆ Favoritar"}</button>
+          <button class="btn primary" type="button" data-used="${id}" ${usos.includes(todayISO()) ? "disabled" : ""}>${usos.includes(todayISO()) ? "✓ Usei hoje" : "Vou usar hoje"}</button>
+        </div>` : ""}
+      </div></div>`);
+}
+
+function showPiece(code) {
+  const p = BY[code];
+  const looks = LOOKS.filter(l => l.pecas.includes(code));
+  openSheet(`${head(p.nome + " " + p.cor, code + " · " + CATS[p.cat])}
+    <div class="split"><img src="${p.img}" alt="">
+      <div class="stack">
+        <div>${esc(p.det)}</div>
+        <div><span class="status ${p.tenho ? "ok" : ""}">${p.tenho ? "tenho" : "a confirmar"}</span></div>
+        <div class="actions"><button class="btn primary" type="button" data-gen="${code}">↻ Montar look com esta peça</button></div>
+      </div></div>
+    <div class="label">Looks com esta peça (${looks.length})</div>
+    ${looks.length ? `<div class="board looks">${looks.map(lookCard).join("")}</div>` : `<p class="note">Nenhum look com foto ainda. Monte uma combinação e salve como ideia.</p>`}`);
+}
+
+// ---------- Gerador ----------
+const LONG = ["CAS-01","TRE-01","BLA-02"];
+function pool(cat) {
+  const all = PIECES.filter(p => p.cat === cat);
+  const mine = all.filter(p => p.tenho);
+  return state.onlyMine && mine.length ? mine : all;
+}
+function generate(lockCode) {
+  const lock = lockCode ? BY[lockCode] : null;
+  const take = (cat, fallback) => lock && lock.cat === cat ? lock : (fallback ?? pick(pool(cat)));
+  const bottom = lock && ["saia","calca"].includes(lock.cat) ? lock : pick([...pool("saia"), ...pool("calca")]);
+  let layer = lock?.cat === "terceira" ? lock : (Math.random() < 0.55 ? pick(pool("terceira")) : null);
+  let top = lock?.cat === "top" ? lock : pick(pool("top").filter(t => layer?.code !== "COL-01" || t.code.startsWith("CAM")));
+  if (layer?.code === "COL-01" && !top.code.startsWith("CAM") && lock?.cat === "top") layer = null;
+  const shoe = take("sapato");
+  const out = [top, layer, bottom, shoe].filter(Boolean);
+  const darkShoe = /preto|preta/.test(shoe.cor);
+  if (lock?.cat === "acessorio") out.push(lock);
+  else if (!LONG.includes(layer?.code) && Math.random() < 0.45) out.push(BY[darkShoe ? "ACE-02" : "ACE-01"]);
+  if (lock?.code !== "ACE-03" && Math.random() < 0.2) out.push(BY["ACE-03"]);
+  const codes = [...new Set(out.map(p => p.code))];
+  if (lockCode && !codes.includes(lockCode)) codes.push(lockCode);
+  return codes;
+}
+function promptFor(codes) {
+  const desc = codes.map(c => { const p = BY[c]; return `- ${p.nome.toLowerCase()} ${p.cor} (${p.det})`; }).join("\n");
+  return `Fotografia de moda realista em estúdio, fundo liso bege-acinzentado, luz suave e difusa.
+Uma mulher em pé, de frente, braços relaxados, corpo inteiro do queixo aos pés, formato vertical 2:3.
+Ela veste exatamente:
+${desc}
+Ocasião: trabalho em escritório.
+Sem texto na imagem. Roupas exatamente como descritas, sem estampas nem peças extras.`;
+}
+function sameLook(codes) {
+  const key = s => [...s].filter(c => !c.startsWith("ACE")).sort().join();
+  return LOOKS.find(l => key(l.pecas) === key(codes));
+}
+let current = null;
+function showGenerated(lockCode) {
+  const codes = generate(lockCode);
+  current = { codes, lockCode };
+  const hit = sameLook(codes);
+  openSheet(`${head("Combinação nova", lockCode ? "Montado com " + lockCode : "Sorteio")}
+    <div class="pieces-row">${codes.map(c => mini(c, c === lockCode)).join("")}</div>
+    <p class="note ${hit ? "hit" : ""}" style="margin:0">${hit ? `Você já tem foto dessa combinação: “${esc(hit.nome)}”.` : "Ainda não tem foto dessa combinação. Copie o prompt e cole no ChatGPT para ver como fica."}</p>
+    <div class="label">Prompt para o ChatGPT</div>
+    <pre class="prompt" id="promptText">${esc(promptFor(codes))}</pre>
+    <div class="actions">
+      <button class="btn" type="button" data-regen>↻ Sortear de novo</button>
+      <button class="btn primary" type="button" data-copy>Copiar prompt</button>
+      ${state.db ? `<button class="btn" type="button" data-save>＋ Salvar ideia</button>` : ""}
+    </div>`);
+}
+function showSavedDraw() {
+  let list = LOOKS;
+  // evita looks usados nos últimos 7 dias; favoritos têm peso dobrado
+  const week = new Date(Date.now() - 7 * 864e5).toLocaleDateString("sv-SE");
+  const fresh = list.filter(l => !(state.favs[l.id]?.usos || []).some(u => u >= week));
+  const base = fresh.length ? fresh : list;
+  const bag = [...base, ...base.filter(l => state.favs[l.id]?.favorito)];
+  showLook(pick(bag).id);
+}
+
+async function copy(text) {
+  try { await navigator.clipboard.writeText(text); toast("Prompt copiado"); }
+  catch {
+    const pre = $("promptText"); if (pre) { const r = document.createRange(); r.selectNodeContents(pre); const s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+    toast("Selecionei o texto: copie com Ctrl+C / segurar e copiar");
+  }
+}
+
+// ---------- Banco (favoritos, usos, ideias) ----------
+async function setLook(id, patch) {
+  const next = { ...(state.favs[id] || {}), ...patch };
+  state.favs[id] = next;
+  try { await state.db.doc(`looks/${id}`).set(next); } catch (e) { toast("Não consegui salvar. Tente de novo."); }
+}
+async function initDb() {
+  let db = null;
+  try { db = await window.claude?.use?.("db"); } catch {}
+  if (!db) { renderIdeas(); return; }
+  state.db = db;
+  renderIdeas();
+  db.collection("looks").onSnapshot(snap => {
+    const favs = {}; snap.docs.forEach(d => favs[d.id] = d.data());
+    state.favs = favs; renderLooks();
+  }, () => {});
+  db.collection("ideias").orderBy("criadoEm", "desc").onSnapshot(snap => {
+    state.ideas = snap.docs.map(d => ({ id: d.id, ...d.data() })); renderIdeas();
+  }, () => {});
+}
+
+// ---------- Navegação ----------
+function route() {
+  const tab = ["looks","pecas","ideias"].includes(location.hash.slice(1)) ? location.hash.slice(1) : "looks";
+  for (const t of ["looks","pecas","ideias"]) $("view-" + t).hidden = t !== tab;
+  document.querySelectorAll("nav.tabs a").forEach(a => a.setAttribute("aria-current", a.dataset.tab === tab ? "page" : "false"));
+}
+addEventListener("hashchange", route);
+
+document.addEventListener("click", async e => {
+  const el = e.target.closest("button"); if (!el) return;
+  const d = el.dataset;
+  if ("close" in d) return sheet.close();
+  if (d.f) { state.lookFilter = d.f; renderLookFilters(); renderLooks(); return; }
+  if (d.cat) { state.cat = d.cat; renderCatFilters(); renderPieces(); return; }
+  if (d.look) return showLook(d.look);
+  if (d.piece) return showPiece(d.piece);
+  if (d.gen) return showGenerated(d.gen);
+  if ("regen" in d) return showGenerated(current?.lockCode);
+  if ("copy" in d) return copy(promptFor(current.codes));
+  if ("save" in d) {
+    try { await state.db.collection("ideias").add({ pecas: current.codes, prompt: promptFor(current.codes), criadoEm: todayISO(), status: "nova" }); toast("Ideia salva"); el.disabled = true; el.textContent = "✓ Salva"; }
+    catch { toast("Não consegui salvar a ideia."); }
+    return;
+  }
+  if (d.fav) { await setLook(d.fav, { favorito: !state.favs[d.fav]?.favorito }); return showLook(d.fav); }
+  if (d.used) { const u = [...(state.favs[d.used]?.usos || []), todayISO()].slice(-30); await setLook(d.used, { usos: u }); toast("Bom dia de trabalho ✦"); return showLook(d.used); }
+  if (d.copyidea) { const i = state.ideas.find(x => x.id === d.copyidea); return copy(i?.prompt || promptFor(i.pecas)); }
+  if (d.delidea) { try { await state.db.doc(`ideias/${d.delidea}`).delete(); toast("Ideia removida"); } catch { toast("Não consegui remover."); } return; }
+});
+$("drawSaved").addEventListener("click", showSavedDraw);
+$("drawNew").addEventListener("click", () => showGenerated());
+$("onlyMine").addEventListener("change", e => { state.onlyMine = e.target.checked; try { localStorage.setItem("onlyMine", state.onlyMine ? "1" : "0"); } catch {} });
+sheet.addEventListener("click", e => { if (e.target === sheet) sheet.close(); });
+
+renderLookFilters(); renderLooks(); renderCatFilters(); renderPieces(); renderIdeas(); route(); initDb();
+</script>

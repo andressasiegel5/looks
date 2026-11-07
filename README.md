@@ -3,6 +3,10 @@
 Acervo das minhas roupas + prompts prontos para gerar looks novos no ChatGPT,
 para não precisar pensar no que vestir de manhã para o trabalho.
 
+## Abrir a página
+
+👉 **[Looks do Dia](https://claude.ai/artifact/4aKopUPTGpFVxXRU8AG6q4)**: mural das peças e dos looks, sorteio do look do dia e montador de combinações com prompt pronto. O código fica em `app/`.
+
 ## Como funciona
 
 ```
