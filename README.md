@@ -53,4 +53,6 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Camiseta listrada vermelha — rodada 2 (peças variadas)](prompts/2026-11-07-camiseta-listrada-rodada-2.md)
 - [Blazer preto trespassado (Zara) — street style v2](prompts/2026-11-07-blazer-preto-trespassado-street-style.md)
 - [Polo de tricô Erica Candy — street style](prompts/2026-11-07-polo-tricot-pistache-street-style.md)
-- [Camisa acetinada, polo com botões e blusa de renda — street style](prompts/2026-11-07-pretas-camisa-polo-renda-street-style.md)
+- [Camisa acetinada preta (Shoulder) — street style](prompts/2026-11-07-camisa-acetinada-preta-street-style.md)
+- [Polo de tricô com botões preta (Shoulder) — street style](prompts/2026-11-07-polo-botoes-preta-street-style.md)
+- [Blusa preta com renda (Anne Fernandes) — street style](prompts/2026-11-07-blusa-renda-preta-street-style.md)
