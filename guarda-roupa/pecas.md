@@ -45,6 +45,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | COL-01 | Colete de alfaiataria | Cinza | Abotoado | ❓ |
 | CAR-01 | Cardigã | Marrom chocolate | Tricô fino, botões | ❓ |
 | JAQ-01 | Jaqueta jeans | Azul escuro | Clássica | ❓ |
+| JAQ-02 | Jaqueta bomber curta | Preta | Tecido aveludado (tipo suede/veludo), gola careca, punhos e barra em ribana, zíper central + botões de pressão prateados, bolsos com lapela na frente, comprimento na cintura | ✅ |
 | CAS-01 | Casaco longo | Camelo | Lã, abaixo do joelho | ❓ |
 | TRE-01 | Trench coat | Bege | Clássico com faixa | ❓ |
 
