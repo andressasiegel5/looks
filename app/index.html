@@ -89,6 +89,13 @@ h2 { font-size: 24px; line-height: 1.1; }
 .tile.sel .check { background: var(--ink); border-color: var(--ink); color: var(--on-ink); }
 .selbar { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(var(--nav-h) + 18px + env(safe-area-inset-bottom, 0px)); z-index: 30; display: flex; gap: 8px; align-items: center; background: var(--surface); border-radius: 999px; padding: 6px 6px 6px 16px; box-shadow: 0 8px 30px -8px rgb(0 0 0 / .35), 0 0 0 1px var(--line) inset; white-space: nowrap; }
 .btn.danger { background: #C8323F; color: #fff; box-shadow: none; }
+.prail { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding: 2px; margin: 0 -2px; }
+.prail::-webkit-scrollbar { display: none; }
+.pf { flex: none; width: 58px; border: none; padding: 0; background: none; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.pf img { width: 58px; height: 58px; object-fit: cover; border-radius: 50%; box-shadow: 0 0 0 1px var(--line); }
+.pf span { font-size: 10px; color: var(--muted); line-height: 1.15; text-align: center; max-width: 58px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.pf[aria-pressed="true"] img { box-shadow: 0 0 0 3px var(--ink); }
+.pf[aria-pressed="true"] span { color: var(--ink); font-weight: 600; }
 .badge { font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
 .badge.ok { color: var(--ink); }
 .toggle { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 13px; }
@@ -151,6 +158,8 @@ dialog::backdrop { background: rgb(10 10 10 / .5); }
     <div class="wrap" style="gap:14px">
       <div class="row"><h2>looks</h2><div class="actions"><button class="btn small" type="button" id="selToggle">selecionar</button><button class="btn small dark" type="button" id="drawNew">↻ combinação nova</button></div></div>
       <div class="chips" id="looksChips"></div>
+      <div class="prail" id="pieceFilter"></div>
+      <p class="sub" id="pieceFilterInfo" style="margin:-6px 0 0" hidden></p>
       <div class="grid" id="looksGrid"></div>
     </div>
   </section>
@@ -446,8 +455,12 @@ function tile(l) {
 }
 function renderLooks() {
   $("looksChips").innerHTML = MOODS.map(([k, t]) => `<button class="chip" type="button" data-lmood="${k}" aria-pressed="${state.looksMood === k}">${t}</button>`).join("");
-  const list = LOOKS.filter(l => visivel(l) && (state.looksMood === "todos" || l.moods.has(state.looksMood)));
-  $("looksGrid").innerHTML = list.map(tile).join("");
+  const usadas = PIECES.filter(p => isMine(p) && p.cat !== "acessorio" && LOOKS.some(l => visivel(l) && l.pecas.includes(p.code)));
+  $("pieceFilter").innerHTML = usadas.map(p => `<button class="pf" type="button" data-lpiece="${p.code}" aria-pressed="${state.lookPiece === p.code}"><img src="${p.img}" alt=""><span>${esc(p.nome)}</span></button>`).join("");
+  const list = LOOKS.filter(l => visivel(l) && (state.looksMood === "todos" || l.moods.has(state.looksMood)) && (!state.lookPiece || l.pecas.includes(state.lookPiece)));
+  $("pieceFilterInfo").hidden = !state.lookPiece;
+  if (state.lookPiece) $("pieceFilterInfo").textContent = `${list.length} look${list.length === 1 ? "" : "s"} com ${BY[state.lookPiece].nome.toLowerCase()} ${BY[state.lookPiece].cor} · toque de novo para limpar`;
+  $("looksGrid").innerHTML = list.length ? list.map(tile).join("") : `<p class="empty" style="grid-column:1/-1">Nenhum look com essa peça neste mood.</p>`;
   $("selToggle").textContent = state.sel ? "cancelar" : "selecionar";
   $("selbar").hidden = !state.sel || !location.hash.startsWith("#looks");
   if (state.sel) { $("selCount").textContent = `${state.sel.size} selecionado${state.sel.size === 1 ? "" : "s"}`; $("selRemove").disabled = !state.sel.size; $("selWish").disabled = !state.sel.size; $("selRemove").textContent = state.sel.size ? `remover (${state.sel.size})` : "remover"; }
@@ -516,10 +529,10 @@ function showPiece(code) {
   openSheet(`${head(p.nome + " " + p.cor, code + " · " + CATS[p.cat])}<img class="big" src="${p.img}" alt="">
     <div>${esc(p.det)}</div><div>${status(p)}</div>
     <div class="actions"><button class="btn dark" type="button" data-gen="${code}">↻ montar look com esta peça</button></div>
-    ${cs.length ? `<h2 style="font-size:18px">combinações com as suas peças (${cs.length})</h2><div class="list">${cs.map(c => `<div class="card"><div class="thumbs">${c.map(x => `<img src="${BY[x].img}" alt="">`).join("")}</div>
-      <div>${c.map(x => esc(BY[x].nome + " " + BY[x].cor)).join(" + ")}</div><div class="actions"><button class="btn small dark" type="button" data-copycombo="${c.join(",")}">copiar prompt</button></div></div>`).join("")}</div>` : ""}
     <h2 style="font-size:18px">looks com esta peça (${looks.length})</h2>
-    ${looks.length ? `<div class="grid">${looks.map(tile).join("")}</div>` : `<p class="sub">Nenhum look com foto ainda.</p>`}`);
+    ${looks.length ? `<div class="grid">${looks.map(tile).join("")}</div>` : `<p class="sub">Nenhum look com foto ainda.</p>`}
+    ${cs.length ? `<h2 style="font-size:18px">combinações com as suas peças (${cs.length})</h2><div class="list">${cs.map(c => `<div class="card"><div class="thumbs">${c.map(x => `<img src="${BY[x].img}" alt="">`).join("")}</div>
+      <div>${c.map(x => esc(BY[x].nome + " " + BY[x].cor)).join(" + ")}</div><div class="actions"><button class="btn small dark" type="button" data-copycombo="${c.join(",")}">copiar prompt</button></div></div>`).join("")}</div>` : ""}`);
 }
 
 // ---------- Gerador ----------
@@ -614,6 +627,7 @@ document.addEventListener("click", async e => {
     return toast(`${ids.length} look${ids.length === 1 ? "" : "s"} removido${ids.length === 1 ? "" : "s"}`);
   }
   if (d.lmood) { state.looksMood = d.lmood; return renderLooks(); }
+  if (d.lpiece) { state.lookPiece = state.lookPiece === d.lpiece ? null : d.lpiece; return renderLooks(); }
   if (d.cat) { state.cat = d.cat; return renderPieces(); }
   if (d.look) { if (state.sel) { state.sel.has(d.look) ? state.sel.delete(d.look) : state.sel.add(d.look); return renderLooks(); } return showLook(d.look); }
   if (d.piece) return showPiece(d.piece);
