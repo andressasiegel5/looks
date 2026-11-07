@@ -37,6 +37,8 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Calça de alfaiataria cinza mescla (H&M) — com as suas blusas, 6 looks](looks/2026-11-calca-cinza-hm/) ✨
+- [Calça wide leg off-white (H&M) — com as suas blusas, 6 looks](looks/2026-11-calca-offwhite-hm/) ✨
 - [Saia slip animal print — com as suas blusas, 6 looks](looks/2026-11-saia-slip-animal-print/) ✨
 - [Blusa Wingsuit branca — street style, 6 looks](looks/2026-11-blusa-wingsuit-branca/) ✨
 - [Blusa preta com renda — street style, 6 looks](looks/2026-11-blusa-renda-preta/) ✨
@@ -63,3 +65,5 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Blusa preta com renda (Anne Fernandes) — street style](prompts/2026-11-07-blusa-renda-preta-street-style.md)
 - [Blusa Wingsuit branca (Insider) — street style](prompts/2026-11-07-blusa-wingsuit-branca-street-style.md)
 - [Saia slip animal print (H&M) — street style](prompts/2026-11-07-saia-slip-animal-print-street-style.md)
+- [Calça wide leg off-white (H&M) — street style](prompts/2026-11-07-calca-offwhite-hm-street-style.md)
+- [Calça de alfaiataria cinza mescla (H&M) — street style](prompts/2026-11-07-calca-cinza-hm-street-style.md)

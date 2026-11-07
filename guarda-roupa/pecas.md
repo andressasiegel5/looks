@@ -16,6 +16,8 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 
 | Código | Peça | Cor | Detalhes | Status |
 |---|---|---|---|---|
+| CAL-03 | Calça wide leg de alfaiataria (H&M) | Off-white | Cintura alta, vinco frontal, perna larga levemente flare, longa cobrindo o sapato, botão de metal | ✅ |
+| CAL-04 | Calça de alfaiataria larga (H&M) | Cinza mescla claro | Cintura alta, passantes, perna larga e longa, tecido mesclado | ✅ |
 | CAL-01 | Calça wide leg de couro sintético | Marrom café | Zara, R$ 279. Wide leg longa, cintura alta, pences frontais | 🛒 |
 | CAL-02 | Calça pantalona com pregas | Cinza-chumbo | Zara, R$ 359. Alfaiataria fluida, pregas, perna larga e comprida | 🛒 |
 
