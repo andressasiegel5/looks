@@ -23,7 +23,7 @@ para o ChatGPT criar imagens. Converse sempre em português.
 3. Parta de `prompts/modelo-base.md`, modelo **C) Street style** (padrão) e descreva cada peça com cor, tecido e modelagem do catálogo.
 4. Salve o prompt em `prompts/AAAA-MM-DD-<tema>.md` (texto após "Prompt pronto para colar:"), linke no README, rode
    `python3 app/build_prompts.py` e republique a página: ela copia com um toque na aba **Prompts**.
-   Na resposta, mostre o prompt em texto corrido (não em bloco de código) e lembre da aba Prompts.
+   Na resposta, mostre o prompt **dentro de um bloco de código** (```), que tem botão de copiar na conversa.
 5. **Sem sapatos no acervo por enquanto**: não escolha sapato; no prompt peça "sapato simples e discreto, em tom neutro".
 6. **Proporção**: peça ampla em cima (ex.: JAQ-02) pede parte de baixo reta ou ajustada; nunca com peça de volume (ex.: SAI-01). Na página isso fica nas listas `AMPLAS` e `COM_VOLUME`.
 7. Foco: trabalho (escritório). Considere clima/ocasião se ela informar.

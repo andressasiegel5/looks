@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Camisa acetinada preta — street style, 6 looks](looks/2026-11-camisa-acetinada-preta/) ✨
 - [Polo de tricô Erica Candy — street style, 6 looks](looks/2026-11-polo-tricot-pistache/) ✨
 - [Blazer preto trespassado — street style, 6 looks](looks/2026-11-blazer-preto-trespassado/) ✨
 - [Camiseta listrada vermelha — rodada 2, peças variadas](looks/2026-11-camiseta-listrada-rodada-2/) ✨
