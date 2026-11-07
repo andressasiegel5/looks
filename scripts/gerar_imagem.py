@@ -17,6 +17,7 @@ ap.add_argument("saida")
 ap.add_argument("--modelo", default="gpt-image-2")
 ap.add_argument("--tamanho", default="1536x1024", help="1536x1024 (grade 2x3), 1024x1536 (vertical) ou 1024x1024")
 ap.add_argument("--qualidade", default="medium", choices=["low", "medium", "high"])
+ap.add_argument("--ref", help="foto de referência da pessoa (ex.: .privado/referencia-andressa.jpg); usa o endpoint de edição")
 a = ap.parse_args()
 
 md = open(a.prompt_md, encoding="utf-8").read()
@@ -28,13 +29,25 @@ else:
         sys.exit("Não achei o prompt no arquivo.")
     texto = m.group(1).strip()
 
-req = urllib.request.Request(
-    "https://api.openai.com/v1/images/generations",
-    data=json.dumps({"model": a.modelo, "prompt": texto, "size": a.tamanho,
-                     "quality": a.qualidade, "n": 1}).encode(),
-    headers={"Content-Type": "application/json",
-             "Authorization": "Bearer " + os.environ.get("OPENAI_API_KEY", "proxy-injected")},
-)
+chave = "Bearer " + os.environ.get("OPENAI_API_KEY", "proxy-injected")
+if a.ref:
+    import uuid, mimetypes
+    b = uuid.uuid4().hex
+    partes = []
+    for k, v in {"model": a.modelo, "prompt": texto, "size": a.tamanho, "quality": a.qualidade, "n": "1"}.items():
+        partes.append(f'--{b}\r\nContent-Disposition: form-data; name="{k}"\r\n\r\n{v}\r\n'.encode())
+    tipo = mimetypes.guess_type(a.ref)[0] or "image/jpeg"
+    partes.append(f'--{b}\r\nContent-Disposition: form-data; name="image[]"; filename="{os.path.basename(a.ref)}"\r\nContent-Type: {tipo}\r\n\r\n'.encode() + open(a.ref, "rb").read() + b"\r\n")
+    partes.append(f"--{b}--\r\n".encode())
+    req = urllib.request.Request("https://api.openai.com/v1/images/edits", data=b"".join(partes),
+        headers={"Content-Type": f"multipart/form-data; boundary={b}", "Authorization": chave})
+else:
+    req = urllib.request.Request(
+        "https://api.openai.com/v1/images/generations",
+        data=json.dumps({"model": a.modelo, "prompt": texto, "size": a.tamanho,
+                         "quality": a.qualidade, "n": 1}).encode(),
+        headers={"Content-Type": "application/json", "Authorization": chave},
+    )
 try:
     with urllib.request.urlopen(req, timeout=300) as r:
         resp = json.load(r)

@@ -51,3 +51,9 @@ Faça commit e push depois de cada alteração.
   (modelo padrão gpt-image-2, 1536x1024, qualidade medium). Depois: recortar os 6 looks em `app/img/looks/`,
   criar o README da coleção, adicionar em `LOOKS`, rodar `build_prompts.py`, republicar e fazer commit.
 - Cada geração custa dinheiro dela: gere uma vez; só repita se a imagem vier com erro claro.
+
+## Foto dela (modelo = ela)
+- Foto de referência em `.privado/referencia-andressa.jpg` (fora do git; não existe em sessões novas: pedir a foto de novo se faltar).
+- Gerar com `--ref .privado/referencia-andressa.jpg --tamanho 1024x1536` para look único em fundo claro (estilo do app).
+  O prompt começa com "Use a mulher da foto de referência como modelo..." (ver `.privado/teste-look-unico.md`).
+- Imagens com o rosto dela vão em `app/img/eu/` (fora do git) e entram no app com `img: "img/eu/..."`.
