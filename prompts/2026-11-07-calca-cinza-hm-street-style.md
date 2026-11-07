@@ -14,7 +14,7 @@ LOOKS:
 1. "Wingsuit": blusa branca ampla de tecido tecnológico fosco, mangas morcego longas justas nos punhos e gola alta, com a frente levemente por dentro (só a blusa é larga); bolsa caramelo; óculos escuros pretos; cabelo solto liso.
 2. "Bomber": blusa gola alta preta fina por dentro e, por cima, jaqueta bomber preta curta oversized de suede com botões de pressão prateados, aberta e caída dos ombros; bolsa preta embaixo do braço; óculos retangulares; cabelo em coque baixo.
 3. "Listrada": camiseta de manga longa justa com listras finas horizontais vermelho vivo e off-white e gola careca vermelha, por dentro; cinto preto fino; bolsa preta; cabelo em rabo de cavalo baixo.
-4. "Pistache": polo de tricô de manga curta justa com listras horizontais em verde pistache e off-white e botões dourados, por dentro; cinto caramelo; bolsa de palha; óculos tartaruga.
+4. "Pistache": polo de tricô canelado mescla off-white com pontinhos cinza (aspecto de cinza claro mesclado), com listras horizontais finas e espaçadas em verde-acinzentado escuro, gola polo do mesmo tricô, abertura com 3 botões dourados pequenos, manga curta, justa, por dentro; cinto caramelo; bolsa de palha; óculos tartaruga.
 5. "Renda": blusa preta de crepe com gola de camisa pontuda em cetim, mangas curtas e ombros de renda floral transparente, barra das mangas em cetim, por dentro; argolas douradas; bolsa preta pequena; cabelo em coque alto.
 6. "Blazer e acetinada": camisa preta acetinada de caimento fluido, manga longa, por dentro com dois botões abertos; e por cima blazer preto trespassado com botões dourados, aberto; bolsa preta estruturada.
 

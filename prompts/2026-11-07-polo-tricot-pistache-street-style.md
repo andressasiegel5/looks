@@ -19,9 +19,7 @@ Rosto cortado na altura do nariz ou coberto pelos óculos. Andando na calçada, 
 como se não soubesse que está sendo fotografada; corpo inteiro visível.
 
 PEÇA FIXA (idêntica em todos os looks):
-Polo de tricô fino de manga curta, justa no corpo, com listras horizontais coloridas em tons
-suaves de verde pistache e off-white, gola polo e pequenos botões dourados na abertura do
-peito. Sempre por dentro da parte de baixo, marcando a cintura.
+Polo de tricô canelado mescla off-white com pontinhos cinza (aspecto de cinza claro mesclado), com listras horizontais finas e espaçadas em verde-acinzentado escuro, gola polo do mesmo tricô, abertura com 3 botões dourados pequenos, manga curta, justa. Sempre por dentro da parte de baixo, marcando a cintura.
 
 LOOKS:
 1. "Linho" — calça pantalona de linho cor areia, cintura alta com amarração; cinto fino de
@@ -38,7 +36,7 @@ LOOKS:
 6. "Verde sobre verde" — calça de alfaiataria verde-oliva escuro, reta e longa; cardigã fino
    off-white jogado sobre os ombros; bolsa preta pequena; cabelo em coque baixo liso.
 
-A polo deve ser idêntica em todas as fotos (mesmas listras e botões dourados).
+A polo deve ser idêntica em todas as fotos: fundo mescla off-white, listras FINAS e espaçadas verde-acinzentado escuro, 3 botões dourados.
 Em todos os looks, sapato simples e discreto, em tom neutro (não é o foco).
 Sem texto, sem legendas, sem logotipos. Roupas exatamente como descritas.
 ```

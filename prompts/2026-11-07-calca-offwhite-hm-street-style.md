@@ -16,6 +16,6 @@ LOOKS:
 3. "Renda": blusa preta de crepe com gola de camisa pontuda em cetim, mangas curtas e ombros de renda floral transparente, barra das mangas em cetim, por dentro; bolsa preta estruturada; cabelo em coque alto liso.
 4. "Camisa acetinada": camisa preta acetinada de caimento fluido, manga longa, por dentro com dois botões abertos; colar de corrente dourado; óculos escuros pretos; cabelo solto liso.
 5. "Blazer": blazer preto trespassado acinturado com seis botões dourados, aberto, sobre regata preta justa; bolsa preta embaixo do braço; óculos escuros retangulares.
-6. "Pistache": polo de tricô de manga curta justa com listras horizontais em verde pistache e off-white e botões dourados, por dentro; bolsa de palha; óculos tartaruga; cabelo em coque baixo.
+6. "Pistache": polo de tricô canelado mescla off-white com pontinhos cinza (aspecto de cinza claro mesclado), com listras horizontais finas e espaçadas em verde-acinzentado escuro, gola polo do mesmo tricô, abertura com 3 botões dourados pequenos, manga curta, justa, por dentro; bolsa de palha; óculos tartaruga; cabelo em coque baixo.
 
 A calça deve ser idêntica em todas as fotos. Em todos os looks, sapato simples e discreto, em tom neutro (não é o foco). Sem texto, sem legendas, sem logotipos. Roupas exatamente como descritas.

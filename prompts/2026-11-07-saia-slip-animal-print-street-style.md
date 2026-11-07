@@ -16,6 +16,6 @@ LOOKS:
 3. "Polo preta": polo preta de tricô canelado justa, decote em V com fileira de botõezinhos prateados, manga curta até o cotovelo, por dentro; cinto preto fino; óculos escuros ovais; cabelo em rabo de cavalo baixo.
 4. "Bomber": blusa gola alta preta fina por dentro e, por cima, jaqueta bomber preta curta oversized de suede com botões de pressão prateados, aberta e caída dos ombros; bolsa preta embaixo do braço; óculos escuros retangulares.
 5. "Camisa acetinada": camisa preta acetinada de caimento fluido, manga longa, por dentro com dois botões abertos; colar de corrente dourado fino; cabelo em coque alto liso.
-6. "Polo pistache": polo de tricô de manga curta justa com listras horizontais em verde pistache e off-white e botões dourados, por dentro; bolsa de palha estruturada; óculos escuros tartaruga.
+6. "Polo pistache": polo de tricô canelado mescla off-white com pontinhos cinza (aspecto de cinza claro mesclado), com listras horizontais finas e espaçadas em verde-acinzentado escuro, gola polo do mesmo tricô, abertura com 3 botões dourados pequenos, manga curta, justa, por dentro; bolsa de palha estruturada; óculos escuros tartaruga.
 
 A saia deve ser idêntica em todas as fotos, sempre com a estampa miúda e densa. Em todos os looks, sapato simples e discreto, em tom neutro (não é o foco). Sem texto, sem legendas, sem logotipos. Roupas exatamente como descritas.

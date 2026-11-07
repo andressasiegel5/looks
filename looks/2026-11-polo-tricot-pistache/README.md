@@ -2,7 +2,7 @@
 
 Peça âncora: **BLU-11** (polo de tricô listrada verde pistache, Brooksfield Donna). Só ela é do acervo.
 Prompt: [polo street style](../../prompts/2026-11-07-polo-tricot-pistache-street-style.md).
-O cabelo saiu castanho acobreado, como pedido.
+Imagem regerada pela API com a polo correta (mescla off-white com listras finas verde-acinzentadas).
 
 ![Grade com 6 looks](grade-6-looks.png)
 

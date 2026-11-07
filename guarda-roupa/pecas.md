@@ -35,7 +35,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLU-08 | Blusa sem manga | Bege / nude | Malha, gola redonda | ❓ |
 | BLU-09 | Malha manga curta | Cinza mescla | Gola redonda | ❓ |
 | BLU-10 | Camiseta listrada manga longa | Vermelho e off-white | 100% algodão (Massimo Dutti), listras horizontais finas, gola careca vermelha lisa, caimento ajustado | ✅ |
-| BLU-11 | Polo de tricô manga curta "Erica Candy" | Verde pistache (listras candy) | Brooksfield Donna. Tricô fino com listras horizontais coloridas em tons suaves (verde pistache e off-white), gola polo, botões dourados, caimento ajustado, tam. P | ✅ |
+| BLU-11 | Polo de tricô manga curta "Erica Candy" | Mescla off-white/cinza com listras verde-acinzentadas | Brooksfield Donna. Tricô canelado mescla off-white com listras finas e espaçadas verde-acinzentado escuro, gola polo, 3 botões dourados, manga curta, ajustada, tam. P | ✅ |
 | BLU-12 | Polo de tricô com botões (Shoulder) | Preta | Tricô canelado justo, gola polo, decote em V profundo com fileira de botõezinhos metálicos, manga curta até o cotovelo, 51% viscose 49% poliamida, tam. M | ✅ |
 | BLU-13 | Blusa com renda (Anne Fernandes) | Preta | Crepe liso, gola de camisa pontuda em cetim, prega no centro do peito, mangas curtas e ombros de renda floral transparente, barra das mangas em cetim | ✅ |
 | BLU-14 | Blusa Wingsuit (Insider) | Branca | Tecido TECHSTURE (poliamida, viscose, elastano), **modelagem ampla**, manga morcego longa justa no punho, gola alta. Pede parte de baixo reta ou justa | ✅ |
