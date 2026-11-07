@@ -30,6 +30,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLU-08 | Blusa sem manga | Bege / nude | Malha, gola redonda | ❓ |
 | BLU-09 | Malha manga curta | Cinza mescla | Gola redonda | ❓ |
 | BLU-10 | Camiseta listrada manga longa | Vermelho e off-white | 100% algodão (Massimo Dutti), listras horizontais finas, gola careca vermelha lisa, caimento ajustado | ✅ |
+| BLU-11 | Polo de tricô manga curta "Erica Candy" | Verde pistache (listras candy) | Brooksfield Donna. Tricô fino com listras horizontais coloridas em tons suaves (verde pistache e off-white), gola polo, botões dourados, caimento ajustado, tam. P | ✅ |
 | CAM-01 | Camisa social | Branca | Algodão, manga longa (usar dobrada ou com nó na cintura) | ❓ |
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
