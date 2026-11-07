@@ -359,7 +359,7 @@ const semBaixo = codes => !codes.some(c => isBottom(BY[c]));
 function promptFor(codes) {
   const desc = codes.map(c => { const p = BY[c]; return `- ${p.nome.toLowerCase()} ${p.cor} (${p.det})`; }).join("\n");
   return `Fotografia de moda realista em estúdio, fundo liso bege-acinzentado, luz suave e difusa.
-Uma mulher magra e esguia, cerca de 56 kg, cintura fina e marcada, pernas finas.
+Uma mulher magra e esguia, 1,68 m, cerca de 56 kg, cintura fina e marcada, pernas longas e finas, cabelo castanho acobreado.
 Pose natural de foto de look do dia: corpo levemente em 3/4, uma mão no bolso ou na cintura. Corpo inteiro do queixo aos pés, formato vertical 2:3.
 Ela veste exatamente:
 ${desc}${semBaixo(codes) ? "\n- " + BAIXO_GENERICO : ""}

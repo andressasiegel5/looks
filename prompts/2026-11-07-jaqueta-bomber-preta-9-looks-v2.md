@@ -17,8 +17,8 @@ Crie uma única imagem de catálogo de moda em formato quadrado, com uma grade d
 (3 linhas × 3 colunas), separadas por finas linhas brancas.
 
 A MODELO (a mesma em todas as fotos):
-Mulher magra e esguia, com cerca de 56 kg, ombros estreitos, cintura fina e marcada e pernas
-finas. Cabelo castanho preso em rabo de cavalo baixo. Corpo inteiro, do queixo até os pés
+Mulher magra e esguia, com 1,68 m e cerca de 56 kg, ombros estreitos, cintura fina e marcada
+e pernas longas e finas. Cabelo castanho acobreado, preso em rabo de cavalo baixo. Corpo inteiro, do queixo até os pés
 (rosto cortado na altura do nariz).
 Pose natural e relaxada, como foto de look do dia: corpo levemente virado em 3/4, uma mão no
 bolso da calça ou na cintura, peso apoiado em uma perna.
