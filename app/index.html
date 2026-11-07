@@ -45,7 +45,8 @@ h2 { font-size: 24px; line-height: 1.1; }
 .chip[aria-pressed="true"] { background: var(--ink); color: var(--on-ink); box-shadow: none; }
 
 /* hero */
-.hero { position: relative; display: flex; justify-content: center; }
+.hero { position: relative; display: flex; justify-content: center; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+.hero-img { -webkit-user-drag: none; }
 .hero-img { width: min(100%, 380px); aspect-ratio: 4 / 5; object-fit: cover; object-position: center 30%; border-radius: 22px; display: block; background: var(--surface); }
 .controls { display: flex; justify-content: center; align-items: center; gap: 22px; margin-top: 14px; }
 .ctrl { width: 52px; height: 52px; border-radius: 50%; border: none; background: var(--surface); display: grid; place-items: center; font-size: 30px; line-height: 1; padding-bottom: 3px; }
@@ -582,6 +583,23 @@ document.addEventListener("click", async e => {
   if (d.copyidea) { const i = state.ideas.find(x => x.id === d.copyidea); return copy(i?.prompt || promptFor(i.pecas)); }
   if (d.delidea) { try { await state.db.doc(`ideias/${d.delidea}`).delete(); toast("Ideia removida"); } catch { toast("Não consegui remover."); } return; }
 });
+// Arrastar a foto: para a esquerda avança, para a direita volta
+(() => {
+  const h = $("hero"); let x0 = null, y0 = 0, dx = 0;
+  const img = () => h.querySelector(".hero-img");
+  h.addEventListener("pointerdown", e => { if (!img() || !e.target.closest(".hero")) return; x0 = e.clientX; y0 = e.clientY; dx = 0; });
+  h.addEventListener("pointermove", e => {
+    if (x0 === null) return; dx = e.clientX - x0;
+    if (Math.abs(dx) > Math.abs(e.clientY - y0)) { const i = img(); i.style.transition = "none"; i.style.transform = `translateX(${dx}px) rotate(${dx / 40}deg)`; i.style.opacity = String(1 - Math.min(Math.abs(dx) / 400, .4)); }
+  });
+  const end = () => {
+    if (x0 === null) return; x0 = null; const i = img();
+    const n = Math.max(1, state.order.length);
+    if (Math.abs(dx) > 60) { state.pos = dx < 0 ? (state.pos + 1) % n : (state.pos - 1 + n) % n; return renderHero(); }
+    if (i) { i.style.transition = "transform .2s ease, opacity .2s ease"; i.style.transform = ""; i.style.opacity = ""; }
+  };
+  h.addEventListener("pointerup", end); h.addEventListener("pointercancel", end); h.addEventListener("pointerleave", end);
+})();
 $("onlyMine").addEventListener("change", e => { state.onlyMine = e.target.checked; try { localStorage.setItem("onlyMine", state.onlyMine ? "1" : "0"); } catch {} });
 sheet.addEventListener("click", e => { if (e.target === sheet) sheet.close(); });
 

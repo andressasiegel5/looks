@@ -39,7 +39,7 @@ para o ChatGPT criar imagens. Converse sempre em português.
 Faça commit e push depois de cada alteração.
 
 ## Página "Looks do Dia" (app/)
-- Visual de app (mood → um look por vez, ♡ e ↻, "meu armário"/"descobrir", "complete o look", barra preta embaixo).
+- Visual de app (mood → um look por vez, arrastar a foto ou ‹ ♡ ›, "meu armário"/"descobrir", "complete o look", barra preta embaixo).
 - Moods são automáticos por palavras-chave (função `moodsOf`); "meu armário" = looks cujas roupas são todas dela (`tenho`), acessórios não contam.
 - Publicada em https://claude.ai/artifact/4aKopUPTGpFVxXRU8AG6q4 a partir de `app/index.html` (imagens em `app/img/`).
 - Os dados `PIECES` e `LOOKS` dentro de `app/index.html` espelham `guarda-roupa/pecas.md` e `looks/`. Ao cadastrar peça ou coleção nova, atualize os dois, gere os recortes em `app/img/` e republique no mesmo URL (Artifact com `url`, `root: app`).
