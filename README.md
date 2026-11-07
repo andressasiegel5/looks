@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Blusa Wingsuit branca — street style, 6 looks](looks/2026-11-blusa-wingsuit-branca/) ✨
 - [Blusa preta com renda — street style, 6 looks](looks/2026-11-blusa-renda-preta/) ✨
 - [Polo de tricô com botões preta — street style, 6 looks](looks/2026-11-polo-botoes-preta/) ✨
 - [Camisa acetinada preta — street style, 6 looks](looks/2026-11-camisa-acetinada-preta/) ✨
