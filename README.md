@@ -70,6 +70,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Saia plissada preta midi — com as suas peças, 6 looks](looks/2026-11-saia-plissada-preta/) ✨
 - [Legging marrom chocolate — com as suas peças, 6 looks](looks/2026-11-legging-marrom/) ✨
 - [Casaco de tricô grosso oversized — com as suas peças, 6 looks](looks/2026-11-casaco-trico-oversized/) ✨
+- [Calça jeans preta flare (Modab) — refeitos + 2 novos](looks/2026-11-calca-jeans-preta-flare/) ✨
 - [Suéter felpudo creme (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-creme-zara/) ✨
 - [Suéter felpudo marinho (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-marinho-zara/) ✨
 - [Colete espinha de peixe bege (Emme) — com as suas peças, 6 looks](looks/2026-11-colete-espinha-bege/) ✨
@@ -235,3 +236,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Saia plissada preta midi — street style](prompts/2026-11-09-saia-plissada-preta-midi-street-style.md)
 - [Legging marrom chocolate — street style](prompts/2026-11-09-legging-marrom-street-style.md)
 - [Casaco de tricô grosso oversized — street style](prompts/2026-11-09-casaco-trico-oversized-street-style.md)
+- [Calça jeans preta flare — street style](prompts/2026-11-09-calca-jeans-preta-flare-street-style.md)
