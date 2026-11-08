@@ -1108,6 +1108,7 @@ function renderHero() {
   $("hero").innerHTML = `<div class="hero"><img class="hero-img" src="${l.img}" alt="${esc(l.nome)}"></div>
     <div class="controls">
       <button class="ctrl" type="button" id="prev" aria-label="Look anterior">‹</button>
+      <button class="ctrl" type="button" data-hide="${l.id}" aria-label="Remover este look">✕</button>
       <button class="ctrl fav ${f ? "on" : ""}" type="button" data-fav="${l.id}" aria-label="${f ? "Tirar dos favoritos" : "Favoritar"}">${f ? "♥" : "♡"}</button>
       <button class="ctrl" type="button" id="next" aria-label="Próximo look">›</button>
     </div>
@@ -1289,6 +1290,14 @@ document.addEventListener("click", async e => {
     for (const id of ids) await setLook(id, { wishlist: true });
     state.sel = null; renderLooks(); renderFavs();
     return toast(`${ids.length} na wishlist (aba favoritos)`);
+  }
+  if (d.hide) {
+    if (!state.db) return toast("Abra logada no claude.ai para remover looks");
+    await setLook(d.hide, { oculto: true, ocultoEm: todayISO() });
+    state.order = state.order.filter(id => id !== d.hide);
+    if (state.pos >= state.order.length) state.pos = 0;
+    renderHero(); renderLooks(); renderFavs();
+    return toast("Look removido");
   }
   if (d.unwish) { await setLook(d.unwish, { wishlist: false }); renderFavs(); return toast("Tirado da wishlist"); }
   if (el.id === "selRemove") {
