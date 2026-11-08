@@ -12,3 +12,5 @@ Peça âncora: **CAS-03**, com as peças dela. Gerada pela API.
 | 4 | Casaco tricô e off-white | BLU-22, CAL-03, ACE-02, Bolsa preta | |
 | 5 | Casaco tricô e acetinada | CAM-05, CAL-05, Colar dourado | |
 | 6 | Casaco tricô e suéter taupe | SUE-01, CAL-03, Bolsa caramelo | |
+
+> Removidos do app: c27-01..06 (o casaco saiu bege; o real é marrom acinzentado escuro).
