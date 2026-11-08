@@ -33,6 +33,7 @@ para o ChatGPT criar imagens. Converse sempre em português.
 
 ## Ao cadastrar peças
 - Adicione na tabela da categoria certa em `guarda-roupa/pecas.md`, com o próximo código livre.
+- Peças marcadas "🎁 vai doar" (JAQ-03 jaqueta de camurça) saíram do app e não entram em nenhum look.
 - Peças marcadas "🏃 só exercício" (corta-ventos JAQ-10, JAQ-11) não entram em looks de trabalho; no app têm `tenho: "exercicio"`.
 - Se ela mandar foto, descreva a peça a partir da foto. Fotos do armário: cadastre SÓ a peça em evidência (no centro/em foco);
   ignore as peças dos lados e não pergunte sobre elas.
@@ -75,6 +76,6 @@ Faça commit e push depois de cada alteração.
 - Cidade: **Curitiba**. Busque a previsão de seg a sex (WebSearch; o host api.open-meteo.com não responde neste ambiente).
 - **O escritório é frio**: todo look precisa de uma camada por cima (blazer, cardigã, casaco, colete sobre camisa),
   mesmo em dia quente. Ex.: 24 °C → blusa/camiseta de manga curta + blazer ou cardigã que dá para tirar na rua.
-  Frio (máx ≤ 17 °C) → suéter + casaco/sobretudo, meia-calça se for saia. Chuva → calçado SÓ bota (SAP-06/07) ou tênis de couro (SAP-03 Veja, SAP-09 Samba), nunca sapato/sapatilha/slingback nem camurça (SAP-04, JAQ-03); evitar SAI-01; preferir parka.
+  Frio (máx ≤ 17 °C) → suéter + casaco/sobretudo, meia-calça se for saia. Chuva → calçado SÓ bota (SAP-06/07) ou tênis de couro (SAP-03 Veja, SAP-09 Samba), nunca sapato/sapatilha/slingback nem camurça (SAP-04); evitar SAI-01; preferir parka.
 - Não repetir a mesma peça principal na semana; variar saia/calça.
 - Responder com tabela dia | previsão | look (códigos + nomes) e oferecer gerar a imagem (grade de 5, uma geração).
