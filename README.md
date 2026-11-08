@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Body manga bufante (Iorane) — com as suas peças, 6 looks](looks/2026-11-body-bufante-preto/) ✨
 - [Regata canelada preta (Shoulder) — com as suas peças, 6 looks](looks/2026-11-regata-canelada-shoulder/) ✨
 - [Regata tricô gola alta preta — com as suas peças, 6 looks](looks/2026-11-regata-trico-gola-alta-preta/) ✨
 - [Regata muscle preta (Insider) — com as suas peças, 6 looks](looks/2026-11-regata-muscle-preta/) ✨
@@ -159,3 +160,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Regata muscle preta (Insider) — street style](prompts/2026-11-09-regata-muscle-preta-street-style.md)
 - [Regata de tricô gola alta preta — street style](prompts/2026-11-09-regata-trico-gola-alta-preta-street-style.md)
 - [Regata canelada preta (Shoulder) — street style](prompts/2026-11-09-regata-canelada-shoulder-street-style.md)
+- [Body manga bufante preto (Iorane) — street style](prompts/2026-11-09-body-bufante-preto-street-style.md)
