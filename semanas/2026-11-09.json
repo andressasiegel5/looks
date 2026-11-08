@@ -156,15 +156,18 @@
      "id": "w1109-41"
     },
     {
-     "nome": "Conjunto caramelo e blazer creme",
+     "nome": "Body bufante, lápis cinza e blazer de malha",
      "pecas": [
-      "BLU-38",
-      "CAL-06",
-      "BLA-08",
-      "SAP-03",
-      "BOL-05"
+      "BLU-35",
+      "SAI-06",
+      "BLA-07",
+      "SAP-07",
+      "BOL-08"
      ],
-     "id": "w1109-42"
+     "id": "w1109-42",
+     "extras": [
+      "Meia-calça fina preta"
+     ]
     },
     {
      "nome": "Camisa perolada e colete",
