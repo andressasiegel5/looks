@@ -37,8 +37,6 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
-- [Corta-vento marinho (Le Lis Blanc) — com as suas peças, 6 looks](looks/2026-11-corta-vento-marinho/) ✨
-- [Corta-vento azul royal (Amaro) — com as suas peças, 6 looks](looks/2026-11-corta-vento-azul/) ✨
 - [Camisa-jaqueta Max Mara — com as suas peças, 6 looks](looks/2026-11-camisa-jaqueta-maxmara/) ✨
 - [Parka leve verde-oliva (Zara) — com as suas peças, 6 looks](looks/2026-11-parka-oliva-zara/) ✨
 - [Blazer curto xadrez — com as suas peças, 6 looks](looks/2026-11-blazer-curto-xadrez/) ✨
@@ -127,5 +125,3 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Blazer curto xadrez — street style](prompts/2026-11-09-blazer-curto-xadrez-street-style.md)
 - [Parka leve verde-oliva (Zara) — street style](prompts/2026-11-09-parka-oliva-zara-street-style.md)
 - [Camisa-jaqueta off-white (Max Mara) — street style](prompts/2026-11-09-camisa-jaqueta-maxmara-street-style.md)
-- [Corta-vento azul royal (Amaro) — street style](prompts/2026-11-09-corta-vento-azul-street-style.md)
-- [Corta-vento marinho (Le Lis Blanc) — street style](prompts/2026-11-09-corta-vento-marinho-street-style.md)

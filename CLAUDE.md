@@ -30,6 +30,7 @@ para o ChatGPT criar imagens. Converse sempre em português.
 
 ## Ao cadastrar peças
 - Adicione na tabela da categoria certa em `guarda-roupa/pecas.md`, com o próximo código livre.
+- Peças marcadas "🏃 só exercício" (corta-ventos JAQ-10, JAQ-11) não entram em looks de trabalho; no app têm `tenho: "exercicio"`.
 - Se ela mandar foto, descreva a peça a partir da foto. Fotos do armário: cadastre SÓ a peça em evidência (no centro/em foco);
   ignore as peças dos lados e não pergunte sobre elas.
 
