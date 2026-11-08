@@ -91,6 +91,8 @@ Faça commit e push depois de cada alteração.
   substitua a foto de cada look `substitui` (mesmo id, assim favoritos ficam), atualize `pecas` em LOOKS e marque o pedido `status: "feito"`.
 
 ## Aba "semana" (substitui o botão/modal; abas favoritos e peças estão escondidas da barra)
+- **Ela pediu para NÃO gerar imagens novas sem pedir**: já há looks suficientes. Para a semana, escolha as 3 opções/dia entre os looks
+  existentes em `LOOKS` (só peças dela, não ocultos, sem 🏠/🎁/parka/jeans, coerentes com o clima) e use a foto deles. Só gere se ela pedir.
 - Toda semana: buscar a previsão de Curitiba (WebSearch ou print dela), montar `semanas/<segunda>.json`
   (5 dias × 3 opções, ids `wMMDD-<dia><opção>`, regras do look da semana), rodar `python3 scripts/semana_prompts.py semanas/<arquivo>.json`
   (gera 3 prompts: 6+6+3 looks), gerar as 3 imagens, recortar, subir como assets e trocar o JSON entre `/*SEMANA*/` e `/*FIMSEMANA*/`
