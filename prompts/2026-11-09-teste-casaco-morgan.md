@@ -6,7 +6,7 @@ Crie uma única imagem com uma grade de 6 fotos (2 linhas × 3 colunas), separad
 
 A MODELO (a mesma em todas as fotos): Mulher magra e esguia, 1,68 m, cerca de 56 kg, ombros estreitos, cintura fina, pernas longas. Cabelo castanho acobreado (castanho médio com reflexos cobre, NÃO preto nem castanho escuro). Rosto cortado na altura do nariz ou coberto pelos óculos. Andando na calçada, naturalmente, como se não soubesse que está sendo fotografada; corpo inteiro visível.
 
-PEÇA FIXA (idêntica em todos os looks): casaco PRETO de lã batida, comprimento na altura do quadril (curto), corte reto levemente amplo, GOLA DE CAMISA EM COURO PRETO, quatro botões pretos na frente, bolsos com pequena lapela de couro preto, ombro natural, manga longa. Só o casaco é levemente amplo; o resto é ajustado.
+PEÇA FIXA (idêntica em todos os looks): casaco PRETO de lã batida, COMPRIDO ATÉ O MEIO DA COXA (bem abaixo do quadril, cobre o bumbum inteiro; NÃO é jaqueta curta), corte reto levemente evasê, GOLA DE CAMISA EM COURO PRETO, quatro botões pretos na frente, bolsos com pequena lapela de couro preto, ombro natural, manga longa. Só o casaco é levemente amplo; o resto é ajustado.
 
 LOOKS (escritório, Curitiba frio):
 1. "Calça cinza": casaco fechado sobre suéter felpudo off-white de gola alta baixa; calça reta cinza espinha de peixe no tornozelo; sapato preto de bico com salto médio bloco; bolsa de ombro estruturada off-white.
@@ -16,4 +16,4 @@ LOOKS (escritório, Curitiba frio):
 5. "Plissada": casaco fechado sobre camisa de linho off-white (gola para fora); saia midi plissada preta; meia-calça fina preta; bota preta; bolsa estruturada vinho.
 6. "Legging": casaco aberto sobre body preto de veludo amassado manga longa; legging marrom chocolate com vinco; bota marrom; bolsa transversal pequena azul royal.
 
-O casaco deve ser idêntico em todas as fotos, curto no quadril, com gola de couro. Sem texto, sem logotipos.
+O casaco deve ser idêntico em todas as fotos, longo até o meio da coxa, com gola de couro. Sem texto, sem logotipos.
