@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Blazer de malha cinza (Zara) — com as suas peças, 5 looks](looks/2026-11-blazer-malha-cinza/) ✨
 - [Vestido longo listrado (Viviane Furrier) — com as suas peças, 6 looks](looks/2026-11-vestido-longo-listrado/) ✨
 - [Vestido letreiro (Lança Perfume) — com as suas peças, 6 looks](looks/2026-11-vestido-letreiro-lanca/) ✨
 - [Casaco-camisa marrom — com as suas peças, 6 looks](looks/2026-11-casaco-camisa-marrom/) ✨
@@ -111,3 +112,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Casaco-camisa aveludado marrom — street style](prompts/2026-11-09-casaco-camisa-marrom-street-style.md)
 - [Vestido letreiro preto (Lança Perfume) — street style](prompts/2026-11-09-vestido-letreiro-lanca-street-style.md)
 - [Vestido longo listrado (Viviane Furrier) — street style](prompts/2026-11-09-vestido-longo-listrado-street-style.md)
+- [Blazer de malha cinza (Zara) — street style](prompts/2026-11-09-blazer-malha-cinza-street-style.md)
