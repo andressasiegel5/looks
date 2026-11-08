@@ -78,6 +78,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLA-05 | Blazer trespassado | Preto | Zara. Alfaiataria acinturada (tamanho certo), lapela pontuda, 6 botões dourados com brasão, ombros estruturados, bolsos com lapela, comprimento no quadril | ✅ |
 | BLA-06 | Blazer longo pied-de-poule | Marrom, caramelo e preto | Pied-de-poule miúdo, alfaiataria, lapela, comprimento abaixo do quadril, caimento reto levemente solto | ✅ |
 | BLA-07 | Blazer de malha (Zara) | Cinza mescla claro | Malha leve mesclada, lapela, sem botão (aberto), mangas dobradas com presilha e botão prateado (3/4), forro off-white, comprimento no quadril | ✅ |
+| BLA-08 | Blazer de alfaiataria (Amaro) | Off-white / creme | Crepe fluido, lapela pontuda larga, um botão marrom, bolsos com lapela, alongado (abaixo do quadril), caimento reto levemente oversized | ✅ |
 | COL-01 | Colete de alfaiataria | Cinza | Abotoado | ❓ |
 | COL-02 | Colete de alfaiataria curto | Preto | Decote V, botões, termina um pouco ACIMA da cintura | ✅ |
 | COL-03 | Colete de alfaiataria | Creme | Decote V, botões, termina um pouco ABAIXO da cintura | ✅ |
