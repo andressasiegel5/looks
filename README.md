@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Bomber off-white (Zara) — com as suas peças, 5 looks](looks/2026-11-bomber-couro-offwhite/) ✨
 - [Casaquinho bouclé (Lemoncola) — com as suas peças, 6 looks](looks/2026-11-casaquinho-boucle/) ✨
 - [Blazer off-white (Amaro) — com as suas peças, 6 looks](looks/2026-11-blazer-offwhite-amaro/) ✨
 - [Blazer de malha cinza (Zara) — com as suas peças, 5 looks](looks/2026-11-blazer-malha-cinza/) ✨
@@ -117,3 +118,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Blazer de malha cinza (Zara) — street style](prompts/2026-11-09-blazer-malha-cinza-street-style.md)
 - [Blazer off-white (Amaro) — street style](prompts/2026-11-09-blazer-offwhite-amaro-street-style.md)
 - [Casaquinho de bouclé com paetês (Lemoncola) — street style](prompts/2026-11-09-casaquinho-boucle-street-style.md)
+- [Bomber de couro sintético off-white (Zara) — street style](prompts/2026-11-09-bomber-couro-offwhite-street-style.md)
