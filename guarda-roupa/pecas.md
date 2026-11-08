@@ -73,6 +73,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLU-33 | Regata de tricô canelado gola alta | Preta | Tricô canelado encorpado, gola alta baixa (mock neck), sem manga com cava americana, justa, comprimento no quadril | ✅ |
 | BLU-34 | Regata canelada cava americana (Shoulder) | Preta | Malha canelada com forro, gola redonda, cava nadador, justa, comprimento longo no quadril | ✅ |
 | BLU-35 | Body canelado manga bufante (Iorane) | Preto | Malha canelada, decote quadrado, mangas bufantes 3/4 franzidas no ombro e com elástico no punho, body (sempre por dentro) | ✅ |
+| BLU-36 | Regata de veludo gola alta (Zara) | Preta | Veludo molhado macio, gola alta, sem manga, justa | ✅ |
 | CAM-01 | Camisa social | Branca | Algodão, manga longa (usar dobrada ou com nó na cintura) | ❓ |
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
