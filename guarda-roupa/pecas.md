@@ -77,6 +77,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | JAQ-05 | Jaqueta jeans oversized | Azul médio (lavagem clássica) | Oversized, ombros caídos, comprimento no quadril, bolsos com lapela, botões metálicos. Peça ampla: parte de baixo reta ou fluida, nunca saia plissada | ✅ |
 | CAS-01 | Casaco longo | Camelo | Lã, abaixo do joelho | ❓ |
 | CAS-02 | Parka com capuz de pelo (Amaro) | Preta | Nylon fosco acolchoado leve, capuz com pelo sintético preto, amarração com cordão na cintura, botões de pressão e zíperes dourados, comprimento no meio da coxa. Peça com volume: usar com parte de baixo justa ou fluida, nunca com saia plissada | ✅ |
+| CAS-03 | Casaco de tricô com cachecol removível (Shoulder) | Bege | Casaco longo de tricô encorpado, abaixo do joelho, aberto sem botões, com cachecol do mesmo tricô removível. Tam. P | ✅ |
 | TRE-01 | Trench coat | Bege | Clássico com faixa | ❓ |
 
 ## Sapatos
