@@ -47,6 +47,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLU-18 | Camiseta gola alta manga curta (Zara) | Cinza mescla | Malha canelada fina, gola alta baixa (mock neck), manga curta, justa, comprimento curto na cintura | ✅ |
 | SUE-01 | Suéter Future Knit (Insider) | Taupe (bege acinzentado) | Tricô macio levemente felpudo, gola redonda, punhos e barra canelados, caimento reto, comprimento no quadril | ✅ |
 | BLU-19 | Regata gola alta Tech (Insider) | Azul petróleo | Malha tecnológica lisa e fosca, gola alta, mini manga caída no ombro, caimento reto ajustado | ✅ |
+| BLU-23 | Regata gola alta Tech (Insider) | Preta | Mesma modelagem da BLU-19 | ✅ |
 | BLU-20 | Regata gola alta Tech (Insider) | Verde-oliva | Mesma modelagem da BLU-19 | ✅ |
 | BLU-21 | Tech T-shirt gola redonda (Insider) | Azul-marinho bem escuro (quase preto) — cor a confirmar | Malha tecnológica lisa e fosca, manga curta, caimento reto ajustado | ✅ |
 | BLU-22 | Tech T-shirt gola V (Insider) | Preta | Malha tecnológica lisa e fosca, decote V, manga curta, caimento reto ajustado | ✅ |
