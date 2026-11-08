@@ -39,6 +39,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 - [Suéter chevron (Kookai) — com as suas peças, 6 looks](looks/2026-11-sueter-chevron-kookai/) ✨
 - [Body de veludo com costas de tule — com as suas peças, 6 looks](looks/2026-11-body-veludo-tule/) ✨
+- [Suéter meio-zíper listrado — com as suas peças, 6 looks](looks/2026-11-sueter-meio-ziper/) ✨
 - [Suéter felpudo creme (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-creme-zara/) ✨
 - [Suéter felpudo marinho (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-marinho-zara/) ✨
 - [Colete espinha de peixe bege (Emme) — com as suas peças, 6 looks](looks/2026-11-colete-espinha-bege/) ✨
@@ -173,3 +174,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Suéter felpudo creme (Zara) — street style](prompts/2026-11-09-sueter-creme-zara-street-style.md)
 - [Suéter chevron (Kookai) — street style](prompts/2026-11-09-sueter-chevron-kookai-street-style.md)
 - [Body de veludo com costas de tule — street style](prompts/2026-11-09-body-veludo-tule-street-style.md)
+- [Suéter meio-zíper listrado — street style](prompts/2026-11-09-sueter-meio-ziper-listrado-street-style.md)

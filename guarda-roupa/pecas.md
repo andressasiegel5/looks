@@ -78,6 +78,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | SUE-02 | Suéter de tricô felpudo (Zara) | Azul-marinho | Tricô macio felpudo (tipo alpaca/mohair), gola redonda, manga raglã longa, caimento reto levemente solto | ✅ |
 | SUE-03 | Suéter de tricô felpudo gola alta baixa (Zara) | Off-white / creme | Tricô macio felpudo, gola alta baixa (mock neck), manga longa, barra e punhos canelados, caimento reto | ✅ |
 | SUE-04 | Suéter de tricô chevron (Kookai) | Cinza mescla com faixas off-white e vermelha | Tricô fino, faixas largas em V (chevron) off-white e vermelho vivo atravessando peito e mangas, gola redonda, manga longa, caimento reto | ✅ |
+| SUE-05 | Suéter meio-zíper listrado | Bege-areia com listras azul-marinho e pala marinho | Tricô fino, pala azul-marinho em V no peito e ombros, gola alta com zíper prateado (half-zip), corpo bege-areia com listras finas marinho espaçadas, manga longa, caimento reto levemente solto | ✅ |
 | CAM-01 | Camisa social | Branca | Algodão, manga longa (usar dobrada ou com nó na cintura) | ❓ |
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
