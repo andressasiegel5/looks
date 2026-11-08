@@ -44,6 +44,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLU-16 | Blusa de tule transparente | Preta | Tule fino transparente, justa, manga longa, gola média alta. Usar sempre com top/regata preta por baixo (estampa a confirmar) | ✅ |
 | BLU-17 | Camiseta canelada com debrum (Morena Rosa) | Preta com debrum branco | Malha canelada justa, manga curta, gola redonda e barra das mangas com debrum branco | ✅ |
 | BLU-18 | Camiseta gola alta manga curta (Zara) | Cinza mescla | Malha canelada fina, gola alta baixa (mock neck), manga curta, justa, comprimento curto na cintura | ✅ |
+| SUE-01 | Suéter Future Knit (Insider) | Taupe (bege acinzentado) | Tricô macio levemente felpudo, gola redonda, punhos e barra canelados, caimento reto, comprimento no quadril | ✅ |
 | CAM-01 | Camisa social | Branca | Algodão, manga longa (usar dobrada ou com nó na cintura) | ❓ |
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
