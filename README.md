@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Vestido de lã cinza chumbo — com as suas peças, 6 looks](looks/2026-11-vestido-la-cinza/) ✨
 - [Camisa-jaqueta de cotelê — com as suas peças, 6 looks](looks/2026-11-camisa-jaqueta-cotele/) ✨
 - [Blazer pied-de-poule — com as suas peças, 6 looks](looks/2026-11-blazer-pied-de-poule/) ✨
 - [Casaco de tricô com cachecol — com as suas peças, 6 looks](looks/2026-11-casaco-trico-cachecol/) ✨
@@ -99,3 +100,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Casaco de tricô com cachecol bege (Shoulder) — street style](prompts/2026-11-09-casaco-trico-cachecol-street-style.md)
 - [Blazer longo pied-de-poule — street style](prompts/2026-11-09-blazer-pied-de-poule-street-style.md)
 - [Camisa-jaqueta de veludo cotelê (Zara) — street style](prompts/2026-11-09-camisa-jaqueta-cotele-street-style.md)
+- [Vestido sem manga de lã cinza chumbo — street style](prompts/2026-11-09-vestido-la-cinza-street-style.md)

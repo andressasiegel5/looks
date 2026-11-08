@@ -5,6 +5,12 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 
 **Status:** ✅ tenho · ❓ a confirmar (apareceu numa sugestão, não sei se tenho) · 🛒 quero comprar
 
+## Vestidos
+
+| Código | Peça | Cor | Detalhes | Status |
+|---|---|---|---|---|
+| VES-01 | Vestido sem manga de lã | Cinza chumbo mescla | Lã batida, decote redondo, sem manga, recorte na cintura, saia levemente evasê, forro caramelo (comprimento a confirmar) | ✅ |
+
 ## Saias
 
 | Código | Peça | Cor | Detalhes | Status |
