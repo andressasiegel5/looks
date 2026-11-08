@@ -10,6 +10,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | Código | Peça | Cor | Detalhes | Status |
 |---|---|---|---|---|
 | VES-02 | Vestido de tricô gola alta | Marrom café mescla | Tricô macio felpudo, gola alta larga, mangas bufantes franzidas no ombro, punho justo, caimento solto, longo (comprimento a confirmar) | ✅ |
+| VES-03 | Vestido floral de malha (Ralph Lauren) | Verde-bandeira estampado | Jersey fluido, flores brancas, azul-claro, marinho e amarelas, gola redonda, manga 3/4, midi | ✅ |
 | VES-01 | Vestido sem manga de lã | Cinza chumbo mescla | Lã batida, decote redondo, sem manga, recorte na cintura, saia levemente evasê, forro caramelo (comprimento a confirmar) | ✅ |
 
 ## Saias
