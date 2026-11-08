@@ -1357,7 +1357,15 @@ function pickReplacement(id) {
   });
   return ok.length ? ok[Math.floor(Math.random() * ok.length)] : null;
 }
+function fixVetados() {
+  let mudou = false;
+  SEMANA.dias.forEach(d => d.opcoes.forEach(o => {
+    if (semOpt(o.id).pecas.some(c => SEM_FORA.includes(c))) { const n = pickReplacement(o.id); if (n) { state.trocas = { ...(state.trocas || {}), [o.id]: n.id }; mudou = true; } }
+  }));
+  if (mudou && state.db) state.db.doc("semana/" + SEMANA.inicio).set({ escolhas: state.escolhas || {}, trocas: state.trocas, excluidos: state.excluidos || [] }).catch(() => {});
+}
 function renderSemana() {
+  fixVetados();
   const esc2 = state.escolhas || {};
   $("semanaInfo").textContent = `Curitiba · 3 opções por dia · toque numa foto para ver as peças e escolher`;
   $("semanaDias").innerHTML = SEMANA.dias.map(d => `<div>
