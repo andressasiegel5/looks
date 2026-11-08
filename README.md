@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Casaco-camisa marrom — com as suas peças, 6 looks](looks/2026-11-casaco-camisa-marrom/) ✨
 - [Vestido floral verde (Ralph Lauren) — com as suas peças, 6 looks](looks/2026-11-vestido-floral-verde/) ✨
 - [Vestido de tricô marrom — com as suas peças, 6 looks](looks/2026-11-vestido-trico-marrom/) ✨
 - [Vestido de lã cinza chumbo — com as suas peças, 6 looks](looks/2026-11-vestido-la-cinza/) ✨
@@ -105,3 +106,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Vestido sem manga de lã cinza chumbo — street style](prompts/2026-11-09-vestido-la-cinza-street-style.md)
 - [Vestido de tricô marrom gola alta — street style](prompts/2026-11-09-vestido-trico-marrom-street-style.md)
 - [Vestido floral verde (Ralph Lauren) — street style](prompts/2026-11-09-vestido-floral-verde-street-style.md)
+- [Casaco-camisa aveludado marrom — street style](prompts/2026-11-09-casaco-camisa-marrom-street-style.md)
