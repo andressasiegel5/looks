@@ -72,6 +72,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Casaco de tricô grosso oversized — com as suas peças, 6 looks](looks/2026-11-casaco-trico-oversized/) ✨
 - [Calça jeans preta flare (Modab) — refeitos + 2 novos](looks/2026-11-calca-jeans-preta-flare/) ✨
 - [Suéter chenille cropped — jeitos de usar](looks/2026-11-sueter-chenille-cropped/) ✨
+- [Camisa Max Mara como vestido-camisa](looks/2026-11-maxmara-vestido-camisa/) ✨
 - [Suéter felpudo creme (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-creme-zara/) ✨
 - [Suéter felpudo marinho (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-marinho-zara/) ✨
 - [Colete espinha de peixe bege (Emme) — com as suas peças, 6 looks](looks/2026-11-colete-espinha-bege/) ✨
@@ -239,3 +240,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Casaco de tricô grosso oversized — street style](prompts/2026-11-09-casaco-trico-oversized-street-style.md)
 - [Calça jeans preta flare — street style](prompts/2026-11-09-calca-jeans-preta-flare-street-style.md)
 - [Suéter chenille cropped — street style](prompts/2026-11-09-sueter-chenille-cropped-street-style.md)
+- [Max Mara como vestido-camisa — street style](prompts/2026-11-09-maxmara-vestido-camisa-street-style.md)
