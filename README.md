@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Camisa tecnológica oliva (Insider) — com as suas peças, 6 looks](looks/2026-11-camisa-tech-oliva/) ✨
 - [Camisa de linho sálvia (Zara) — com as suas peças, 6 looks](looks/2026-11-camisa-linho-salvia/) ✨
 - [Camisa fluida cinza (Zara) — com as suas peças, 6 looks](looks/2026-11-camisa-cinza-zara/) ✨
 - [Blusa com babados (Anselmi) — com as suas peças, 6 looks](looks/2026-11-blusa-babados-anselmi/) ✨
@@ -133,3 +134,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Blusa canelada com babados (Anselmi) — street style](prompts/2026-11-09-blusa-babados-anselmi-street-style.md)
 - [Camisa fluida cinza (Zara) — street style](prompts/2026-11-09-camisa-cinza-zara-street-style.md)
 - [Camisa de linho verde-sálvia (Zara) — street style](prompts/2026-11-09-camisa-linho-salvia-street-style.md)
+- [Camisa tecnológica oliva (Insider) — street style](prompts/2026-11-09-camisa-tech-oliva-street-style.md)
