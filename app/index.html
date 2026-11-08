@@ -335,7 +335,7 @@ const PIECES = [
   P("JAQ-07","terceira","Casaquinho de bouclé com paetês","preto","Lemoncola; bouclé texturizado com paetês pretos discretos, gola larga, aberto, manga 3/4 com barra de guipir floral off-white, comprimento no quadril", true),
   P("JAQ-08","terceira","Jaqueta bomber de couro sintético","off-white","Zara; couro sintético macio gelo, gola alta com zíper prateado, cordões, barra e punhos franzidos, ombros caídos, curta na cintura", true),
   P("JAQ-09","terceira","Jaqueta utilitária com capuz","preta","nylon fosco, capuz embutido na gola alta, zíper e botões de pressão, bolsos cargo com lapela, ombros caídos, curta na cintura com cordão", true),
-  P("CAS-06","terceira","Casaco-capa de tricô (conjunto)","creme","Lucy in the Sky; casaco-capa de malha creme, gola alta, capa aberta nas laterais deixando os braços de fora (efeito manga curta), faixa amarrada na cintura; conjunto com a calça CAL-07; não esquenta sozinha em dia frio", true),
+  P("CAS-06","terceira","Casaco-capa de tricô (conjunto)","creme","Lucy in the Sky; casaco-capa de malha creme, gola alta, capa aberta nas laterais deixando os braços de fora (efeito manga curta); é quente: no frio, usar com blusa de manga longa por baixo, faixa amarrada na cintura; conjunto com a calça CAL-07; não esquenta sozinha em dia frio", true),
   P("CAS-07","terceira","Sobretudo sem gola","rosa antigo","Lauren Ralph Lauren; lã encorpada rosé empoeirado, decote redondo sem gola, botões de pressão encapados, abaixo do joelho, reto", true),
   P("CAS-08","terceira","Casaco de tricô grosso oversized","cinza-claro perolado","tricô grosso bem felpudo, aberto, ombro caído, mangas largas, oversized", true),
   P("CAS-05","terceira","Parka leve utilitária","verde-oliva","Zara; sarja fluida, gola de camisa alta, botões de pressão dourados, bolsos com lapela, cordão na cintura, mangas dobráveis com presilha, meio da coxa", true),
@@ -1341,7 +1341,8 @@ function semOpt(id) {
 }
 const QUENTES = ["CAS-03","CAS-08","CAS-07","CAS-02"];
 function climaOk(pecas, extras, d) {
-  const quente = pecas.some(c => c.startsWith("SUE-") || QUENTES.includes(c)) || (extras || []).some(x => /suéter|tricô grosso/i.test(x));
+  const mangaLongaPorBaixo = pecas.some(c => BY[c] && BY[c].cat === "top" && /manga longa/i.test(BY[c].det + " " + BY[c].nome));
+  const quente = pecas.some(c => c.startsWith("SUE-") || QUENTES.includes(c) || (c === "CAS-06" && mangaLongaPorBaixo)) || (extras || []).some(x => /suéter|tricô grosso/i.test(x));
   if ((d.max <= 19 || d.min <= 10) && !quente) return false;
   return true;
 }
