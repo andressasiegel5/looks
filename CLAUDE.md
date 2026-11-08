@@ -64,3 +64,13 @@ Faça commit e push depois de cada alteração.
 ## Modelo
 - Ela testou gerar com o próprio rosto (foto de referência) e NÃO gostou do resultado. Use sempre a modelo
   descrita no Perfil (sem foto de referência). A opção `--ref` do script continua existindo, mas não use.
+
+## Look da semana (pedido dela: "monta minha semana")
+- Peças favoritas: coleção `pecas` no banco (`pecas/<código>` com `favorito: true`), marcadas na aba peças (♡ marcar favoritas).
+  Leia com ArtifactData. Monte os looks SÓ com as favoritas (+ bolsas BOL-xx dela).
+- Cidade: **Curitiba**. Busque a previsão de seg a sex (WebSearch; o host api.open-meteo.com não responde neste ambiente).
+- **O escritório é frio**: todo look precisa de uma camada por cima (blazer, cardigã, casaco, colete sobre camisa),
+  mesmo em dia quente. Ex.: 24 °C → blusa/camiseta de manga curta + blazer ou cardigã que dá para tirar na rua.
+  Frio (máx ≤ 17 °C) → suéter + casaco/sobretudo, meia-calça se for saia. Chuva → evitar camurça (JAQ-03) e SAI-01; preferir parka.
+- Não repetir a mesma peça principal na semana; variar saia/calça.
+- Responder com tabela dia | previsão | look (códigos + nomes) e oferecer gerar a imagem (grade de 5, uma geração).

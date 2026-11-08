@@ -1061,7 +1061,7 @@ const lookIsMine = l => garmentExtras(l).length === 0 && l.pecas.every(c => isMi
 LOOKS.forEach(l => { l.moods = moodsOf(l); l.mine = lookIsMine(l); });
 
 // ---------- Estado ----------
-const state = { mood: "todos", mode: "mine", order: [], pos: 0, looksMood: "todos", cat: "todas", favs: {}, ideas: [], db: null, onlyMine: true };
+const state = { mood: "todos", mode: "mine", order: [], pos: 0, looksMood: "todos", cat: "todas", favs: {}, pfav: {}, ideas: [], db: null, onlyMine: true };
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
 const pick = arr => arr[Math.floor(Math.random() * arr.length)];
@@ -1165,8 +1165,10 @@ const CAT_LIST = () => ["todas", ...Object.keys(CATS).filter(c => PIECES.some(p 
 const status = p => p.tenho === "exercicio" ? `<span class="badge">só exercício</span>` : p.tenho === true ? `<span class="badge ok">tenho</span>` : p.tenho === "desejo" ? `<span class="badge">quero comprar</span>` : `<span class="badge">a confirmar</span>`;
 function renderPieces() {
   $("catChips").innerHTML = CAT_LIST().map(c => `<button class="chip" type="button" data-cat="${c}" aria-pressed="${state.cat === c}">${c === "todas" ? "todas" : CATS[c].toLowerCase()}</button>`).join("");
-  const list = PIECES.filter(p => state.cat === "todas" || p.cat === state.cat).sort((a, b) => (b.tenho === true) - (a.tenho === true));
-  $("piecesGrid").innerHTML = list.map(p => `<button class="tile" type="button" data-piece="${p.code}"><img src="${p.img}" alt="" loading="lazy" style="aspect-ratio:1">
+  $("catChips").innerHTML = `<button class="chip" type="button" id="pfMark" aria-pressed="${!!state.pfMark}">${state.pfMark ? "✓ pronto" : "♡ marcar favoritas"}</button><button class="chip" type="button" data-cat="favs" aria-pressed="${state.cat === "favs"}">♥ favoritas (${Object.values(state.pfav).filter(x => x.favorito).length})</button>` + $("catChips").innerHTML;
+  const pf = c => !!state.pfav[c]?.favorito;
+  const list = PIECES.filter(p => state.cat === "todas" || (state.cat === "favs" ? pf(p.code) : p.cat === state.cat)).filter(p => !state.pfMark || p.tenho === true).sort((a, b) => (b.tenho === true) - (a.tenho === true));
+  $("piecesGrid").innerHTML = (state.pfMark ? `<p class="sub" style="grid-column:1/-1">Toque nas peças para marcar ♥ ou desmarcar. Depois toque em “✓ pronto”.</p>` : "") + list.map(p => `<button class="tile ${state.pfMark && pf(p.code) ? "sel" : ""}" type="button" data-piece="${p.code}"><img src="${p.img}" alt="" loading="lazy" style="aspect-ratio:1">${pf(p.code) ? `<span class="fav">♥</span>` : ""}
     <span class="t"><b>${esc(p.nome)}</b><small>${esc(p.cor)}</small>${status(p)}</span></button>`).join("");
 }
 
@@ -1201,7 +1203,7 @@ function showPiece(code) {
   const p = BY[code]; const looks = LOOKS.filter(l => visivel(l) && l.pecas.includes(code)); const cs = combosFor(p);
   openSheet(`${head(p.nome + " " + p.cor, code + " · " + CATS[p.cat])}<img class="big" src="${p.img}" alt="">
     <div>${esc(p.det)}</div><div>${status(p)}</div>
-    <div class="actions"><button class="btn dark" type="button" data-gen="${code}">↻ montar look com esta peça</button></div>
+    <div class="actions">${state.db ? `<button class="btn" type="button" data-pfav="${code}">${state.pfav[code]?.favorito ? "♥ favorita" : "♡ favoritar peça"}</button>` : ""}<button class="btn dark" type="button" data-gen="${code}">↻ montar look com esta peça</button></div>
     <h2 style="font-size:18px">looks com esta peça (${looks.length})</h2>
     ${looks.length ? `<div class="grid">${looks.map(tile).join("")}</div>` : `<p class="sub">Nenhum look com foto ainda.</p>`}
     ${cs.length ? `<h2 style="font-size:18px">combinações com as suas peças (${cs.length})</h2><div class="list">${cs.map(c => `<div class="card"><div class="thumbs">${c.map(x => `<img src="${BY[x].img}" alt="">`).join("")}</div>
@@ -1255,11 +1257,17 @@ async function setLook(id, patch) {
   state.favs[id] = { ...(state.favs[id] || {}), ...patch };
   try { await state.db.doc(`looks/${id}`).set(state.favs[id]); } catch { toast("Não consegui salvar. Tente de novo."); }
 }
+async function setPeca(code) {
+  const v = !state.pfav[code]?.favorito;
+  state.pfav[code] = { ...(state.pfav[code] || {}), favorito: v, em: todayISO() };
+  try { await state.db.doc(`pecas/${code}`).set(state.pfav[code]); } catch { toast("Não consegui salvar. Tente de novo."); }
+}
 async function initDb() {
   let db = null; try { db = await window.claude?.use?.("db"); } catch {}
   if (!db) { renderFavs(); return; }
   state.db = db; renderFavs();
   db.collection("looks").onSnapshot(snap => { const f = {}; snap.docs.forEach(d => f[d.id] = d.data()); state.favs = f; renderHero(); renderLooks(); renderFavs(); }, () => {});
+  db.collection("pecas").onSnapshot(snap => { const f = {}; snap.docs.forEach(d => f[d.id] = d.data()); state.pfav = f; renderPieces(); }, () => {});
   db.collection("ideias").orderBy("criadoEm", "desc").onSnapshot(snap => { state.ideas = snap.docs.map(d => ({ id: d.id, ...d.data() })); renderFavs(); }, () => {});
 }
 
@@ -1291,6 +1299,9 @@ document.addEventListener("click", async e => {
     state.sel = null; renderLooks(); renderFavs();
     return toast(`${ids.length} na wishlist (aba favoritos)`);
   }
+  if (el.id === "pfMark") { if (!state.db) return toast("Abra logada no claude.ai para favoritar"); state.pfMark = !state.pfMark; if (state.pfMark) state.cat = "todas"; return renderPieces(); }
+  if (d.pfav) { await setPeca(d.pfav); return showPiece(d.pfav); }
+  if (d.piece && state.pfMark) { await setPeca(d.piece); return renderPieces(); }
   if (d.hide) {
     if (!state.db) return toast("Abra logada no claude.ai para remover looks");
     await setLook(d.hide, { oculto: true, ocultoEm: todayISO() });
