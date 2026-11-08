@@ -73,6 +73,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Calça jeans preta flare (Modab) — refeitos + 2 novos](looks/2026-11-calca-jeans-preta-flare/) ✨
 - [Suéter chenille cropped — jeitos de usar](looks/2026-11-sueter-chenille-cropped/) ✨
 - [Camisa Max Mara como vestido-camisa](looks/2026-11-maxmara-vestido-camisa/) ✨
+- [Casaco de tricô marrom (Shoulder) — cor certa](looks/2026-11-casaco-marrom-shoulder/) ✨
 - [📅 Semana 9–13 nov](looks/2026-11-semana-09-13/) ✨
 - [Suéter felpudo creme (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-creme-zara/) ✨
 - [Suéter felpudo marinho (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-marinho-zara/) ✨
