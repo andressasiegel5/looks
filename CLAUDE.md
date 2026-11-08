@@ -103,3 +103,9 @@ Faça commit e push depois de cada alteração.
 - A escolha dela por dia fica em `semana/<inicio>` (`escolhas: {iso: id}`, `trocas: {opção: lookId}`, `excluidos: [...]`).
   Botão "✕ não gostei, trocar" troca a opção por outro look existente (função `pickReplacement`, lista `SEM_FORA`); sem gerar imagem.
   Ao vetar peça nova, adicionar o código em `SEM_FORA`.
+
+## Fotos de catálogo das peças
+- `python3 scripts/catalogo.py prompts` gera prompts (6 peças por grade, fundo neutro) a partir de `pecas.md`; gerar com `gerar_imagem.py`
+  em `looks/_catalogo/gNN.png`; `python3 scripts/catalogo.py recortar` corta em `app/img/pecas/cat-<código>.jpg`.
+- Subir como assets e pôr o `/_blob/` no mapa `CAT` em `app/index.html` (a foto real continua em `IMG`, aparece em "ver a foto real").
+- Peça nova: gerar a foto de catálogo junto (cabe numa grade com outras).
