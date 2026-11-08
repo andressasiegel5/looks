@@ -166,8 +166,9 @@ Cadastrados a partir do que ela contou (sem foto ainda: pedir foto para confirma
 
 | Código | Peça | Cor | Detalhes | Tenho? |
 |---|---|---|---|---|
-| SAP-01 | Loafer (mocassim) | A confirmar | **Está largo, caindo do pé**: não usar nos looks até ela resolver (palmilha/ajuste) | ⏸️ |
-| SAP-02 | Sapato (Jorge Bischoff) | Marrom | Modelo a confirmar (foto pendente). Escritório | ✅ |
+| SAP-01 | Loafer com corrente (Jorge Bischoff) | Preto | Couro preto liso, bico quadrado, corrente dourada no peito do pé, salto baixíssimo. **Está largo, caindo do pé**: não usar até ela resolver | ⏸️ |
+| SAP-02 | Slingback Café (Jorge Bischoff) | Marrom café croco | Couro croco marrom escuro, bico fino, tira slingback com fivela dourada, salto médio fino curvado (kitten/carretel). Escritório | ✅ |
+| SAP-10 | Slingback prata salto bloco (Jorge Bischoff) | Prata metalizado | Couro metalizado prata, bico quadrado, tira slingback, salto médio bloco | ✅ |
 | SAP-03 | Tênis Veja | Branco com o V preto | Couro branco, logo V preto na lateral. Casual: sexta/dia informal | ✅ |
 | SAP-04 | Tênis Stella (Larroude) | Camurça marrom caramelo com couro off-white | Tênis retrô baixo de camurça caramelo, faixa curva e calcanhar off-white, furinhos laterais, cadarço off-white, sola branca fina. Casual | ✅ |
 | SAP-08 | Sapatilha slingback | Marrom claro (caramelo/nude) | Sapatilha baixa com tira de elástico atrás do calcanhar. Escritório e dias amenos/quentes | ✅ |
@@ -190,4 +191,5 @@ Cadastrados a partir do que ela contou (sem foto ainda: pedir foto para confirma
 | BOL-05 | Bolsa de ombro estruturada | Off-white | Couro sintético liso, ferragens douradas, alça curta de ombro | ✅ |
 | BOL-06 | Mini bolsa matelassê | Preta | Couro sintético com matelassê em chevron, alça curta de contas marrom | ✅ |
 | BOL-07 | Bolsa de palha trançada | Marrom café | Ráfia/palha trançada marrom, alça de tecido franzido marrom (tipo scrunchie), formato baguete | ✅ |
+| BOL-09 | Carteira envelope (Jorge Bischoff) | Preta | Couro texturizado snake preto, formato envelope, passante com fivela dourada, logo dourado, corrente | ✅ |
 | BOL-08 | Bolsa meia-lua | Nude / rosa claro | Couro sintético saffiano, formato meia-lua, ferragens douradas, alça transversal | ✅ |
