@@ -43,6 +43,8 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | CAL-11 | Short de alfaiataria xadrez | Xadrez miúdo preto, off-white e bege com fio vinho | Alfaiataria com leve brilho, xadrez miúdo (tipo príncipe de gales/gingham) preto, off-white e bege com fios marrom-avermelhados, cintura alta, bolsos traseiros embutidos, zíper lateral, comprimento curto (meio da coxa) | ✅ |
 | CAL-12 | Calça saruel fluida (Zara) | Cinza chumbo | Malha fluida com caimento pesado, cós de elástico franzido, modelagem saruel bem larga e solta (gancho baixo, muito tecido), longa. **Peça de volume**: usar com parte de cima justa/curta | ✅ |
 | CAL-13 | Calça de alfaiataria cenoura | Terracota / coral queimado | Crepe de alfaiataria, cintura alta com passantes, pregas na frente, perna afunilada (cenoura) terminando no tornozelo | ✅ |
+| CAL-14 | Calça jeans skinny | Azul médio-escuro (lavagem clássica) | Jeans com elastano, costuras caramelo, cintura alta, justa, longa | ✅ |
+| CAL-15 | Calça jeans skinny | Preta | Jeans preto com elastano, cintura alta, justa, longa (sem foto) | ✅ |
 | CAL-01 | Calça wide leg de couro sintético | Marrom café | Zara, R$ 279. Wide leg longa, cintura alta, pences frontais | 🛒 |
 | CAL-02 | Calça pantalona com pregas | Cinza-chumbo | Zara, R$ 359. Alfaiataria fluida, pregas, perna larga e comprida | 🛒 |
 
