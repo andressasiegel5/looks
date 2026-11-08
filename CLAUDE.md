@@ -71,7 +71,8 @@ Faça commit e push depois de cada alteração.
 
 ## Look da semana (pedido dela: "monta minha semana")
 - No app: botão "📅 monta minha semana" na aba mood (capability `sample`; capabilities agora `{db:{}, assets:{}, sample:{}}`).
-  Tenta a previsão (open-meteo) no navegador; se falhar, ela preenche máx/mín. O resultado fica em `semana/atual` no banco.
+  O app NÃO acessa sites externos: a previsão vem do doc `clima/atual` no banco ({dias: {"AAAA-MM-DD": {max, min, chuva}}}).
+  Quando ela pedir "atualiza o clima" (ou ao montar a semana), busque a previsão de Curitiba (WebSearch) e grave com ArtifactData. O resultado fica em `semana/atual` no banco.
 - Peças favoritas: coleção `pecas` no banco (`pecas/<código>` com `favorito: true`), marcadas na aba peças (♡ marcar favoritas).
   Leia com ArtifactData. Monte os looks SÓ com as favoritas (+ bolsas BOL-xx dela).
 - Cidade: **Curitiba**. Busque a previsão de seg a sex (WebSearch; o host api.open-meteo.com não responde neste ambiente).

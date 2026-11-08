@@ -1269,6 +1269,11 @@ function nextWeekdays() {
 }
 async function fetchWeather(days) {
   try {
+    const doc = state.db && await state.db.doc("clima/atual").get();
+    const c = doc && (doc.data ? doc.data() : doc);
+    if (c && c.dias) { let n = 0; days.forEach(d => { const x = c.dias[d.iso]; if (x) { d.max = x.max; d.min = x.min; d.chuva = !!x.chuva; n++; } }); if (n) return true; }
+  } catch {}
+  try {
     const r = await fetch("https://api.open-meteo.com/v1/forecast?latitude=-25.43&longitude=-49.27&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=America%2FSao_Paulo&forecast_days=10");
     const j = await r.json(); const t = j.daily.time;
     days.forEach(d => { const i = t.indexOf(d.iso); if (i >= 0) { d.max = Math.round(j.daily.temperature_2m_max[i]); d.min = Math.round(j.daily.temperature_2m_min[i]); d.chuva = j.daily.precipitation_probability_max[i] >= 60; } });
@@ -1281,7 +1286,7 @@ async function openWeek() {
   const ok = await fetchWeather(days);
   state.week = days;
   openSheet(`${head("minha semana", "Curitiba")}
-    <p class="sub">${ok ? "Previsão carregada. Ajuste se quiser." : "Não consegui puxar a previsão: preencha a máxima e a mínima de cada dia."}</p>
+    <p class="sub">${ok ? "Previsão de Curitiba carregada (atualizada pelo Claude). Ajuste se quiser." : "Ainda não tenho a previsão desta semana: peça no chat “atualiza o clima” ou preencha a máxima e a mínima."}</p>
     <div class="list">${days.map((d, i) => `<div class="card" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><b style="width:70px">${d.dia}</b>
       máx <input type="number" id="wmax${i}" value="${d.max ?? 20}" style="width:56px"> mín <input type="number" id="wmin${i}" value="${d.min ?? 13}" style="width:56px">
       <label><input type="checkbox" id="wch${i}" ${d.chuva ? "checked" : ""}> chuva</label></div>`).join("")}</div>
