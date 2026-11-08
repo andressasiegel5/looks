@@ -157,7 +157,8 @@ dialog::backdrop { background: rgb(10 10 10 / .5); }
 
   <section id="view-looks" hidden>
     <div class="wrap" style="gap:14px">
-      <div class="row" style="position:sticky;top:0;z-index:20;background:var(--bg, #ecebe8);padding:10px 0;margin:-10px 0"><h2>looks</h2><div class="actions"><button class="btn small" type="button" id="selToggle">selecionar</button><button class="btn small dark" type="button" id="drawNew">↻ combinação nova</button></div></div>
+      <div class="row" style="position:sticky;top:0;z-index:20;background:var(--bg, #ecebe8);padding:10px 0;margin:-10px 0"><h2>looks</h2><div class="actions"><button class="btn small" type="button" id="selToggle">selecionar</button></div></div>
+      <div class="seg" role="group" aria-label="Tipo de look"><button type="button" data-lmode="mine">só peças minhas</button><button type="button" data-lmode="sug">sugestões de compra</button></div>
       <div class="chips" id="looksChips"></div>
       <div class="prail" id="pieceFilter"></div>
       <p class="sub" id="pieceFilterInfo" style="margin:-6px 0 0" hidden></p>
@@ -1049,7 +1050,7 @@ function moodsOf(l) {
   return m;
 }
 const garmentExtras = l => l.extras.filter(x => !ACESS.test(x));
-const lookIsMine = l => garmentExtras(l).length === 0 && l.pecas.every(c => isMine(BY[c]) || BY[c]?.cat === "acessorio");
+const lookIsMine = l => garmentExtras(l).length === 0 && l.pecas.every(c => isMine(BY[c]) || BY[c]?.cat === "acessorio" || (!BY[c] && c.startsWith("SAP-")));
 LOOKS.forEach(l => { l.moods = moodsOf(l); l.mine = lookIsMine(l); });
 
 // ---------- Estado ----------
@@ -1120,9 +1121,10 @@ function tile(l) {
 }
 function renderLooks() {
   $("looksChips").innerHTML = MOODS.map(([k, t]) => `<button class="chip" type="button" data-lmood="${k}" aria-pressed="${state.looksMood === k}">${t}</button>`).join("");
-  const usadas = PIECES.filter(p => isMine(p) && p.cat !== "acessorio" && LOOKS.some(l => visivel(l) && l.pecas.includes(p.code)));
+  const usadas = PIECES.filter(p => isMine(p) && p.cat !== "acessorio" && LOOKS.some(l => visivel(l) && ((state.looksMode || "mine") === "mine" ? l.mine : !l.mine) && l.pecas.includes(p.code)));
   $("pieceFilter").innerHTML = usadas.map(p => `<button class="pf" type="button" data-lpiece="${p.code}" aria-pressed="${state.lookPiece === p.code}"><img src="${p.img}" alt=""><span>${esc(p.nome)}</span></button>`).join("");
-  const list = LOOKS.filter(l => visivel(l) && (state.looksMood === "todos" || l.moods.has(state.looksMood)) && (!state.lookPiece || l.pecas.includes(state.lookPiece)));
+  document.querySelectorAll("[data-lmode]").forEach(b => b.setAttribute("aria-pressed", b.dataset.lmode === (state.looksMode || "mine")));
+  const list = LOOKS.filter(l => visivel(l) && ((state.looksMode || "mine") === "mine" ? l.mine : !l.mine) && (state.looksMood === "todos" || l.moods.has(state.looksMood)) && (!state.lookPiece || l.pecas.includes(state.lookPiece)));
   $("pieceFilterInfo").hidden = !state.lookPiece;
   if (state.lookPiece) $("pieceFilterInfo").textContent = `${list.length} look${list.length === 1 ? "" : "s"} com ${BY[state.lookPiece].nome.toLowerCase()} ${BY[state.lookPiece].cor} · toque de novo para limpar`;
   $("looksGrid").innerHTML = list.length ? list.map(tile).join("") : `<p class="empty" style="grid-column:1/-1">Nenhum look com essa peça neste mood.</p>`;
@@ -1361,6 +1363,7 @@ document.addEventListener("click", async e => {
     state.sel = null; resetOrder(); renderHero(); renderLooks(); renderFavs();
     return toast(`${ids.length} look${ids.length === 1 ? "" : "s"} removido${ids.length === 1 ? "" : "s"}`);
   }
+  if (d.lmode) { state.looksMode = d.lmode; state.lookPiece = null; return renderLooks(); }
   if (d.lmood) { state.looksMood = d.lmood; return renderLooks(); }
   if (d.lpiece) { state.lookPiece = state.lookPiece === d.lpiece ? null : d.lpiece; return renderLooks(); }
   if (d.cat) { state.cat = d.cat; return renderPieces(); }
