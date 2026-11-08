@@ -79,7 +79,7 @@ Faça commit e push depois de cada alteração.
 - **O escritório é frio**: todo look precisa de uma camada por cima (blazer, cardigã, casaco, colete sobre camisa),
   mesmo em dia quente. Ex.: 24 °C → blusa/camiseta de manga curta + blazer ou cardigã que dá para tirar na rua.
   Frio (máx ≤ 17 °C) → suéter + casaco/sobretudo, meia-calça se for saia. Chuva → calçado SÓ bota (SAP-06/07) ou tênis de couro (SAP-03 Veja, SAP-09 Samba), nunca sapato/sapatilha/slingback nem camurça (SAP-04); evitar SAI-01; preferir parka.
-- **Fora do trabalho (🏠)**: conjunto caramelo BLU-38 + CAL-06 (cozy, só casa/fim de semana) e os shorts CAL-09, CAL-10, CAL-11. Nunca em looks de trabalho nem na aba semana.
+- **Fora do trabalho (🏠)**: conjunto caramelo BLU-38 + CAL-06 (cozy, só casa/fim de semana) e os shorts CAL-08, CAL-09, CAL-10, CAL-11. Nunca em looks de trabalho nem na aba semana.
 - **Peças que ela evita**: parka CAS-02 e jeans CAL-14/CAL-15. Só em extremo (máx ≤ 12 °C ou chuva forte o dia todo).
 - Não repetir a mesma peça principal na semana; variar saia/calça.
 - Responder com tabela dia | previsão | look (códigos + nomes) e oferecer gerar a imagem (grade de 5, uma geração).

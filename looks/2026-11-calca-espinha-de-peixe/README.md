@@ -12,3 +12,5 @@ Peça âncora: **CAL-08**, com as peças e bolsas dela. Gerada pela API.
 | 4 | Espinha e camisa branca | CAM-10, ACE-01, BOL-07 | |
 | 5 | Espinha e listras | SUE-10, BOL-06 | |
 | 6 | Espinha e blazer preto | BLU-33, BLA-05, BOL-01 | |
+
+> Removida do app: a peça é um SHORT, não calça; todos os looks saíram errados.

@@ -35,15 +35,16 @@
      "id": "w1109-12"
     },
     {
-     "nome": "Marinho, espinha e tricô cinza",
+     "nome": "Capa creme e calça marrom",
      "pecas": [
-      "SUE-02",
-      "CAL-08",
-      "CAS-08",
-      "SAP-02",
-      "BOL-05"
+      "CAS-06",
+      "CAL-05",
+      "SAP-05",
+      "BOL-06"
      ],
-     "id": "w1109-13"
+     "id": "w1109-13",
+     "extras": [],
+     "reusa": "c79-03"
     }
    ]
   },
