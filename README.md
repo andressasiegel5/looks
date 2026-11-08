@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Colete de tricô off-white — com as suas peças, 6 looks](looks/2026-11-colete-trico-offwhite/) ✨
 - [Camisa tecnológica oliva (Insider) — com as suas peças, 6 looks](looks/2026-11-camisa-tech-oliva/) ✨
 - [Camisa de linho sálvia (Zara) — com as suas peças, 6 looks](looks/2026-11-camisa-linho-salvia/) ✨
 - [Camisa fluida cinza (Zara) — com as suas peças, 6 looks](looks/2026-11-camisa-cinza-zara/) ✨
@@ -135,3 +136,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Camisa fluida cinza (Zara) — street style](prompts/2026-11-09-camisa-cinza-zara-street-style.md)
 - [Camisa de linho verde-sálvia (Zara) — street style](prompts/2026-11-09-camisa-linho-salvia-street-style.md)
 - [Camisa tecnológica oliva (Insider) — street style](prompts/2026-11-09-camisa-tech-oliva-street-style.md)
+- [Colete de tricô off-white — street style](prompts/2026-11-09-colete-trico-offwhite-street-style.md)
