@@ -78,6 +78,7 @@ Faça commit e push depois de cada alteração.
 - Cidade: **Curitiba**. Busque a previsão de seg a sex (WebSearch; o host api.open-meteo.com não responde neste ambiente).
 - **O escritório é frio**: todo look precisa de uma camada por cima (blazer, cardigã, casaco, colete sobre camisa),
   mesmo em dia quente. Ex.: 24 °C → blusa/camiseta de manga curta + blazer ou cardigã que dá para tirar na rua.
+  Dia com mín ≤ 10 °C ou máx ≤ 19 °C: precisa de suéter ou casaco quente (CAS-03, CAS-06, CAS-08); casaco-camisa CAS-04 e polo/manga curta sozinhos NÃO servem (função `climaOk` no app).
   Frio (máx ≤ 17 °C) → suéter + casaco/sobretudo, meia-calça se for saia. Chuva → calçado SÓ bota (SAP-06/07) ou tênis de couro (SAP-03 Veja, SAP-09 Samba), nunca sapato/sapatilha/slingback nem camurça (SAP-04); evitar SAI-01; preferir parka.
 - **Fora do trabalho (🏠)**: jaquetas jeans JAQ-01, JAQ-04, JAQ-05; conjunto caramelo BLU-38 + CAL-06 (cozy, só casa/fim de semana) e os shorts CAL-08, CAL-09, CAL-10, CAL-11. Nunca em looks de trabalho nem na aba semana.
 - **Peças que ela evita**: sobretudo rosa CAS-07 (💰 provável venda: não usar), parka CAS-02 e jeans CAL-14/CAL-15. Só em extremo (máx ≤ 12 °C ou chuva forte o dia todo).

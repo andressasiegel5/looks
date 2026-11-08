@@ -1339,6 +1339,12 @@ function semOpt(id) {
   const l = LOOKS.find(x => x.id === t); if (!l) return base;
   return { ...base, nome: l.nome, pecas: l.pecas, extras: l.extras, img: l.img, lookId: l.id };
 }
+const QUENTES = ["CAS-03","CAS-06","CAS-08","CAS-07","CAS-02"];
+function climaOk(pecas, extras, d) {
+  const quente = pecas.some(c => c.startsWith("SUE-") || QUENTES.includes(c)) || (extras || []).some(x => /suéter|tricô grosso/i.test(x));
+  if ((d.max <= 19 || d.min <= 10) && !quente) return false;
+  return true;
+}
 function pickReplacement(id) {
   const d = SEM_OPC[id].dia;
   const usados = new Set(SEMANA.dias.flatMap(x => x.opcoes.map(o => semOpt(o.id).lookId || o.reusa || o.id)));
@@ -1348,8 +1354,7 @@ function pickReplacement(id) {
     if (l.pecas.some(c => SEM_FORA.includes(c))) return false;
     const layer = l.pecas.some(c => BY[c] && BY[c].cat === "terceira");
     if (!layer) return false;
-    const temSueter = l.pecas.some(c => c.startsWith("SUE-") || c.startsWith("CAS-"));
-    if (d.max <= 19 && !temSueter) return false;
+    if (!climaOk(l.pecas, l.extras, d)) return false;
     if (d.max >= 24 && l.pecas.some(c => c.startsWith("CAS-"))) return false;
     if (d.chuva && (l.pecas.some(c => ["SAP-02","SAP-04","SAP-08","SAP-10","SAI-01"].includes(c)) || l.extras.some(x => /slingback|sapatilha|camurça/i.test(x)))) return false;
     return true;
@@ -1359,7 +1364,8 @@ function pickReplacement(id) {
 function fixVetados() {
   let mudou = false;
   SEMANA.dias.forEach(d => d.opcoes.forEach(o => {
-    if (semOpt(o.id).pecas.some(c => SEM_FORA.includes(c))) { const n = pickReplacement(o.id); if (n) { state.trocas = { ...(state.trocas || {}), [o.id]: n.id }; mudou = true; } }
+    const so = semOpt(o.id);
+    if (so.pecas.some(c => SEM_FORA.includes(c)) || (so.lookId && !climaOk(so.pecas, so.extras, d))) { const n = pickReplacement(o.id); if (n) { state.trocas = { ...(state.trocas || {}), [o.id]: n.id }; mudou = true; } }
   }));
   if (mudou && state.db) state.db.doc("semana/" + SEMANA.inicio).set({ escolhas: state.escolhas || {}, trocas: state.trocas, excluidos: state.excluidos || [] }).catch(() => {});
 }
