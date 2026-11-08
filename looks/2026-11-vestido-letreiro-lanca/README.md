@@ -1,6 +1,6 @@
 # Vestido letreiro preto (Lança Perfume) — street style
 
-Peça âncora: **VES-04**, com as peças dela. Gerada pela API. Obs.: as letras da estampa saíram como um padrão genérico.
+Peça âncora: **VES-04**, com as peças dela. Gerada pela API. Regerada com a estampa "LANÇA PERFUME" escrita.
 
 ![Grade com 6 looks](grade-6-looks.png)
 
