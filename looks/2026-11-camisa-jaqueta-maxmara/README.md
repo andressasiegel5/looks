@@ -12,3 +12,5 @@ Peça âncora: **CAM-06**, com as peças dela. Gerada pela API.
 | 4 | Max Mara e saia verde | SAI-03, ACE-03, Bolsa de palha | |
 | 5 | Max Mara e cinza | BLU-18, CAL-04, ACE-02 | |
 | 6 | Max Mara e vestido listrado | VES-05, Bolsa preta pequena | |
+
+> Removidos do app: 2 (fechada e preto) e 4 (saia verde) — mostravam a camisa por dentro; ela é larga e longa demais para isso.

@@ -113,7 +113,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
 | CAM-05 | Camisa acetinada (Shoulder) | Preta | Tecido acetinado com brilho suave, caimento fluido levemente solto, gola clássica, botões na frente, manga longa, tam. P | ✅ |
-| CAM-06 | Camisa-jaqueta utilitária (Max Mara) | Off-white | Malha/viscose macia off-white, gola de camisa, botões tartaruga, bolsos com lapela, mangas dobráveis com presilha, caimento solto, comprimento abaixo do quadril | ✅ |
+| CAM-06 | Camisa-jaqueta utilitária (Max Mara) | Off-white | Malha/viscose macia off-white, gola de camisa, botões tartaruga, bolsos com lapela, mangas dobráveis com presilha, MUITO larga e comprida (vai até o meio da coxa, dá para usar como vestido-camisa). **Nunca por dentro da calça/saia**: usar aberta como terceira peça, ou fechada como vestido/túnica com cinto, sobre meia-calça ou calça justa | ✅ |
 | CAM-07 | Camisa fluida (Zara) | Cinza-claro perolado | Viscose/cetim fosco levemente amassado, gola de camisa, botões, caimento solto, barra arredondada. Evitar fechada + calça social (vira uniforme): usar aberta ou meio por dentro, mangas dobradas, com texturas e dourado | ✅ |
 | CAM-08 | Camisa de linho (Zara) | Verde-sálvia claro | Linho misto, gola padre com decote V, botões dourados, dois bolsos com lapela, mangas dobráveis com presilha, caimento solto | ✅ |
 | CAM-09 | Camisa tecnológica (Insider) | Verde-oliva acinzentado (cáqui escuro) | Poliamida com elastano, fosca e lisa, gola de camisa, botões, caimento reto, manga longa | ✅ |
