@@ -187,8 +187,8 @@ dialog::backdrop { background: rgb(10 10 10 / .5); }
   <section id="view-pecas" hidden>
     <div class="wrap" style="gap:14px">
       <h2>peças</h2>
-      <div class="chips" id="catChips"></div>
-      <label class="toggle"><input type="checkbox" id="onlyMine"> sortear só com peças que eu tenho</label>
+      <div class="chips" id="catChips" style="flex-wrap:wrap;overflow:visible"></div>
+      <label class="toggle" hidden><input type="checkbox" id="onlyMine"> sortear só com peças que eu tenho</label>
       <div class="grid" id="piecesGrid"></div>
     </div>
   </section>
@@ -1150,7 +1150,7 @@ const CAT_LIST = () => ["todas", ...Object.keys(CATS).filter(c => PIECES.some(p 
 const status = p => p.tenho === "exercicio" ? `<span class="badge">só exercício</span>` : p.tenho === true ? `<span class="badge ok">tenho</span>` : p.tenho === "desejo" ? `<span class="badge">quero comprar</span>` : `<span class="badge">a confirmar</span>`;
 function renderPieces() {
   $("catChips").innerHTML = CAT_LIST().map(c => `<button class="chip" type="button" data-cat="${c}" aria-pressed="${state.cat === c}">${c === "todas" ? "todas" : CATS[c].toLowerCase()}</button>`).join("");
-  $("catChips").innerHTML = `<button class="chip" type="button" id="pfMark" aria-pressed="${!!state.pfMark}">${state.pfMark ? "✓ pronto" : "♡ marcar favoritas"}</button><button class="chip" type="button" data-cat="favs" aria-pressed="${state.cat === "favs"}">♥ favoritas (${Object.values(state.pfav).filter(x => x.favorito).length})</button>` + $("catChips").innerHTML;
+  $("catChips").innerHTML = $("catChips").innerHTML.replace(">blusas e camisas<", ">blusas<").replace(">terceira peça<", ">casacos e blazers<");
   const pf = c => !!state.pfav[c]?.favorito;
   const list = PIECES.filter(p => state.cat === "todas" || (state.cat === "favs" ? pf(p.code) : p.cat === state.cat)).filter(p => !state.pfMark || p.tenho === true).sort((a, b) => (b.tenho === true) - (a.tenho === true));
   $("piecesGrid").innerHTML = (state.pfMark ? `<p class="sub" style="grid-column:1/-1">Toque nas peças para marcar ♥ ou desmarcar. Depois toque em “✓ pronto”.</p>` : "") + list.map(p => `<button class="tile ${state.pfMark && pf(p.code) ? "sel" : ""}" type="button" data-piece="${p.code}"><img src="${p.img}" alt="" loading="lazy" style="aspect-ratio:1">${pf(p.code) ? `<span class="fav">♥</span>` : ""}
