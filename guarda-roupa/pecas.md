@@ -93,6 +93,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | JAQ-07 | Casaquinho de bouclé com paetês (Lemoncola) | Preto | Bouclé texturizado com paetês pretos discretos, gola larga, aberto sem botão, manga 3/4 com barra de renda/guipir floral off-white, curto no quadril | ✅ |
 | JAQ-08 | Jaqueta bomber de couro sintético (Zara) | Off-white / gelo | Couro sintético macio, gola alta com zíper, zíper prateado, cordões, barra e punhos franzidos, ombros caídos, curta na cintura. Peça ampla | ✅ |
 | JAQ-09 | Jaqueta utilitária com capuz | Preta | Nylon fosco, capuz embutido na gola alta, zíper e botões de pressão, bolsos cargo com lapela, ombros caídos, curta na cintura com barra de cordão. Peça ampla | ✅ |
+| JAQ-10 | Corta-vento com capuz (Amaro) | Azul royal / cobalto | Nylon leve acetinado, capuz com cordão, zíper, bolsos com lapela, cordão na barra, comprimento no quadril | ✅ |
 | CAS-01 | Casaco longo | Camelo | Lã, abaixo do joelho | ❓ |
 | CAS-02 | Parka com capuz de pelo (Amaro) | Preta | Nylon fosco acolchoado leve, capuz com pelo sintético preto, amarração com cordão na cintura, botões de pressão e zíperes dourados, comprimento no meio da coxa. Peça com volume: usar com parte de baixo justa ou fluida, nunca com saia plissada | ✅ |
 | CAS-03 | Casaco de tricô com cachecol removível (Shoulder) | Bege | Casaco longo de tricô encorpado, abaixo do joelho, aberto sem botões, com cachecol do mesmo tricô removível. Tam. P | ✅ |
