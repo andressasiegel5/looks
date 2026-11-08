@@ -47,6 +47,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Conjunto texturizado caramelo — com as suas peças, 6 looks](looks/2026-11-conjunto-caramelo/) ✨
 - [Suéter listrado com pala preta (City) — com as suas peças, 6 looks](looks/2026-11-sueter-pala-preta/) ✨
 - [Suéter rosa queimado — com as suas peças, 6 looks](looks/2026-11-sueter-rosa-queimado/) ✨
+- [Suéter camelo (Shoulder) — com as suas peças, 6 looks](looks/2026-11-sueter-camelo-shoulder/) ✨
 - [Suéter felpudo creme (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-creme-zara/) ✨
 - [Suéter felpudo marinho (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-marinho-zara/) ✨
 - [Colete espinha de peixe bege (Emme) — com as suas peças, 6 looks](looks/2026-11-colete-espinha-bege/) ✨
@@ -189,3 +190,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Conjunto texturizado caramelo — street style](prompts/2026-11-09-conjunto-caramelo-texturizado-street-style.md)
 - [Suéter listrado com pala preta (City) — street style](prompts/2026-11-09-sueter-listrado-pala-preta-street-style.md)
 - [Suéter rosa queimado — street style](prompts/2026-11-09-sueter-rosa-queimado-street-style.md)
+- [Suéter camelo (Shoulder) — street style](prompts/2026-11-09-sueter-camelo-shoulder-street-style.md)
