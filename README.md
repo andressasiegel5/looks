@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Blusa transpassada preta (Emme) — com as suas peças, 6 looks](looks/2026-11-blusa-transpassada-preta/) ✨
 - [Blusa raglã preta (Vista-me) — com as suas peças, 6 looks](looks/2026-11-blusa-raglan-preta/) ✨
 - [Blusa gola alta bege rosado — com as suas peças, 6 looks](looks/2026-11-blusa-gola-alta-nude/) ✨
 - [Conjunto tricô caramelo — com as suas peças, 6 looks](looks/2026-11-conjunto-trico-caramelo/) ✨
@@ -149,3 +150,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Conjunto cardigã + regata caramelo — street style](prompts/2026-11-09-conjunto-trico-caramelo-street-style.md)
 - [Blusa de tricô gola alta bege rosado — street style](prompts/2026-11-09-blusa-gola-alta-nude-street-style.md)
 - [Blusa de tricô raglã preta (Vista-me) — street style](prompts/2026-11-09-blusa-raglan-preta-street-style.md)
+- [Blusa transpassada preta (Emme) — street style](prompts/2026-11-09-blusa-transpassada-preta-street-style.md)
