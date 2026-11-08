@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Camisa-jaqueta Max Mara — com as suas peças, 6 looks](looks/2026-11-camisa-jaqueta-maxmara/) ✨
 - [Parka leve verde-oliva (Zara) — com as suas peças, 6 looks](looks/2026-11-parka-oliva-zara/) ✨
 - [Blazer curto xadrez — com as suas peças, 6 looks](looks/2026-11-blazer-curto-xadrez/) ✨
 - [Jaqueta utilitária preta — com as suas peças, 6 looks](looks/2026-11-jaqueta-utilitaria-preta/) ✨
@@ -123,3 +124,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Jaqueta utilitária preta — street style](prompts/2026-11-09-jaqueta-utilitaria-preta-street-style.md)
 - [Blazer curto xadrez — street style](prompts/2026-11-09-blazer-curto-xadrez-street-style.md)
 - [Parka leve verde-oliva (Zara) — street style](prompts/2026-11-09-parka-oliva-zara-street-style.md)
+- [Camisa-jaqueta off-white (Max Mara) — street style](prompts/2026-11-09-camisa-jaqueta-maxmara-street-style.md)

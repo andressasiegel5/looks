@@ -64,6 +64,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
 | CAM-05 | Camisa acetinada (Shoulder) | Preta | Tecido acetinado com brilho suave, caimento fluido levemente solto, gola clássica, botões na frente, manga longa, tam. P | ✅ |
+| CAM-06 | Camisa-jaqueta utilitária (Max Mara) | Off-white | Malha/viscose macia off-white, gola de camisa, botões tartaruga, bolsos com lapela, mangas dobráveis com presilha, caimento solto, comprimento abaixo do quadril | ✅ |
 | CAM-04 | Camisa de seda | Off-white | Gola com laço/aberta | ❓ |
 
 ## Casacos, blazers e terceiras peças
