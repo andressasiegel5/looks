@@ -156,6 +156,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | CAS-04 | Casaco-camisa de veludo/suede | Marrom chocolate | Tecido aveludado fosco, gola de camisa grande, botões, caimento reto, comprimento no meio da coxa | ✅ |
 | CAS-06 | Casaco-capa de tricô (Lucy in the Sky, conjunto com CAL-07) | Creme | Tricô de malha encorpada lisa, gola alta, capa ampla com abertura nos braços, faixa do mesmo tecido amarrada na cintura, comprimento no quadril. **Peça ampla**: com parte de baixo reta/flare ajustada | ✅ |
 | CAS-07 | Casaco sobretudo sem gola (Lauren Ralph Lauren) | Rosa antigo (rosé empoeirado) | Lã batida/sarja encorpada, decote redondo sem gola com recorte assimétrico, fechamento com botões de pressão encapados, forro rosé, comprimento abaixo do joelho, caimento reto | ✅ |
+| CAS-08 | Casaco de tricô grosso oversized | Cinza-oliva mescla (taupe esverdeado) | Tricô grosso canelado levemente felpudo, aberto sem botões, ombro caído, mangas longas largas com punho canelado, comprimento no quadril/coxa. **Peça ampla**: com parte de baixo reta ou justa | ✅ |
 | CAS-05 | Parka leve/camisa utilitária (Zara) | Verde-oliva | Tecido fluido tipo sarja de viscose, gola alta de camisa, botões de pressão dourados, bolsos com lapela, cordão na cintura, mangas dobráveis com presilha, comprimento no meio da coxa | ✅ |
 | TRE-01 | Trench coat | Bege | Clássico com faixa | ❓ |
 
