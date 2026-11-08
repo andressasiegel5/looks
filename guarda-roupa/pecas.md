@@ -9,6 +9,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 
 | Código | Peça | Cor | Detalhes | Status |
 |---|---|---|---|---|
+| VES-02 | Vestido de tricô gola alta | Marrom café mescla | Tricô macio felpudo, gola alta larga, mangas bufantes franzidas no ombro, punho justo, caimento solto, longo (comprimento a confirmar) | ✅ |
 | VES-01 | Vestido sem manga de lã | Cinza chumbo mescla | Lã batida, decote redondo, sem manga, recorte na cintura, saia levemente evasê, forro caramelo (comprimento a confirmar) | ✅ |
 
 ## Saias
