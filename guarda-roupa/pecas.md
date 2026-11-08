@@ -71,6 +71,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | CAM-07 | Camisa fluida (Zara) | Cinza-claro perolado | Viscose/cetim fosco levemente amassado, gola de camisa, botões, caimento solto, barra arredondada. Evitar fechada + calça social (vira uniforme): usar aberta ou meio por dentro, mangas dobradas, com texturas e dourado | ✅ |
 | CAM-08 | Camisa de linho (Zara) | Verde-sálvia claro | Linho misto, gola padre com decote V, botões dourados, dois bolsos com lapela, mangas dobráveis com presilha, caimento solto | ✅ |
 | CAM-09 | Camisa tecnológica (Insider) | Verde-oliva acinzentado (cáqui escuro) | Poliamida com elastano, fosca e lisa, gola de camisa, botões, caimento reto, manga longa | ✅ |
+| CAM-10 | Camisa de linho (Amaro) | Off-white | Linho/algodão levemente amassado, gola de camisa, botões cor bege, um bolso no peito, caimento solto oversized, barra arredondada | ✅ |
 | CAM-04 | Camisa de seda | Off-white | Gola com laço/aberta | ❓ |
 
 ## Casacos, blazers e terceiras peças
