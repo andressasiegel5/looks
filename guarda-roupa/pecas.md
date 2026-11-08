@@ -81,6 +81,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | SUE-05 | Suéter meio-zíper listrado | Bege-areia com listras azul-marinho e pala marinho | Tricô fino, pala azul-marinho em V no peito e ombros, gola alta com zíper prateado (half-zip), corpo bege-areia com listras finas marinho espaçadas, manga longa, caimento reto levemente solto | ✅ |
 | SUE-06 | Suéter de tricô texturizado | Laranja queimado (terracota vivo) | Tricô de algodão em ponto texturizado (tipo pipoca/arroz), gola redonda canelada, mangas com detalhe vazado, barra e punhos canelados, caimento reto | ✅ |
 | SUE-07 | Suéter listrado de cashmere (Abercrombie) | Azul-marinho com listras off-white | Cashmere macio levemente felpudo, listras horizontais off-white finas e espaçadas, gola redonda, manga longa, caimento reto | ✅ |
+| SUE-08 | Suéter de tricô de tranças (Anselmi) | Branco / off-white | Tricô de algodão com tranças em relevo variadas (onduladas e torcidas) na frente toda, gola redonda canelada, manga raglã longa, tam. G, caimento reto levemente solto | ✅ |
 | CAM-01 | Camisa social | Branca | Algodão, manga longa (usar dobrada ou com nó na cintura) | ❓ |
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
