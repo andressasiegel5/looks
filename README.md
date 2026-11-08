@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Tech T-shirts gola redonda e V — com as suas peças, 6 looks](looks/2026-11-tech-tshirts-insider/) ✨
 - [Regatas gola alta azul e oliva — com as suas peças, 6 looks](looks/2026-11-regatas-gola-alta-insider/) ✨
 - [Jaqueta de camurça caramelo — com as suas peças, 6 looks](looks/2026-11-jaqueta-camurca-caramelo/) ✨
 - [Suéter taupe — com as suas peças, 6 looks](looks/2026-11-sueter-taupe/) ✨
@@ -85,3 +86,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Suéter Future Knit taupe (Insider) — street style](prompts/2026-11-08-sueter-taupe-street-style.md)
 - [Jaqueta-camisa de camurça caramelo — street style](prompts/2026-11-08-jaqueta-camurca-caramelo-street-style.md)
 - [Regatas gola alta Tech (Insider) azul e oliva — street style](prompts/2026-11-08-regatas-gola-alta-insider-street-style.md)
+- [Tech T-shirts (Insider) gola redonda e gola V — street style](prompts/2026-11-08-tech-tshirts-insider-street-style.md)
