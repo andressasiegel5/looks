@@ -68,6 +68,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | CAM-05 | Camisa acetinada (Shoulder) | Preta | Tecido acetinado com brilho suave, caimento fluido levemente solto, gola clássica, botões na frente, manga longa, tam. P | ✅ |
 | CAM-06 | Camisa-jaqueta utilitária (Max Mara) | Off-white | Malha/viscose macia off-white, gola de camisa, botões tartaruga, bolsos com lapela, mangas dobráveis com presilha, caimento solto, comprimento abaixo do quadril | ✅ |
 | CAM-07 | Camisa fluida (Zara) | Cinza-claro perolado | Viscose/cetim fosco levemente amassado, gola de camisa, botões, caimento solto, barra arredondada. Evitar fechada + calça social (vira uniforme): usar aberta ou meio por dentro, mangas dobradas, com texturas e dourado | ✅ |
+| CAM-08 | Camisa de linho (Zara) | Verde-sálvia claro | Linho misto, gola padre com decote V, botões dourados, dois bolsos com lapela, mangas dobráveis com presilha, caimento solto | ✅ |
 | CAM-04 | Camisa de seda | Off-white | Gola com laço/aberta | ❓ |
 
 ## Casacos, blazers e terceiras peças
