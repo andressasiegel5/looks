@@ -44,6 +44,9 @@ Faça commit e push depois de cada alteração.
 - Visual de app (mood → um look por vez, arrastar a foto ou ‹ ♡ ›, "meu armário"/"descobrir", "complete o look", barra preta embaixo).
 - Moods são automáticos por palavras-chave (função `moodsOf`); "meu armário" = looks cujas roupas são todas dela (`tenho`), acessórios não contam.
 - Publicada em https://claude.ai/artifact/4aKopUPTGpFVxXRU8AG6q4 a partir de `app/index.html` (imagens em `app/img/`).
+- Limite de 512 arquivos por versão já atingido: imagens NOVAS (recortes e peças) vão para o armazenamento de assets
+  (Artifact `asset: true`, `file_paths`) e o `/_blob/<id>` retornado entra no mapa `IMG` em `app/index.html`.
+  Continue salvando os .jpg em `app/img/` no repositório, mas não os passe em `files`. Capabilities: `{db:{}, assets:{}}`.
 - Os dados `PIECES` e `LOOKS` dentro de `app/index.html` espelham `guarda-roupa/pecas.md` e `looks/`. Ao cadastrar peça ou coleção nova, atualize os dois, gere os recortes em `app/img/` e republique no mesmo URL (Artifact com `url`, `root: app`).
 - Aba looks tem "selecionar" (estilo Google Fotos): os looks que ela remove ganham `oculto: true` em `looks/<id>` no banco e somem do app.
   O botão "♡ wishlist" grava `wishlist: true`; a aba favoritos lista esses looks com as peças que faltam.
