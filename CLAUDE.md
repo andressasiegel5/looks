@@ -49,7 +49,7 @@ Faça commit e push depois de cada alteração.
 - Publicada em https://claude.ai/artifact/4aKopUPTGpFVxXRU8AG6q4 a partir de `app/index.html` (imagens em `app/img/`).
 - Limite de 512 arquivos por versão já atingido: imagens NOVAS (recortes e peças) vão para o armazenamento de assets
   (Artifact `asset: true`, `file_paths`) e o `/_blob/<id>` retornado entra no mapa `IMG` em `app/index.html`.
-  Continue salvando os .jpg em `app/img/` no repositório, mas não os passe em `files`. Capabilities: `{db:{}, assets:{}}`.
+  Continue salvando os .jpg em `app/img/` no repositório, mas não os passe em `files`. Capabilities: `{db:{}, assets:{}, sample:{}}`.
 - Os dados `PIECES` e `LOOKS` dentro de `app/index.html` espelham `guarda-roupa/pecas.md` e `looks/`. Ao cadastrar peça ou coleção nova, atualize os dois, gere os recortes em `app/img/` e republique no mesmo URL (Artifact com `url`, `root: app`).
 - Aba looks tem "selecionar" (estilo Google Fotos): os looks que ela remove ganham `oculto: true` em `looks/<id>` no banco e somem do app.
   O botão "♡ wishlist" grava `wishlist: true`; a aba favoritos lista esses looks com as peças que faltam.
@@ -68,6 +68,8 @@ Faça commit e push depois de cada alteração.
   descrita no Perfil (sem foto de referência). A opção `--ref` do script continua existindo, mas não use.
 
 ## Look da semana (pedido dela: "monta minha semana")
+- No app: botão "📅 monta minha semana" na aba mood (capability `sample`; capabilities agora `{db:{}, assets:{}, sample:{}}`).
+  Tenta a previsão (open-meteo) no navegador; se falhar, ela preenche máx/mín. O resultado fica em `semana/atual` no banco.
 - Peças favoritas: coleção `pecas` no banco (`pecas/<código>` com `favorito: true`), marcadas na aba peças (♡ marcar favoritas).
   Leia com ArtifactData. Monte os looks SÓ com as favoritas (+ bolsas BOL-xx dela).
 - Cidade: **Curitiba**. Busque a previsão de seg a sex (WebSearch; o host api.open-meteo.com não responde neste ambiente).

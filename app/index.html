@@ -140,6 +140,7 @@ dialog::backdrop { background: rgb(10 10 10 / .5); }
   <section id="view-mood">
     <div class="wrap" style="gap:16px">
       <h1>escolha seu mood</h1>
+      <button class="btn dark" type="button" id="weekBtn">📅 monta minha semana</button>
       <div class="chips" id="moodChips"></div>
       <div id="hero"></div>
       <div class="seg" role="group" aria-label="De onde vêm as peças">
@@ -1257,6 +1258,55 @@ async function copy(text, preId = "promptText") {
   catch { const pre = $(preId); if (pre) { const d = pre.closest("details"); if (d) d.open = true; const r = document.createRange(); r.selectNodeContents(pre); const s = getSelection(); s.removeAllRanges(); s.addRange(r); } toast("Texto selecionado: segure e copie"); }
 }
 
+// ---------- Semana ----------
+const DIAS = ["segunda","terça","quarta","quinta","sexta"];
+function nextWeekdays() {
+  const out = []; const d = new Date(); d.setHours(12, 0, 0, 0);
+  if (d.getDay() === 6) d.setDate(d.getDate() + 2); else if (d.getDay() === 0) d.setDate(d.getDate() + 1);
+  while (out.length < 5) { if (d.getDay() >= 1 && d.getDay() <= 5) out.push({ iso: d.toLocaleDateString("sv-SE"), dia: DIAS[d.getDay() - 1] }); d.setDate(d.getDate() + 1); }
+  return out;
+}
+async function fetchWeather(days) {
+  try {
+    const r = await fetch("https://api.open-meteo.com/v1/forecast?latitude=-25.43&longitude=-49.27&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=America%2FSao_Paulo&forecast_days=10");
+    const j = await r.json(); const t = j.daily.time;
+    days.forEach(d => { const i = t.indexOf(d.iso); if (i >= 0) { d.max = Math.round(j.daily.temperature_2m_max[i]); d.min = Math.round(j.daily.temperature_2m_min[i]); d.chuva = j.daily.precipitation_probability_max[i] >= 60; } });
+    return true;
+  } catch { return false; }
+}
+async function openWeek() {
+  const days = nextWeekdays();
+  openSheet(`${head("minha semana", "Curitiba")}<p class="sub">Buscando a previsão…</p>`);
+  const ok = await fetchWeather(days);
+  state.week = days;
+  openSheet(`${head("minha semana", "Curitiba")}
+    <p class="sub">${ok ? "Previsão carregada. Ajuste se quiser." : "Não consegui puxar a previsão: preencha a máxima e a mínima de cada dia."}</p>
+    <div class="list">${days.map((d, i) => `<div class="card" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><b style="width:70px">${d.dia}</b>
+      máx <input type="number" id="wmax${i}" value="${d.max ?? 20}" style="width:56px"> mín <input type="number" id="wmin${i}" value="${d.min ?? 13}" style="width:56px">
+      <label><input type="checkbox" id="wch${i}" ${d.chuva ? "checked" : ""}> chuva</label></div>`).join("")}</div>
+    <div class="actions"><button class="btn dark" type="button" id="weekGo">montar os looks</button></div><div id="weekOut"></div>`);
+}
+async function buildWeek(btn) {
+  const days = state.week.map((d, i) => ({ ...d, max: +$("wmax" + i).value, min: +$("wmin" + i).value, chuva: $("wch" + i).checked }));
+  const favCodes = Object.entries(state.pfav).filter(([, v]) => v.favorito).map(([k]) => k);
+  const mine = PIECES.filter(p => p.tenho === true && (favCodes.length ? favCodes.includes(p.code) || p.cat === "acessorio" || p.cat === "sapato" : true));
+  const sample = await window.claude?.use?.("sample").catch(() => null);
+  if (!sample) return toast("Abra logada no claude.ai para montar a semana");
+  btn.disabled = true; $("weekOut").innerHTML = `<p class="sub">Montando…</p>`;
+  const lista = mine.filter(p => p.code !== "SAP-01").map(p => `${p.code} | ${p.cat} | ${p.nome} | ${p.cor} | ${p.det}`).join("\n");
+  const prompt = `Você é a stylist da Andressa (Curitiba, trabalha em escritório). Monte 1 look por dia, de segunda a sexta, usando SÓ estas peças dela (código | categoria | nome | cor | detalhes):\n${lista}\n\nPrevisão: ${days.map(d => `${d.dia}: máx ${d.max} °C, mín ${d.min} °C${d.chuva ? ", chuva" : ""}`).join("; ")}.\n\nRegras: o escritório é FRIO, então todo look tem uma camada por cima (blazer, cardigã, casaco, colete, sobretudo), mesmo em dia quente (ex.: 24 °C = blusa de manga curta + blazer ou cardigã para tirar na rua). Dia frio (máx até 17): suéter + casaco/sobretudo; saia só com meia-calça. Chuva: nada de camurça e prefira bota. Cada look: 1 parte de cima, 1 parte de baixo (ou vestido), 1 camada, 1 bolsa (BOL-), 1 sapato (SAP-). Peça larga em cima pede parte de baixo reta ou justa. Não repita a mesma calça/saia nem a mesma parte de cima na semana. Sexta pode ser mais casual (tênis). Responda só JSON: [{"dia":"segunda","pecas":["CODIGO",...],"porque":"frase curta"}].`;
+  try {
+    const plan = await sample.json(prompt, { modelTier: "default" });
+    const ok = Array.isArray(plan) ? plan : (plan.looks || []);
+    $("weekOut").innerHTML = `<div class="list">${ok.map((l, i) => `<div class="card"><b>${esc(l.dia)}</b> · ${days[i] ? `${days[i].max}°/${days[i].min}°${days[i].chuva ? " · chuva" : ""}` : ""}
+      <div class="thumbs">${(l.pecas || []).filter(c => BY[c]).map(c => `<img src="${BY[c].img}" alt="">`).join("")}</div>
+      <div>${(l.pecas || []).filter(c => BY[c]).map(c => esc(BY[c].nome + " " + BY[c].cor)).join(" + ")}</div><small class="sub">${esc(l.porque || "")}</small></div>`).join("")}</div>
+      <p class="sub">Para ver em foto, me peça no chat “gera a imagem da semana”.</p>`;
+    if (state.db) try { await state.db.doc("semana/atual").set({ criadoEm: todayISO(), dias: days, looks: ok }); } catch {}
+  } catch (e) { $("weekOut").innerHTML = `<p class="sub">Não consegui montar agora (${esc(e?.code || "erro")}). Tente de novo.</p>`; }
+  btn.disabled = false;
+}
+
 // ---------- Banco ----------
 async function setLook(id, patch) {
   state.favs[id] = { ...(state.favs[id] || {}), ...patch };
@@ -1304,6 +1354,8 @@ document.addEventListener("click", async e => {
     state.sel = null; renderLooks(); renderFavs();
     return toast(`${ids.length} na wishlist (aba favoritos)`);
   }
+  if (el.id === "weekBtn") return openWeek();
+  if (el.id === "weekGo") return buildWeek(el);
   if (el.id === "pfMark") { if (!state.db) return toast("Abra logada no claude.ai para favoritar"); state.pfMark = !state.pfMark; if (state.pfMark) state.cat = "todas"; return renderPieces(); }
   if (d.pfav) { await setPeca(d.pfav); return showPiece(d.pfav); }
   if (d.piece && state.pfMark) { await setPeca(d.piece); return renderPieces(); }
