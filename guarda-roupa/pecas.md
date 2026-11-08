@@ -91,7 +91,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLA-09 | Blazer curto xadrez | Xadrez preto, branco, bege e vinho | Xadrez príncipe de gales miúdo, lapela, um botão, curto (cropped na cintura), manga longa, acinturado | ✅ |
 | COL-01 | Colete de alfaiataria | Cinza | Abotoado | ❓ |
 | COL-02 | Colete de alfaiataria curto | Preto | Decote V, botões, termina um pouco ACIMA da cintura | ✅ |
-| COL-03 | Colete de alfaiataria | Creme | Decote V, botões, termina um pouco ABAIXO da cintura | ✅ |
+| COL-03 | Colete de alfaiataria risca de giz (Marfinno) | Bege-creme com riscas pretas finas | Linho misto, riscas verticais pretas finas e espaçadas, decote V profundo, botões tartaruga, termina um pouco ABAIXO da cintura | ✅ |
 | CAR-01 | Cardigã | Marrom chocolate | Tricô fino, botões | ❓ |
 | JAQ-01 | Jaqueta jeans | Azul escuro | Clássica | ❓ |
 | JAQ-02 | Jaqueta bomber curta | Preta | Tam. G, **modelagem ampla**: usar com parte de baixo reta/ajustada (não combina com SAI-01). Tecido aveludado (tipo suede/veludo), gola careca, punhos e barra em ribana, zíper central + botões de pressão prateados, bolsos com lapela na frente, comprimento na cintura | ✅ |

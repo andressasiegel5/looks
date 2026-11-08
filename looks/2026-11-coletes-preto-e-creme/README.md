@@ -1,6 +1,6 @@
 # Coletes preto curto e creme — street style
 
-Peças âncora: **COL-02** e **COL-03**, com as peças dela. Gerada pela API.
+Peças âncora: **COL-02** e **COL-03**, com as peças dela. Gerada pela API (regerada com o colete creme risca de giz correto).
 Prompt: [prompt](../../prompts/2026-11-07-coletes-preto-e-creme-street-style.md).
 
 ![Grade com 6 looks](grade-6-looks.png)
