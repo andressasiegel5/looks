@@ -51,6 +51,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Conjunto capa + calça creme (Lucy in the Sky) — com as suas peças, 6 looks](looks/2026-11-conjunto-capa-creme/) ✨
 - [Suéter color block (Banana Republic) — com as suas peças, 6 looks](looks/2026-11-sueter-color-block/) ✨
 - [Saia curta com barra de pégasos (Lança Perfume) — com as suas peças, 6 looks](looks/2026-11-saia-pegasos/) ✨
+- [Saia lápis preta de malha — com as suas peças, 6 looks](looks/2026-11-saia-lapis-preta/) ✨
 - [Suéter felpudo creme (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-creme-zara/) ✨
 - [Suéter felpudo marinho (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-marinho-zara/) ✨
 - [Colete espinha de peixe bege (Emme) — com as suas peças, 6 looks](looks/2026-11-colete-espinha-bege/) ✨
@@ -197,3 +198,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Conjunto capa + calça creme (Lucy in the Sky) — street style](prompts/2026-11-09-conjunto-capa-creme-street-style.md)
 - [Suéter color block (Banana Republic) — street style](prompts/2026-11-09-sueter-color-block-banana-street-style.md)
 - [Saia curta com barra de pégasos (Lança Perfume) — street style](prompts/2026-11-09-saia-pegasos-lanca-perfume-street-style.md)
+- [Saia lápis preta de malha — street style](prompts/2026-11-09-saia-lapis-preta-street-style.md)
