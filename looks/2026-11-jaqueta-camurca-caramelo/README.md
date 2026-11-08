@@ -1,6 +1,6 @@
 # Jaqueta-camisa de camurça caramelo — street style
 
-Peça âncora: **JAQ-03**, com as peças dela. Gerada pela API.
+Peça âncora: **JAQ-03**, com as peças dela. Gerada pela API (regerada com a cor certa: caramelo frio, levemente acinzentado).
 Prompt: [prompt](../../prompts/2026-11-08-jaqueta-camurca-caramelo-street-style.md).
 
 ![Grade com 6 looks](grade-6-looks.png)

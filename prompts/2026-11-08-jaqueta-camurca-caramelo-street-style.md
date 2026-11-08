@@ -8,7 +8,7 @@ Crie uma única imagem com uma grade de 6 fotos (2 linhas × 3 colunas), separad
 
 A MODELO (a mesma em todas as fotos): Mulher magra e esguia, 1,68 m, cerca de 56 kg, ombros estreitos, cintura fina, pernas longas. Cabelo castanho acobreado (castanho médio com reflexos cobre, NÃO preto nem castanho escuro). Rosto cortado na altura do nariz ou coberto pelos óculos. Andando na calçada, naturalmente, como se não soubesse que está sendo fotografada; corpo inteiro visível.
 
-PEÇA FIXA (idêntica em todos os looks): Jaqueta-camisa (overshirt) de camurça/suede caramelo, gola de camisa, botões de pressão dourados, dois bolsos com lapela no peito, caimento reto, comprimento no quadril, usada sempre aberta.
+PEÇA FIXA (idêntica em todos os looks): Jaqueta-camisa (overshirt) de camurça/suede em caramelo FRIO, levemente acinzentado (cor cogumelo, entre caramelo e taupe; menos marrom e menos alaranjado que um caramelo comum), gola de camisa, botões de pressão dourados, dois bolsos com lapela no peito, caimento reto, comprimento no quadril, usada sempre aberta.
 
 LOOKS:
 1. "Debrum e off-white": jaqueta aberta; por baixo camiseta preta canelada justa com debrum branco na gola e nas mangas, por dentro; calça de alfaiataria off-white, cintura alta, vinco frontal, perna larga levemente flare, comprida cobrindo metade do sapato; cinto preto fino; cabelo em coque baixo liso.
