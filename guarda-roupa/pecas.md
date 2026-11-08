@@ -65,6 +65,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLU-25 | Colete/blusa de tricô aberto | Off-white | Tricô de ponto grosso, decote redondo, sem manga (cava ampla caída), barra canelada, curto e reto. Usar por cima de blusa ou camiseta | ✅ |
 | BLU-26 | Blusa listrada manga curta (Emme) | Off-white com listras pretas | Malha canelada macia, listras pretas finas, gola redonda, manga curta, caimento reto levemente solto | ✅ |
 | BLU-27 | Camiseta boxy | Bege acinzentado (taupe claro) | Algodão encorpado, gola redonda canelada, manga curta caída, corte boxy curto na cintura | ✅ |
+| BLU-28 | Blusa de tricô fino gola alta | Bege rosado (nude) | Tricô fino leve, gola alta canelada larga, manga 3/4 com punho canelado, caimento reto até o quadril | ✅ |
 | CAM-01 | Camisa social | Branca | Algodão, manga longa (usar dobrada ou com nó na cintura) | ❓ |
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |

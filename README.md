@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Blusa gola alta bege rosado — com as suas peças, 6 looks](looks/2026-11-blusa-gola-alta-nude/) ✨
 - [Conjunto tricô caramelo — com as suas peças, 6 looks](looks/2026-11-conjunto-trico-caramelo/) ✨
 - [Camiseta boxy bege — com as suas peças, 6 looks](looks/2026-11-camiseta-boxy-taupe/) ✨
 - [Blusa listrada P&B (Emme) — com as suas peças, 6 looks](looks/2026-11-blusa-listrada-pb/) ✨
@@ -145,3 +146,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Blusa listrada preta e branca (Emme) — street style](prompts/2026-11-09-blusa-listrada-pb-street-style.md)
 - [Camiseta boxy bege acinzentado — street style](prompts/2026-11-09-camiseta-boxy-taupe-street-style.md)
 - [Conjunto cardigã + regata caramelo — street style](prompts/2026-11-09-conjunto-trico-caramelo-street-style.md)
+- [Blusa de tricô gola alta bege rosado — street style](prompts/2026-11-09-blusa-gola-alta-nude-street-style.md)
