@@ -62,6 +62,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Calça saruel fluida cinza (Zara) — com as suas peças, 6 looks](looks/2026-11-calca-saruel-zara/) ✨
 - [Calça cenoura terracota — com as suas peças, 6 looks](looks/2026-11-calca-cenoura-terracota/) ✨
 - [Calças jeans azul e preta — com as suas peças, 6 looks](looks/2026-11-calcas-jeans/) ✨
+- [Calça de linho amarelo-manteiga — com as suas peças, 6 looks](looks/2026-11-calca-linho-manteiga/) ✨
 - [Suéter felpudo creme (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-creme-zara/) ✨
 - [Suéter felpudo marinho (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-marinho-zara/) ✨
 - [Colete espinha de peixe bege (Emme) — com as suas peças, 6 looks](looks/2026-11-colete-espinha-bege/) ✨
@@ -219,3 +220,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Calça saruel fluida cinza (Zara) — street style](prompts/2026-11-09-calca-saruel-zara-street-style.md)
 - [Calça cenoura terracota — street style](prompts/2026-11-09-calca-cenoura-terracota-street-style.md)
 - [Calças jeans azul e preta — street style](prompts/2026-11-09-calcas-jeans-street-style.md)
+- [Calça de linho amarelo-manteiga com fenda — street style](prompts/2026-11-09-calca-linho-manteiga-street-style.md)
