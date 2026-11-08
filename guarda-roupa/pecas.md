@@ -102,6 +102,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | COL-02 | Colete de alfaiataria curto | Preto | Decote V, botões, termina um pouco ACIMA da cintura | ✅ |
 | COL-03 | Colete de alfaiataria risca de giz (Marfinno) | Bege-creme com riscas pretas finas | Linho misto, riscas verticais pretas finas e espaçadas, decote V profundo, botões tartaruga, termina um pouco ABAIXO da cintura | ✅ |
 | CON-01 | Conjunto cardigã + regata de tricô fino | Caramelo / camel | Tricô fino leve: cardigã longo aberto sem botões (até o quadril, mangas longas) + regata de alça larga gola redonda. Pode usar junto ou separado | ✅ |
+| COL-04 | Colete de alfaiataria espinha de peixe (Emme) | Bege claro | Tecido espinha de peixe (herringbone) bege claro, decote V, 2 botões encapados, caimento reto, comprimento no quadril | ✅ |
 | CAR-01 | Cardigã | Marrom chocolate | Tricô fino, botões | ❓ |
 | JAQ-01 | Jaqueta jeans | Azul escuro | Clássica | ❓ |
 | JAQ-02 | Jaqueta bomber curta | Preta | Tam. G, **modelagem ampla**: usar com parte de baixo reta/ajustada (não combina com SAI-01). Tecido aveludado (tipo suede/veludo), gola careca, punhos e barra em ribana, zíper central + botões de pressão prateados, bolsos com lapela na frente, comprimento na cintura | ✅ |
