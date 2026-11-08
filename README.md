@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Camiseta preta com debrum — com as suas peças, 6 looks](looks/2026-11-camiseta-debrum-preta/) ✨
 - [Calça marrom escuro — com as suas peças, 6 looks](looks/2026-11-calca-marrom/) ✨
 - [Coletes preto curto e creme — com as suas peças, 6 looks](looks/2026-11-coletes-preto-e-creme/) ✨
 - [Blusa de tricô marrom — com as suas peças, 6 looks](looks/2026-11-blusa-trico-marrom/) ✨
@@ -73,3 +74,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Blusa slim de tricô marrom (Hering) — street style](prompts/2026-11-07-blusa-trico-marrom-street-style.md)
 - [Coletes preto curto e creme — street style](prompts/2026-11-07-coletes-preto-e-creme-street-style.md)
 - [Calça de alfaiataria marrom escuro — street style](prompts/2026-11-07-calca-marrom-street-style.md)
+- [Camiseta preta com debrum (Morena Rosa) — street style](prompts/2026-11-08-camiseta-debrum-preta-street-style.md)

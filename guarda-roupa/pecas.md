@@ -42,6 +42,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLU-14 | Blusa Wingsuit (Insider) | Branca | Tecido TECHSTURE (poliamida, viscose, elastano), **modelagem ampla**, manga morcego longa justa no punho, gola alta. Pede parte de baixo reta ou justa | ✅ |
 | BLU-15 | Blusa slim de tricô (Hering) | Marrom chocolate | Tricô canelado justo, manga longa, gola redonda | ✅ |
 | BLU-16 | Blusa de tule transparente | Preta | Tule fino transparente, justa, manga longa, gola média alta. Usar sempre com top/regata preta por baixo (estampa a confirmar) | ✅ |
+| BLU-17 | Camiseta canelada com debrum (Morena Rosa) | Preta com debrum branco | Malha canelada justa, manga curta, gola redonda e barra das mangas com debrum branco | ✅ |
 | CAM-01 | Camisa social | Branca | Algodão, manga longa (usar dobrada ou com nó na cintura) | ❓ |
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
