@@ -46,7 +46,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | CAL-12 | Calça saruel fluida (Zara) | Cinza chumbo | Malha fluida com caimento pesado, cós de elástico franzido, modelagem saruel bem larga e solta (gancho baixo, muito tecido), longa. **Peça de volume**: usar com parte de cima justa/curta | ✅ |
 | CAL-13 | Calça de alfaiataria cenoura | Terracota / coral queimado | Crepe de alfaiataria, cintura alta com passantes, pregas na frente, perna afunilada (cenoura) terminando no tornozelo | ✅ |
 | CAL-14 | Calça jeans skinny | Azul médio-escuro (lavagem clássica) | Jeans com elastano, costuras caramelo, cintura alta, justa, longa | ✅ |
-| CAL-15 | Calça jeans skinny | Preta | Jeans preto com elastano, cintura alta, justa, longa (sem foto) | ✅ |
+| CAL-15 | Calça jeans flare (Modab, Preto Intenso) | Preta | Jeans preto intenso com elastano, cintura média, justa até o joelho e flare na barra, longa cobrindo o sapato | ✅ |
 | CAL-16 | Calça wide leg de linho com fenda na barra | Amarelo-manteiga claro | Linho/viscose com brilho suave, cintura alta com passantes, perna larga e fluida, longa, barra com fenda lateral arredondada (abertura curva na lateral) | ✅ |
 | CAL-17 | Calça pantalona de sarja fluida | Marrom canela (terracota amarronzado) | Sarja leve de viscose, cintura alta, perna larga e reta, longa, caimento fluido | ✅ |
 | CAL-18 | Calça reta espinha de peixe (Zara) | Cinza mescla (preto e branco) | Alfaiataria em espinha de peixe miúda cinza, cintura alta, bolso traseiro embutido, perna reta, comprimento um pouco mais curto (no tornozelo) | ✅ |
