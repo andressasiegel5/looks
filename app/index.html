@@ -140,7 +140,6 @@ dialog::backdrop { background: rgb(10 10 10 / .5); }
   <section id="view-mood">
     <div class="wrap" style="gap:16px">
       <h1>escolha seu mood</h1>
-      <button class="btn dark" type="button" id="weekBtn">📅 monta minha semana</button>
       <div class="chips" id="moodChips"></div>
       <div id="hero"></div>
       <div class="seg" role="group" aria-label="De onde vêm as peças">
@@ -166,6 +165,13 @@ dialog::backdrop { background: rgb(10 10 10 / .5); }
     </div>
   </section>
 
+  <section id="view-semana" hidden>
+    <div class="wrap" style="gap:18px">
+      <h1>minha semana</h1>
+      <p class="sub" id="semanaInfo"></p>
+      <div id="semanaDias" style="display:flex;flex-direction:column;gap:22px"></div>
+    </div>
+  </section>
   <section id="view-favoritos" hidden>
     <div class="wrap" style="gap:14px">
       <h2>favoritos</h2>
@@ -192,8 +198,7 @@ dialog::backdrop { background: rgb(10 10 10 / .5); }
 <nav class="bar" aria-label="Seções"><div class="in">
   <a href="#mood" data-tab="mood">mood</a>
   <a href="#looks" data-tab="looks">looks</a>
-  <a href="#favoritos" data-tab="favoritos">favoritos</a>
-  <a href="#pecas" data-tab="pecas">peças</a>
+  <a href="#semana" data-tab="semana">semana</a>
 </div></nav>
 
 <div class="selbar" id="selbar" hidden><span id="selCount">0 selecionados</span><button class="btn small dark" type="button" id="selWish">♡ wishlist</button><button class="btn small danger" type="button" id="selRemove">remover</button></div>
@@ -1332,6 +1337,23 @@ async function regenLook(id, btn) {
   btn.disabled = false;
 }
 
+// ---------- Semana (gerada pelo Claude) ----------
+const SEMANA = /*SEMANA*/{"inicio": "2026-11-09", "dias": [{"iso": "2026-11-09", "dia": "segunda", "max": 18, "min": 9, "chuva": false, "opcoes": [{"nome": "Creme, cinza e sobretudo rosa", "pecas": ["SUE-03", "CAL-18", "CAS-07", "SAP-05", "BOL-06"], "id": "w1109-11", "img": "/_blob/d0d77100e7485f1c9a20e80ca8494482"}, {"nome": "Office siren pied-de-poule", "pecas": ["SUE-12", "SAI-05", "BLA-06", "SAP-05", "BOL-02"], "extras": ["Meia-calça fina preta", "Óculos de grau"], "id": "w1109-12", "img": "/_blob/8183a79da71054511ada287b9e51c1da"}, {"nome": "Marinho, espinha e tricô cinza", "pecas": ["SUE-02", "CAL-08", "CAS-08", "SAP-02", "BOL-05"], "id": "w1109-13", "img": "/_blob/4ebb482849a8c049fa12e453d503fe62"}]}, {"iso": "2026-11-10", "dia": "terça", "max": 19, "min": 9, "chuva": false, "opcoes": [{"nome": "Rosa, plissada e casaco bege", "pecas": ["SUE-11", "SAI-10", "CAS-03", "SAP-06", "BOL-01"], "extras": ["Meia-calça fina preta"], "id": "w1109-21", "img": "/_blob/12525353e83b866be6312296b5d4d155"}, {"nome": "Chevron e blazer preto", "pecas": ["SUE-04", "CAL-04", "BLA-05", "SAP-07", "BOL-05"], "id": "w1109-22", "img": "/_blob/636e2871577cdb353841c0cb947288ce"}, {"nome": "Tranças, canela e chocolate", "pecas": ["SUE-08", "CAL-17", "CAS-04", "SAP-06", "BOL-02"], "id": "w1109-23", "img": "/_blob/c7129c222afdbebc9fb0c79f1ccbec2e"}]}, {"iso": "2026-11-11", "dia": "quarta", "max": 22, "min": 12, "chuva": true, "opcoes": [{"nome": "Linho, canela e blazer creme", "pecas": ["CAM-10", "CAL-17", "BLA-08", "SAP-06", "BOL-02"], "id": "w1109-31", "img": "/_blob/24ee36b99f8e4a0bfbdd3b0f4cf8f754"}, {"nome": "Max Mara e xadrez curto", "pecas": ["BLU-33", "SAI-08", "BLA-09", "SAP-07", "BOL-01"], "extras": ["Meia-calça fina preta"], "id": "w1109-32", "img": "/_blob/24c662ebcd10601f8a652490d064ccaa"}, {"nome": "Listrado, off-white e Samba", "pecas": ["SUE-07", "CAL-03", "BLA-05", "SAP-09", "BOL-06"], "id": "w1109-33", "img": "/_blob/e9bd755c89efe169d632cd3ee8aa6eab"}]}, {"iso": "2026-11-12", "dia": "quinta", "max": 25, "min": 13, "chuva": true, "opcoes": [{"nome": "Terracota e pied-de-poule", "pecas": ["BLU-33", "CAL-13", "BLA-06", "SAP-09", "BOL-01"], "id": "w1109-41", "img": "/_blob/1855d24106459ea3ca0f954bb2a5b5a6"}, {"nome": "Conjunto caramelo e blazer creme", "pecas": ["BLU-38", "CAL-06", "BLA-08", "SAP-03", "BOL-05"], "id": "w1109-42", "img": "/_blob/1df32145edea3cb427741d3cdeb5e83d"}, {"nome": "Camisa perolada e colete", "pecas": ["CAM-07", "CAL-05", "COL-04", "SAP-07", "BOL-02"], "id": "w1109-43", "img": "/_blob/37b07f17362a1e2c8eac57de76542f27"}]}, {"iso": "2026-11-13", "dia": "sexta", "max": 25, "min": 14, "chuva": false, "opcoes": [{"nome": "Caramelo, off-white e tricô nos ombros", "pecas": ["BLU-38", "CAL-03", "CAS-08", "SAP-08", "BOL-07"], "id": "w1109-51", "img": "/_blob/7f2ef6c0ca3d6b8ccd73c6a9fff791e5"}, {"nome": "Max Mara aberta e manteiga", "pecas": ["BLU-32", "CAM-06", "CAL-16", "SAP-04", "BOL-03"], "id": "w1109-52", "img": "/_blob/a3b0c01400afaae4f7cd4337b7439fee"}, {"nome": "Sálvia, slip e cardigã caramelo", "pecas": ["CAM-08", "SAI-02", "CON-01", "SAP-10", "BOL-08"], "id": "w1109-53", "img": "/_blob/6e0db58f6954069a7b41d9fe4b3f3577"}]}]}/*FIMSEMANA*/;
+const SEM_OPC = Object.fromEntries(SEMANA.dias.flatMap(d => d.opcoes.map(o => [o.id, { ...o, dia: d }])));
+function renderSemana() {
+  const esc2 = state.escolhas || {};
+  $("semanaInfo").textContent = `Curitiba · 3 opções por dia · toque numa foto para ver as peças e escolher`;
+  $("semanaDias").innerHTML = SEMANA.dias.map(d => `<div>
+    <div class="row" style="align-items:baseline"><h2 style="font-size:20px;text-transform:capitalize">${esc(d.dia)}</h2><span class="sub">${d.max}° / ${d.min}°${d.chuva ? " · 🌧 chuva" : ""}</span></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px">${d.opcoes.map(o => `<button class="tile ${esc2[d.iso] === o.id ? "sel" : ""}" type="button" data-wopt="${o.id}" style="padding:0"><img src="${o.img}" alt="" loading="lazy" style="aspect-ratio:3/4;object-fit:cover;width:100%">${esc2[d.iso] === o.id ? `<span class="check">✓</span>` : ""}<span class="t"><small>${esc(o.nome)}</small></span></button>`).join("")}</div></div>`).join("");
+}
+function showWOpt(id) {
+  const o = SEM_OPC[id]; const d = o.dia; const escolhido = (state.escolhas || {})[d.iso] === id;
+  openSheet(`${head(o.nome, d.dia + " · " + d.max + "°/" + d.min + "°" + (d.chuva ? " · chuva" : ""))}<img class="big" src="${o.img}" alt="">
+    <div class="rail">${[...o.pecas.filter(c => BY[c]).map(pieceCard), ...(o.extras || []).map(ghostCard)].join("")}</div>
+    ${state.db ? `<div class="actions"><button class="btn dark" type="button" data-wpick="${id}">${escolhido ? "✓ escolhido para " + d.dia : "escolher para " + d.dia}</button></div>` : ""}`);
+}
+
 // ---------- Banco ----------
 async function setLook(id, patch) {
   state.favs[id] = { ...(state.favs[id] || {}), ...patch };
@@ -1347,12 +1369,13 @@ async function initDb() {
   if (!db) { renderFavs(); return; }
   state.db = db; renderFavs();
   db.collection("looks").onSnapshot(snap => { const f = {}; snap.docs.forEach(d => f[d.id] = d.data()); state.favs = f; renderHero(); renderLooks(); renderFavs(); }, () => {});
+  db.doc("semana/" + SEMANA.inicio).onSnapshot(snap => { state.escolhas = (snap && snap.exists && snap.data().escolhas) || {}; renderSemana(); }, () => {});
   db.collection("pecas").onSnapshot(snap => { const f = {}; snap.docs.forEach(d => f[d.id] = d.data()); state.pfav = f; renderPieces(); }, () => {});
   db.collection("ideias").orderBy("criadoEm", "desc").onSnapshot(snap => { state.ideas = snap.docs.map(d => ({ id: d.id, ...d.data() })); renderFavs(); }, () => {});
 }
 
 // ---------- Navegação ----------
-const TABS = ["mood","looks","favoritos","pecas"];
+const TABS = ["mood","looks","semana","favoritos","pecas"];
 function route() {
   const tab = TABS.includes(location.hash.slice(1)) ? location.hash.slice(1) : "mood";
   TABS.forEach(t => $("view-" + t).hidden = t !== tab);
@@ -1381,6 +1404,8 @@ document.addEventListener("click", async e => {
   }
   if (d.regen) return regenLook(d.regen, el);
   if (d.regenfoto) { const g = state.regen; if (!g) return; try { await state.db.collection("pedidos").add({ tipo: "regerar", substitui: g.de, nome: g.nome || "", pecas: g.pecas, criadoEm: todayISO(), status: "novo" }); el.disabled = true; el.textContent = "✓ pedido salvo"; toast("Pedido salvo: me fale “gera os pedidos” no chat"); } catch { toast("Não consegui salvar"); } return; }
+  if (d.wopt) return showWOpt(d.wopt);
+  if (d.wpick) { const o = SEM_OPC[d.wpick]; state.escolhas = { ...(state.escolhas || {}), [o.dia.iso]: d.wpick }; try { await state.db.doc("semana/" + SEMANA.inicio).set({ escolhas: state.escolhas }); } catch {} renderSemana(); showWOpt(d.wpick); return toast("Escolhido para " + o.dia.dia); }
   if (el.id === "weekBtn") return openWeek();
   if (el.id === "weekGo") return buildWeek(el);
   if (el.id === "pfMark") { if (!state.db) return toast("Abra logada no claude.ai para favoritar"); state.pfMark = !state.pfMark; if (state.pfMark) state.cat = "todas"; return renderPieces(); }
@@ -1467,5 +1492,5 @@ function go(step) {
 $("onlyMine").addEventListener("change", e => { state.onlyMine = e.target.checked; try { localStorage.setItem("onlyMine", state.onlyMine ? "1" : "0"); } catch {} });
 sheet.addEventListener("click", e => { if (e.target === sheet) sheet.close(); });
 
-resetOrder(); renderMoodChips(); renderHero(); renderLooks(); renderFavs(); renderPieces(); route(); initDb();
+resetOrder(); renderMoodChips(); renderHero(); renderLooks(); renderFavs(); renderPieces(); renderSemana(); route(); initDb();
 </script>

@@ -88,3 +88,10 @@ Faça commit e push depois de cada alteração.
   Se ela tocar "📸 quero a foto deste", grava em `pedidos` (`tipo: "regerar"`, `substitui: <id do look>`, `pecas`, `status: "novo"`).
 - Quando ela disser "gera os pedidos": leia `pedidos` com status "novo" (ArtifactData), gere UMA imagem com até 6 pedidos,
   substitua a foto de cada look `substitui` (mesmo id, assim favoritos ficam), atualize `pecas` em LOOKS e marque o pedido `status: "feito"`.
+
+## Aba "semana" (substitui o botão/modal; abas favoritos e peças estão escondidas da barra)
+- Toda semana: buscar a previsão de Curitiba (WebSearch ou print dela), montar `semanas/<segunda>.json`
+  (5 dias × 3 opções, ids `wMMDD-<dia><opção>`, regras do look da semana), rodar `python3 scripts/semana_prompts.py semanas/<arquivo>.json`
+  (gera 3 prompts: 6+6+3 looks), gerar as 3 imagens, recortar, subir como assets e trocar o JSON entre `/*SEMANA*/` e `/*FIMSEMANA*/`
+  em `app/index.html` (com `img` = `/_blob/<id>` em cada opção). Também gravar `clima/atual`.
+- A escolha dela por dia fica em `semana/<inicio>` (`escolhas: {iso: id}`).
