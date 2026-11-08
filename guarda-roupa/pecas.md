@@ -31,6 +31,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | CAL-04 | Calça de alfaiataria larga (H&M) | Cinza mescla claro | Cintura alta, passantes, perna larga e longa, tecido mesclado | ✅ |
 | CAL-05 | Calça de alfaiataria larga | Marrom escuro (café) | Mesmo modelo da CAL-04: cintura alta, passantes, perna larga e longa | ✅ |
 | CAL-06 | Calça pantalona texturizada (conjunto com BLU-38) | Caramelo acobreado | Malha texturizada ondulada (tipo crepe/seersucker), cintura alta, perna bem larga e longa, fluida. Conjunto com a blusa BLU-38 | ✅ |
+| CAL-07 | Calça flare de malha (Lucy in the Sky, conjunto com CAS-06) | Creme | Malha encorpada lisa, cintura alta, ajustada no quadril, perna flare longa | ✅ |
 | CAL-01 | Calça wide leg de couro sintético | Marrom café | Zara, R$ 279. Wide leg longa, cintura alta, pences frontais | 🛒 |
 | CAL-02 | Calça pantalona com pregas | Cinza-chumbo | Zara, R$ 359. Alfaiataria fluida, pregas, perna larga e comprida | 🛒 |
 
@@ -133,6 +134,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | CAS-02 | Parka com capuz de pelo (Amaro) | Preta | Nylon fosco acolchoado leve, capuz com pelo sintético preto, amarração com cordão na cintura, botões de pressão e zíperes dourados, comprimento no meio da coxa. Peça com volume: usar com parte de baixo justa ou fluida, nunca com saia plissada | ✅ |
 | CAS-03 | Casaco de tricô com cachecol removível (Shoulder) | Bege | Casaco longo de tricô encorpado, abaixo do joelho, aberto sem botões, com cachecol do mesmo tricô removível. Tam. P | ✅ |
 | CAS-04 | Casaco-camisa de veludo/suede | Marrom chocolate | Tecido aveludado fosco, gola de camisa grande, botões, caimento reto, comprimento no meio da coxa | ✅ |
+| CAS-06 | Casaco-capa de tricô (Lucy in the Sky, conjunto com CAL-07) | Creme | Tricô de malha encorpada lisa, gola alta, capa ampla com abertura nos braços, faixa do mesmo tecido amarrada na cintura, comprimento no quadril. **Peça ampla**: com parte de baixo reta/flare ajustada | ✅ |
 | CAS-05 | Parka leve/camisa utilitária (Zara) | Verde-oliva | Tecido fluido tipo sarja de viscose, gola alta de camisa, botões de pressão dourados, bolsos com lapela, cordão na cintura, mangas dobráveis com presilha, comprimento no meio da coxa | ✅ |
 | TRE-01 | Trench coat | Bege | Clássico com faixa | ❓ |
 
