@@ -58,6 +58,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Short acetinado preto (Calvin Klein) — com as suas peças, 6 looks](looks/2026-11-short-acetinado-ck/) ✨
 - [Short de alfaiataria xadrez — com as suas peças, 6 looks](looks/2026-11-short-xadrez/) ✨
 - [Saia envelope marinho estampada — com as suas peças, 6 looks](looks/2026-11-saia-envelope-estampada/) ✨
+- [Saia preta transpassada (Max Mara) — com as suas peças, 6 looks](looks/2026-11-saia-preta-max-mara/) ✨
 - [Suéter felpudo creme (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-creme-zara/) ✨
 - [Suéter felpudo marinho (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-marinho-zara/) ✨
 - [Colete espinha de peixe bege (Emme) — com as suas peças, 6 looks](looks/2026-11-colete-espinha-bege/) ✨
@@ -211,3 +212,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Short acetinado preto (Calvin Klein) — street style](prompts/2026-11-09-short-acetinado-calvin-klein-street-style.md)
 - [Short de alfaiataria xadrez — street style](prompts/2026-11-09-short-xadrez-street-style.md)
 - [Saia envelope marinho estampada — street style](prompts/2026-11-09-saia-envelope-estampada-street-style.md)
+- [Saia preta transpassada (Max Mara) — street style](prompts/2026-11-09-saia-preta-max-mara-street-style.md)
