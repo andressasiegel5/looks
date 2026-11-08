@@ -50,6 +50,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | CAL-16 | Calça wide leg de linho com fenda na barra | Amarelo-manteiga claro | Linho/viscose com brilho suave, cintura alta com passantes, perna larga e fluida, longa, barra com fenda lateral arredondada (abertura curva na lateral) | ✅ |
 | CAL-17 | Calça pantalona de sarja fluida | Marrom canela (terracota amarronzado) | Sarja leve de viscose, cintura alta, perna larga e reta, longa, caimento fluido | ✅ |
 | CAL-18 | Calça reta espinha de peixe (Zara) | Cinza mescla (preto e branco) | Alfaiataria em espinha de peixe miúda cinza, cintura alta, bolso traseiro embutido, perna reta, comprimento um pouco mais curto (no tornozelo) | ✅ |
+| CAL-19 | Legging de malha encorpada com vinco | Marrom chocolate | Malha encorpada tipo ponto roma (não é de academia), costura/vinco frontal, cintura alta, justa, longa | ✅ |
 | CAL-01 | Calça wide leg de couro sintético | Marrom café | Zara, R$ 279. Wide leg longa, cintura alta, pences frontais | 🛒 |
 | CAL-02 | Calça pantalona com pregas | Cinza-chumbo | Zara, R$ 359. Alfaiataria fluida, pregas, perna larga e comprida | 🛒 |
 
