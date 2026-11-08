@@ -97,4 +97,6 @@ Faça commit e push depois de cada alteração.
   (5 dias × 3 opções, ids `wMMDD-<dia><opção>`, regras do look da semana), rodar `python3 scripts/semana_prompts.py semanas/<arquivo>.json`
   (gera 3 prompts: 6+6+3 looks), gerar as 3 imagens, recortar, subir como assets e trocar o JSON entre `/*SEMANA*/` e `/*FIMSEMANA*/`
   em `app/index.html` (com `img` = `/_blob/<id>` em cada opção). Também gravar `clima/atual`.
-- A escolha dela por dia fica em `semana/<inicio>` (`escolhas: {iso: id}`).
+- A escolha dela por dia fica em `semana/<inicio>` (`escolhas: {iso: id}`, `trocas: {opção: lookId}`, `excluidos: [...]`).
+  Botão "✕ não gostei, trocar" troca a opção por outro look existente (função `pickReplacement`, lista `SEM_FORA`); sem gerar imagem.
+  Ao vetar peça nova, adicionar o código em `SEM_FORA`.
