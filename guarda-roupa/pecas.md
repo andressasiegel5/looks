@@ -66,6 +66,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLA-03 | Blazer | Azul marinho | Alfaiataria acinturada | ❓ |
 | BLA-04 | Blazer | Preto | Alfaiataria, usado aberto | ❓ |
 | BLA-05 | Blazer trespassado | Preto | Zara. Alfaiataria acinturada (tamanho certo), lapela pontuda, 6 botões dourados com brasão, ombros estruturados, bolsos com lapela, comprimento no quadril | ✅ |
+| BLA-06 | Blazer longo pied-de-poule | Marrom, caramelo e preto | Pied-de-poule miúdo, alfaiataria, lapela, comprimento abaixo do quadril, caimento reto levemente solto | ✅ |
 | COL-01 | Colete de alfaiataria | Cinza | Abotoado | ❓ |
 | COL-02 | Colete de alfaiataria curto | Preto | Decote V, botões, termina um pouco ACIMA da cintura | ✅ |
 | COL-03 | Colete de alfaiataria | Creme | Decote V, botões, termina um pouco ABAIXO da cintura | ✅ |

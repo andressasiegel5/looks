@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Blazer pied-de-poule — com as suas peças, 6 looks](looks/2026-11-blazer-pied-de-poule/) ✨
 - [Casaco de tricô com cachecol — com as suas peças, 6 looks](looks/2026-11-casaco-trico-cachecol/) ✨
 - [Jaqueta jeans oversized — com as suas peças, 6 looks](looks/2026-11-jaqueta-jeans-oversized/) ✨
 - [Jaqueta jeans branca — com as suas peças, 6 looks](looks/2026-11-jaqueta-jeans-branca/) ✨
@@ -95,3 +96,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Jaqueta jeans branca (Zara) — street style](prompts/2026-11-08-jaqueta-jeans-branca-street-style.md)
 - [Jaqueta jeans oversized azul — street style](prompts/2026-11-08-jaqueta-jeans-oversized-street-style.md)
 - [Casaco de tricô com cachecol bege (Shoulder) — street style](prompts/2026-11-09-casaco-trico-cachecol-street-style.md)
+- [Blazer longo pied-de-poule — street style](prompts/2026-11-09-blazer-pied-de-poule-street-style.md)
