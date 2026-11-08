@@ -70,6 +70,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLU-30 | Blusa transpassada de crepe (Emme) | Preta | Crepe fluido levemente translúcido, decote V transpassado (envelope), barra franzida com elástico na cintura, manga longa com punho | ✅ |
 | BLU-31 | Regata canelada decote V | Cinza chumbo mescla | Malha canelada fina, decote V, alça larga, caimento reto ajustado | ✅ |
 | BLU-32 | Regata muscle de viscose (Insider) | Preta | Viscose macia fosca, gola redonda, cavas largas, caimento reto levemente solto, curta | ✅ |
+| BLU-33 | Regata de tricô canelado gola alta | Preta | Tricô canelado encorpado, gola alta baixa (mock neck), sem manga com cava americana, justa, comprimento no quadril | ✅ |
 | CAM-01 | Camisa social | Branca | Algodão, manga longa (usar dobrada ou com nó na cintura) | ❓ |
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
