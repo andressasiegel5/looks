@@ -10,6 +10,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | Código | Peça | Cor | Detalhes | Status |
 |---|---|---|---|---|
 | SAI-02 | Saia midi slip estampa animal (H&M) | Creme com risquinhos marrom-escuros miúdos | Estampa animal muito miúda e densa. Cetim fluido, corte enviesado rente ao corpo, cintura alta com elástico, comprimento até o meio da canela | ✅ |
+| SAI-03 | Saia midi transpassada de linho | Verde-menta (sálvia) | Envelope com nó na lateral, barra assimétrica, cintura alta, linho, comprimento midi | ✅ |
 | SAI-01 | Saia midi em camadas | Creme / off-white | Babados plissados em 5 camadas, tecido leve (tipo chiffon/tule), cintura alta, comprimento abaixo do joelho | ✅ |
 
 ## Calças
