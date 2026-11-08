@@ -167,7 +167,7 @@ Cadastrados a partir do que ela contou (sem foto ainda: pedir foto para confirma
 | Código | Peça | Cor | Detalhes | Tenho? |
 |---|---|---|---|---|
 | SAP-01 | Loafer (mocassim) | A confirmar | **Está largo, caindo do pé**: não usar nos looks até ela resolver (palmilha/ajuste) | ⏸️ |
-| SAP-02 | Sapato | Marrom | Modelo a confirmar | ✅ |
+| SAP-02 | Sapato (Jorge Bischoff) | Marrom | Modelo a confirmar (foto pendente). Escritório | ✅ |
 | SAP-03 | Tênis Veja | Branco com o V preto | Couro branco, logo V preto na lateral. Casual: sexta/dia informal | ✅ |
 | SAP-04 | Tênis Stella (Larroude) | Camurça marrom caramelo com couro off-white | Tênis retrô baixo de camurça caramelo, faixa curva e calcanhar off-white, furinhos laterais, cadarço off-white, sola branca fina. Casual | ✅ |
 | SAP-08 | Sapatilha slingback | Marrom claro (caramelo/nude) | Sapatilha baixa com tira de elástico atrás do calcanhar. Escritório e dias amenos/quentes | ✅ |
