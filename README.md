@@ -56,6 +56,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Calça espinha de peixe marrom — com as suas peças, 6 looks](looks/2026-11-calca-espinha-de-peixe/) ✨
 - [Short de alfaiataria risca de giz — com as suas peças, 6 looks](looks/2026-11-short-risca-de-giz/) ✨
 - [Short acetinado preto (Calvin Klein) — com as suas peças, 6 looks](looks/2026-11-short-acetinado-ck/) ✨
+- [Short de alfaiataria xadrez — com as suas peças, 6 looks](looks/2026-11-short-xadrez/) ✨
 - [Suéter felpudo creme (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-creme-zara/) ✨
 - [Suéter felpudo marinho (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-marinho-zara/) ✨
 - [Colete espinha de peixe bege (Emme) — com as suas peças, 6 looks](looks/2026-11-colete-espinha-bege/) ✨
@@ -207,3 +208,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Calça espinha de peixe marrom — street style](prompts/2026-11-09-calca-espinha-de-peixe-street-style.md)
 - [Short de alfaiataria risca de giz — street style](prompts/2026-11-09-short-risca-de-giz-street-style.md)
 - [Short acetinado preto (Calvin Klein) — street style](prompts/2026-11-09-short-acetinado-calvin-klein-street-style.md)
+- [Short de alfaiataria xadrez — street style](prompts/2026-11-09-short-xadrez-street-style.md)
