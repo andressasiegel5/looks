@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Jaqueta jeans branca — com as suas peças, 6 looks](looks/2026-11-jaqueta-jeans-branca/) ✨
 - [Saia transpassada verde-menta — com as suas peças, 6 looks](looks/2026-11-saia-transpassada-verde/) ✨
 - [Tech T-shirts gola redonda e V — com as suas peças, 6 looks](looks/2026-11-tech-tshirts-insider/) ✨
 - [Regatas gola alta azul e oliva — com as suas peças, 6 looks](looks/2026-11-regatas-gola-alta-insider/) ✨
@@ -89,3 +90,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Regatas gola alta Tech (Insider) azul e oliva — street style](prompts/2026-11-08-regatas-gola-alta-insider-street-style.md)
 - [Tech T-shirts (Insider) gola redonda e gola V — street style](prompts/2026-11-08-tech-tshirts-insider-street-style.md)
 - [Saia transpassada de linho verde-menta — street style](prompts/2026-11-08-saia-transpassada-verde-street-style.md)
+- [Jaqueta jeans branca (Zara) — street style](prompts/2026-11-08-jaqueta-jeans-branca-street-style.md)
