@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Suéter felpudo marinho (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-marinho-zara/) ✨
 - [Colete espinha de peixe bege (Emme) — com as suas peças, 6 looks](looks/2026-11-colete-espinha-bege/) ✨
 - [Regata de veludo (Zara) — com as suas peças, 6 looks](looks/2026-11-regata-veludo-zara/) ✨
 - [Body manga bufante (Iorane) — com as suas peças, 6 looks](looks/2026-11-body-bufante-preto/) ✨
@@ -165,3 +166,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Body manga bufante preto (Iorane) — street style](prompts/2026-11-09-body-bufante-preto-street-style.md)
 - [Regata de veludo gola alta (Zara) — street style](prompts/2026-11-09-regata-veludo-zara-street-style.md)
 - [Colete espinha de peixe bege (Emme) — street style](prompts/2026-11-09-colete-espinha-bege-street-style.md)
+- [Suéter felpudo azul-marinho (Zara) — street style](prompts/2026-11-09-sueter-marinho-zara-street-style.md)
