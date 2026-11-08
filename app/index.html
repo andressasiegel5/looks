@@ -1426,10 +1426,12 @@ document.addEventListener("click", async e => {
     const atual = semOpt(d.wtroca); const novo = pickReplacement(d.wtroca);
     if (!novo) return toast("Não achei outro look para esse clima");
     state.excluidos = [...new Set([...(state.excluidos || []), atual.lookId || SEM_OPC[d.wtroca].reusa || d.wtroca])];
+    const lookVelho = atual.lookId || SEM_OPC[d.wtroca].reusa;
+    if (lookVelho && state.db) await setLook(lookVelho, { oculto: true, ocultoEm: todayISO() });
     state.trocas = { ...(state.trocas || {}), [d.wtroca]: novo.id };
     if (state.escolhas && state.escolhas[atual.dia.iso] === d.wtroca) delete state.escolhas[atual.dia.iso];
     try { await state.db.doc("semana/" + SEMANA.inicio).set({ escolhas: state.escolhas || {}, trocas: state.trocas, excluidos: state.excluidos }); } catch {}
-    renderSemana(); showWOpt(d.wtroca); return toast("Trocado");
+    renderSemana(); showWOpt(d.wtroca); return toast("Removido e trocado");
   }
   if (d.wpick) { const o = SEM_OPC[d.wpick]; state.escolhas = { ...(state.escolhas || {}), [o.dia.iso]: d.wpick }; try { await state.db.doc("semana/" + SEMANA.inicio).set({ escolhas: state.escolhas, trocas: state.trocas || {}, excluidos: state.excluidos || [] }); } catch {} renderSemana(); showWOpt(d.wpick); return toast("Escolhido para " + o.dia.dia); }
   if (el.id === "weekBtn") return openWeek();
