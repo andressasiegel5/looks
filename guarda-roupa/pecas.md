@@ -86,6 +86,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | SUE-08 | Suéter de tricô de tranças (Anselmi) | Branco / off-white | Tricô de algodão com tranças em relevo variadas (onduladas e torcidas) na frente toda, gola redonda canelada, manga raglã longa, tam. G, caimento reto levemente solto | ✅ |
 | SUE-09 | Suéter oversized de chenille com tranças | Cinza-claro perolado mescla (greige) | Tricô de chenille macio e felpudo, tranças e losangos em relevo suave, gola redonda, ombro caído, manga longa, tam. M, **modelagem ampla**: usar com parte de baixo reta/ajustada | ✅ |
 | SUE-10 | Suéter de tricô fino listrado com pala preta (City) | Off-white acinzentado com listras pretas, ombros e barra pretos | Tricô fino de viscose, gola redonda e ombros/pala em preto liso, corpo e mangas off-white com listras pretas finas espaçadas, faixa preta larga na barra, manga longa, caimento reto | ✅ |
+| SUE-11 | Suéter de tricô grosso gola alta baixa | Rosa queimado (rosé terroso / pêssego escuro) | Tricô de algodão encorpado em ponto inglês, gola alta baixa (mock neck) canelada, ombro caído, manga até o cotovelo, barra canelada, caimento reto levemente solto | ✅ |
 | CAM-01 | Camisa social | Branca | Algodão, manga longa (usar dobrada ou com nó na cintura) | ❓ |
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
