@@ -89,6 +89,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | SUE-10 | Suéter de tricô fino listrado com pala preta (City) | Off-white acinzentado com listras pretas, ombros e barra pretos | Tricô fino de viscose, gola redonda e ombros/pala em preto liso, corpo e mangas off-white com listras pretas finas espaçadas, faixa preta larga na barra, manga longa, caimento reto | ✅ |
 | SUE-11 | Suéter de tricô grosso gola alta baixa | Rosa queimado (rosé terroso / pêssego escuro) | Tricô de algodão encorpado em ponto inglês, gola alta baixa (mock neck) canelada, ombro caído, manga até o cotovelo, barra canelada, caimento reto levemente solto | ✅ |
 | SUE-12 | Suéter de tricô fino (Shoulder) | Camelo / caramelo claro | Tricô fino liso de viscose, gola redonda canelada, manga longa, caimento reto, tam. M | ✅ |
+| SUE-13 | Suéter canelado color block (Banana Republic) | Creme e cinza médio | Tricô canelado macio levemente felpudo, blocos grandes: parte de cima creme e parte de baixo/laterais cinza médio, gola redonda alta, manga longa, caimento reto | ✅ |
 | CAM-01 | Camisa social | Branca | Algodão, manga longa (usar dobrada ou com nó na cintura) | ❓ |
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
