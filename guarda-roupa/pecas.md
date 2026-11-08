@@ -162,8 +162,14 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 
 ## Sapatos
 
-Fora do acervo por enquanto: os sapatos das imagens geradas não são meus.
-Os prompts pedem "sapato simples e discreto, em tom neutro".
+Cadastrados a partir do que ela contou (sem foto ainda: pedir foto para confirmar cor/modelo).
+
+| Código | Peça | Cor | Detalhes | Tenho? |
+|---|---|---|---|---|
+| SAP-01 | Loafer (mocassim) | A confirmar | **Está largo, caindo do pé**: não usar nos looks até ela resolver (palmilha/ajuste) | ⏸️ |
+| SAP-02 | Sapato | Marrom | Modelo a confirmar | ✅ |
+| SAP-03 | Tênis Veja | Branco com o V preto | Couro branco, logo V preto na lateral. Casual: sexta/dia informal | ✅ |
+| SAP-04 | Tênis (La Rode?) | Marrom | Nome da marca a confirmar. Casual | ✅ |
 
 ## Acessórios
 

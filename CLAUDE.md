@@ -25,7 +25,8 @@ para o ChatGPT criar imagens. Converse sempre em português.
    `python3 app/build_prompts.py` (a aba Prompts foi removida do app a pedido dela; os prompts ficam só no repositório).
    Na resposta, mostre o prompt **dentro de um bloco de código** (```), que tem botão de copiar na conversa.
 5. **Bolsas dela (BOL-01 a BOL-08)**: nos looks, use uma dessas bolsas (cor/estilo do catálogo), não invente outras.
-6. **Sem sapatos no acervo por enquanto**: não escolha sapato; no prompt peça "sapato simples e discreto, em tom neutro".
+6. **Sapatos dela (SAP-02 a SAP-04)**: escolha entre eles (marrom no dia a dia; tênis Veja branco ou tênis marrom em looks casuais/sexta).
+   O loafer SAP-01 está caindo do pé: não usar até ela avisar que resolveu.
 6. **Proporção**: peça ampla em cima (ex.: JAQ-02) pede parte de baixo reta ou ajustada; nunca com peça de volume (ex.: SAI-01). Na página isso fica nas listas `AMPLAS` e `COM_VOLUME`.
 7. Foco: trabalho (escritório). Considere clima/ocasião se ela informar.
 
