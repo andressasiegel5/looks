@@ -66,6 +66,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | CAR-01 | Cardigã | Marrom chocolate | Tricô fino, botões | ❓ |
 | JAQ-01 | Jaqueta jeans | Azul escuro | Clássica | ❓ |
 | JAQ-02 | Jaqueta bomber curta | Preta | Tam. G, **modelagem ampla**: usar com parte de baixo reta/ajustada (não combina com SAI-01). Tecido aveludado (tipo suede/veludo), gola careca, punhos e barra em ribana, zíper central + botões de pressão prateados, bolsos com lapela na frente, comprimento na cintura | ✅ |
+| JAQ-03 | Jaqueta-camisa de camurça | Caramelo | Suede caramelo, gola de camisa, botões de pressão dourados, dois bolsos com lapela no peito, caimento reto, comprimento no quadril. Usar aberta | ✅ |
 | CAS-01 | Casaco longo | Camelo | Lã, abaixo do joelho | ❓ |
 | CAS-02 | Parka com capuz de pelo (Amaro) | Preta | Nylon fosco acolchoado leve, capuz com pelo sintético preto, amarração com cordão na cintura, botões de pressão e zíperes dourados, comprimento no meio da coxa. Peça com volume: usar com parte de baixo justa ou fluida, nunca com saia plissada | ✅ |
 | TRE-01 | Trench coat | Bege | Clássico com faixa | ❓ |

@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Jaqueta de camurça caramelo — com as suas peças, 6 looks](looks/2026-11-jaqueta-camurca-caramelo/) ✨
 - [Suéter taupe — com as suas peças, 6 looks](looks/2026-11-sueter-taupe/) ✨
 - [Camiseta gola alta cinza — com as suas peças, 6 looks](looks/2026-11-camiseta-gola-alta-cinza/) ✨
 - [Parka preta — com as suas peças, 6 looks](looks/2026-11-parka-preta/) ✨
@@ -81,3 +82,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Parka preta com capuz de pelo (Amaro) — street style](prompts/2026-11-08-parka-preta-street-style.md)
 - [Camiseta gola alta cinza (Zara) — street style](prompts/2026-11-08-camiseta-gola-alta-cinza-street-style.md)
 - [Suéter Future Knit taupe (Insider) — street style](prompts/2026-11-08-sueter-taupe-street-style.md)
+- [Jaqueta-camisa de camurça caramelo — street style](prompts/2026-11-08-jaqueta-camurca-caramelo-street-style.md)
