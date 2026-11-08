@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Suéter chevron (Kookai) — com as suas peças, 6 looks](looks/2026-11-sueter-chevron-kookai/) ✨
 - [Suéter felpudo creme (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-creme-zara/) ✨
 - [Suéter felpudo marinho (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-marinho-zara/) ✨
 - [Colete espinha de peixe bege (Emme) — com as suas peças, 6 looks](looks/2026-11-colete-espinha-bege/) ✨
@@ -169,3 +170,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Colete espinha de peixe bege (Emme) — street style](prompts/2026-11-09-colete-espinha-bege-street-style.md)
 - [Suéter felpudo azul-marinho (Zara) — street style](prompts/2026-11-09-sueter-marinho-zara-street-style.md)
 - [Suéter felpudo creme (Zara) — street style](prompts/2026-11-09-sueter-creme-zara-street-style.md)
+- [Suéter chevron (Kookai) — street style](prompts/2026-11-09-sueter-chevron-kookai-street-style.md)
