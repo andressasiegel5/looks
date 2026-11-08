@@ -73,6 +73,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | JAQ-02 | Jaqueta bomber curta | Preta | Tam. G, **modelagem ampla**: usar com parte de baixo reta/ajustada (não combina com SAI-01). Tecido aveludado (tipo suede/veludo), gola careca, punhos e barra em ribana, zíper central + botões de pressão prateados, bolsos com lapela na frente, comprimento na cintura | ✅ |
 | JAQ-03 | Jaqueta-camisa de camurça | Caramelo acinzentado (cogumelo) | Suede em caramelo frio, levemente puxado para o cinza (entre caramelo e taupe), gola de camisa, botões de pressão dourados, dois bolsos com lapela no peito, caimento reto, comprimento no quadril. Usar aberta | ✅ |
 | JAQ-04 | Jaqueta jeans (Zara) | Branca / off-white | Jeans branco clássico, gola de camisa, botões prateados, bolsos com lapela no peito, barra desfiada com franjinhas, comprimento no quadril | ✅ |
+| JAQ-05 | Jaqueta jeans oversized | Azul médio (lavagem clássica) | Oversized, ombros caídos, comprimento no quadril, bolsos com lapela, botões metálicos. Peça ampla: parte de baixo reta ou fluida, nunca saia plissada | ✅ |
 | CAS-01 | Casaco longo | Camelo | Lã, abaixo do joelho | ❓ |
 | CAS-02 | Parka com capuz de pelo (Amaro) | Preta | Nylon fosco acolchoado leve, capuz com pelo sintético preto, amarração com cordão na cintura, botões de pressão e zíperes dourados, comprimento no meio da coxa. Peça com volume: usar com parte de baixo justa ou fluida, nunca com saia plissada | ✅ |
 | TRE-01 | Trench coat | Bege | Clássico com faixa | ❓ |
