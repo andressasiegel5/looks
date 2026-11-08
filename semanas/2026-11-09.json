@@ -9,15 +9,17 @@
    "chuva": false,
    "opcoes": [
     {
-     "nome": "Creme, cinza e sobretudo rosa",
+     "nome": "Camisa branca, calça cinza e tricô cinza",
      "pecas": [
-      "SUE-03",
+      "CAM-10",
       "CAL-18",
-      "CAS-07",
-      "SAP-05",
-      "BOL-06"
+      "CAS-08",
+      "BOL-01",
+      "ACE-03"
      ],
-     "id": "w1109-11"
+     "id": "w1109-11",
+     "extras": [],
+     "reusa": "c100-04"
     },
     {
      "nome": "Office siren pied-de-poule",
