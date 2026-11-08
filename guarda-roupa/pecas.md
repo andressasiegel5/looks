@@ -12,6 +12,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | VES-02 | Vestido de tricô gola alta | Marrom café mescla | Tricô macio felpudo, gola alta larga, mangas bufantes franzidas no ombro, punho justo, caimento solto, longo (comprimento a confirmar) | ✅ |
 | VES-03 | Vestido floral de malha (Ralph Lauren) | Verde-bandeira estampado | Jersey fluido, flores brancas, azul-claro, marinho e amarelas, gola redonda, manga 3/4, midi | ✅ |
 | VES-04 | Vestido de malha com letreiro (Lança Perfume) | Preto com letras brancas | Malha canelada, estampa de letras brancas grandes repetidas, gola alta baixa, manga curta, justo, midi | ✅ |
+| VES-05 | Vestido longo de tricô listrado (Viviane Furrier) | Preto com listras off-white | Tricô fino, listras horizontais largas off-white espaçadas, decote com acabamento off-white, manga longa, longo, caimento reto | ✅ |
 | VES-01 | Vestido sem manga de lã | Cinza chumbo mescla | Lã batida, decote redondo, sem manga, recorte na cintura, saia levemente evasê, forro caramelo (comprimento a confirmar) | ✅ |
 
 ## Saias
