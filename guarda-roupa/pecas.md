@@ -96,6 +96,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | CAS-02 | Parka com capuz de pelo (Amaro) | Preta | Nylon fosco acolchoado leve, capuz com pelo sintético preto, amarração com cordão na cintura, botões de pressão e zíperes dourados, comprimento no meio da coxa. Peça com volume: usar com parte de baixo justa ou fluida, nunca com saia plissada | ✅ |
 | CAS-03 | Casaco de tricô com cachecol removível (Shoulder) | Bege | Casaco longo de tricô encorpado, abaixo do joelho, aberto sem botões, com cachecol do mesmo tricô removível. Tam. P | ✅ |
 | CAS-04 | Casaco-camisa de veludo/suede | Marrom chocolate | Tecido aveludado fosco, gola de camisa grande, botões, caimento reto, comprimento no meio da coxa | ✅ |
+| CAS-05 | Parka leve/camisa utilitária (Zara) | Verde-oliva | Tecido fluido tipo sarja de viscose, gola alta de camisa, botões de pressão dourados, bolsos com lapela, cordão na cintura, mangas dobráveis com presilha, comprimento no meio da coxa | ✅ |
 | TRE-01 | Trench coat | Bege | Clássico com faixa | ❓ |
 
 ## Sapatos
