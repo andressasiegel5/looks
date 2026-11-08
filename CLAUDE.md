@@ -30,7 +30,8 @@ para o ChatGPT criar imagens. Converse sempre em português.
 
 ## Ao cadastrar peças
 - Adicione na tabela da categoria certa em `guarda-roupa/pecas.md`, com o próximo código livre.
-- Se ela mandar foto, descreva a peça a partir da foto.
+- Se ela mandar foto, descreva a peça a partir da foto. Fotos do armário: cadastre SÓ a peça em evidência (no centro/em foco);
+  ignore as peças dos lados e não pergunte sobre elas.
 
 ## Ao receber uma imagem gerada
 - Crie `looks/AAAA-MM-<tema>/` com a imagem e um `README.md` listando os looks (modelo: `looks/2026-11-saia-creme-camadas/`).
