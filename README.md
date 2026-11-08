@@ -67,6 +67,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Saia micro plissada preto e off-white — com as suas peças, 6 looks](looks/2026-11-saia-plissada-pb/) ✨
 - [Calça reta cinza espinha de peixe (Zara) — com as suas peças, 6 looks](looks/2026-11-calca-reta-cinza-zara/) ✨
 - [Sobretudo rosa antigo (Lauren Ralph Lauren) — com as suas peças, 6 looks](looks/2026-11-sobretudo-rosa/) ✨
+- [Saia plissada preta midi — com as suas peças, 6 looks](looks/2026-11-saia-plissada-preta/) ✨
 - [Suéter felpudo creme (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-creme-zara/) ✨
 - [Suéter felpudo marinho (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-marinho-zara/) ✨
 - [Colete espinha de peixe bege (Emme) — com as suas peças, 6 looks](looks/2026-11-colete-espinha-bege/) ✨
@@ -229,3 +230,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Saia micro plissada preto e off-white — street style](prompts/2026-11-09-saia-plissada-pb-street-style.md)
 - [Calça reta cinza espinha de peixe (Zara) — street style](prompts/2026-11-09-calca-reta-cinza-zara-street-style.md)
 - [Sobretudo rosa antigo (Lauren Ralph Lauren) — street style](prompts/2026-11-09-sobretudo-rosa-ralph-street-style.md)
+- [Saia plissada preta midi — street style](prompts/2026-11-09-saia-plissada-preta-midi-street-style.md)

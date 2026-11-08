@@ -27,6 +27,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | SAI-07 | Saia envelope estampada | Azul-marinho com estampa de folhas abstratas nude/rosé | Crepe fluido, estampa grande de folhas e traços orgânicos nude-rosado sobre marinho, modelagem envelope (transpassada) com leve evasê, cintura alta, comprimento midi | ✅ |
 | SAI-08 | Saia transpassada com fivela (Max Mara) | Preta | Malha crepe encorpada fosca, cintura alta com pequena fivela metálica prateada, transpasse diagonal com debrum de cetim preto brilhante na borda, pence/costura frontal, caimento reto, comprimento midi | ✅ |
 | SAI-09 | Saia plissada estampada | Preto e off-white | Plissado miúdo (micro plissê) com estampa floral abstrata em pinceladas preto e off-white, cós largo de elástico preto, caimento reto, comprimento até o joelho | ✅ |
+| SAI-10 | Saia plissada midi | Preta | Crepe fluido com pregas largas marcadas (plissado faca), cós de elástico, caimento solto que balança ao andar, comprimento midi | ✅ |
 | SAI-01 | Saia midi em camadas | Creme / off-white | Babados plissados em 5 camadas, tecido leve (tipo chiffon/tule), cintura alta, comprimento abaixo do joelho | ✅ |
 
 ## Calças
