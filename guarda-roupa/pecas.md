@@ -19,7 +19,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 
 | Código | Peça | Cor | Detalhes | Status |
 |---|---|---|---|---|
-| SAI-02 | Saia midi slip estampa animal (H&M) | Creme com risquinhos marrom-escuros miúdos | Estampa animal muito miúda e densa. Cetim fluido, corte enviesado rente ao corpo, cintura alta com elástico, comprimento até o meio da canela | ✅ |
+| SAI-02 | Saia midi slip estampa animal (H&M) | Creme com risquinhos marrom-escuros miúdos | Estampa animal muito miúda e densa. Cetim fluido, corte enviesado rente ao corpo, cintura alta com elástico, comprimento até o meio da canela | 📦 a caminho (ainda não chegou) |
 | SAI-03 | Saia midi transpassada de linho | Verde-menta (sálvia) | Envelope com nó na lateral, barra assimétrica, cintura alta, linho, comprimento midi | ✅ |
 | SAI-04 | Saia curta com barra de pégasos (Lança Perfume) | Azul-marinho médio com barra bege-dourada | Sarja de alfaiataria, reta, curta (acima do joelho); faixa larga de cetim bege-dourado na barra com aplicações de pégasos (cavalos alados) em metal dourado rosé | ✅ |
 | SAI-05 | Saia lápis de malha (bandage) | Preta | Malha encorpada com nervuras horizontais sutis em relevo, cintura alta, justa no corpo, comprimento até o joelho | ✅ |
@@ -28,15 +28,15 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | SAI-08 | Saia transpassada com fivela (Max Mara) | Preta | Malha crepe encorpada fosca, cintura alta com pequena fivela metálica prateada, transpasse diagonal com debrum de cetim preto brilhante na borda, pence/costura frontal, caimento reto, comprimento midi | ✅ |
 | SAI-09 | Saia plissada estampada | Preto e off-white | Plissado miúdo (micro plissê) com estampa floral abstrata em pinceladas preto e off-white, cós largo de elástico preto, caimento reto, comprimento até o joelho | ✅ |
 | SAI-10 | Saia plissada midi | Preta | Crepe fluido com pregas largas marcadas (plissado faca), cós de elástico, caimento solto que balança ao andar, comprimento midi | ✅ |
-| SAI-01 | Saia midi em camadas | Creme / off-white | Babados plissados em 5 camadas, tecido leve (tipo chiffon/tule), cintura alta, comprimento abaixo do joelho | ✅ |
+| SAI-01 | Saia midi em camadas | Creme / off-white | Babados plissados em 5 camadas, tecido leve (tipo chiffon/tule), cintura alta, comprimento abaixo do joelho | 📦 a caminho (ainda não chegou) |
 
 ## Calças
 
 | Código | Peça | Cor | Detalhes | Status |
 |---|---|---|---|---|
-| CAL-03 | Calça wide leg de alfaiataria (H&M) | Off-white | Cintura alta, vinco frontal, perna larga levemente flare, longa cobrindo o sapato, botão de metal | ✅ |
-| CAL-04 | Calça de alfaiataria larga (H&M) | Cinza mescla claro | Cintura alta, passantes, perna larga e longa, tecido mesclado | ✅ |
-| CAL-05 | Calça de alfaiataria larga | Marrom escuro (café) | Mesmo modelo da CAL-04: cintura alta, passantes, perna larga e longa | ✅ |
+| CAL-03 | Calça wide leg de alfaiataria (H&M) | Off-white | Cintura alta, vinco frontal, perna larga levemente flare, longa cobrindo o sapato, botão de metal | 📦 a caminho (ainda não chegou) |
+| CAL-04 | Calça de alfaiataria larga (H&M) | Cinza mescla claro | Cintura alta, passantes, perna larga e longa, tecido mesclado | 📦 a caminho (ainda não chegou) |
+| CAL-05 | Calça de alfaiataria larga | Marrom escuro (café) | Mesmo modelo da CAL-04: cintura alta, passantes, perna larga e longa | 📦 a caminho (ainda não chegou) |
 | CAL-06 | Calça pantalona texturizada (conjunto com BLU-38) | Caramelo acobreado | Malha texturizada ondulada (tipo crepe/seersucker), cintura alta, perna bem larga e longa, fluida. Conjunto com a blusa BLU-38 | ✅ 🏠 fim de semana (não é de trabalho) |
 | CAL-07 | Calça flare de malha (Lucy in the Sky, conjunto com CAS-06) | Creme | Malha encorpada lisa, cintura alta, ajustada no quadril, perna flare longa | ✅ |
 | CAL-08 | Short de alfaiataria espinha de peixe | Marrom e bege (tweed) | Tweed espinha de peixe (herringbone) marrom café com bege, cintura alta, SHORT (não é calça) | ✅ 🏠 fora do trabalho |
