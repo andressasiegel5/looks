@@ -1197,7 +1197,8 @@ function showLook(id) {
     <div class="rail">${[...l.pecas.map(pieceCard), ...l.extras.map(ghostCard)].join("")}</div>
     <p class="sub" style="margin:0">${usos.length ? `Usado ${usos.length}× · última vez em ${new Date(usos[usos.length - 1] + "T12:00").toLocaleDateString("pt-BR")}` : "Ainda não usado."}</p>
     ${state.db ? `<div class="actions"><button class="btn" type="button" data-fav="${id}">${f.favorito ? "♥ favorito" : "♡ favoritar"}</button>
-      <button class="btn dark" type="button" data-used="${id}" ${usos.includes(todayISO()) ? "disabled" : ""}>${usos.includes(todayISO()) ? "✓ usei hoje" : "vou usar hoje"}</button></div>` : ""}`);
+      <button class="btn dark" type="button" data-used="${id}" ${usos.includes(todayISO()) ? "disabled" : ""}>${usos.includes(todayISO()) ? "✓ usei hoje" : "vou usar hoje"}</button></div>` : ""}
+    ${state.db ? `<div class="actions"><button class="btn" type="button" data-regen="${id}">↻ regerar este look</button></div><div id="regenOut"></div>` : ""}`);
 }
 function combosFor(p) {
   const conflito = (a, b) => (AMPLAS.includes(a) && COM_VOLUME.includes(b)) || (AMPLAS.includes(b) && COM_VOLUME.includes(a));
@@ -1307,6 +1308,25 @@ async function buildWeek(btn) {
   btn.disabled = false;
 }
 
+// ---------- Regerar look ----------
+async function regenLook(id, btn) {
+  const l = LOOKS.find(x => x.id === id);
+  const sample = await window.claude?.use?.("sample").catch(() => null);
+  if (!sample) return toast("Abra logada no claude.ai para regerar");
+  btn.disabled = true; $("regenOut").innerHTML = `<p class="sub">Montando outra opção…</p>`;
+  const lista = PIECES.filter(p => p.tenho === true && p.code !== "SAP-01").map(p => `${p.code} | ${p.cat} | ${p.nome} | ${p.cor}`).join("\n");
+  const prompt = `Você é a stylist da Andressa (Curitiba, escritório FRIO: sempre uma camada por cima). Ela não gostou deste look: "${l.nome}" = ${l.pecas.map(c => BY[c] ? BY[c].nome + " " + BY[c].cor : c).join(" + ")} ${l.extras.join(" + ")}. Monte UMA alternativa para a mesma ocasião/clima (o nome do look indica o dia e o clima), bem diferente, usando SÓ estas peças dela (código | categoria | nome | cor):\n${lista}\nRegras: 1 parte de cima, 1 parte de baixo (ou vestido), 1 camada por cima, 1 bolsa BOL-, 1 sapato SAP-. Chuva: só bota ou tênis de couro. Saia em dia frio: com meia-calça. Peça larga em cima pede parte de baixo reta. Responda só JSON: {"nome":"...","pecas":["COD",...],"porque":"frase curta"}.`;
+  try {
+    const r = await sample.json(prompt, { modelTier: "default" });
+    const pcs = (r.pecas || []).filter(c => BY[c]);
+    $("regenOut").innerHTML = `<div class="card"><b>${esc(r.nome || "nova opção")}</b><div class="thumbs">${pcs.map(c => `<img src="${BY[c].img}" alt="">`).join("")}</div>
+      <div>${pcs.map(c => esc(BY[c].nome + " " + BY[c].cor)).join(" + ")}</div><small class="sub">${esc(r.porque || "")}</small>
+      <div class="actions"><button class="btn small" type="button" data-regen="${id}">↻ outra</button><button class="btn small dark" type="button" data-regenfoto="${id}">📸 quero a foto deste</button></div></div>`;
+    state.regen = { de: id, nome: r.nome, pecas: pcs };
+  } catch (e) { $("regenOut").innerHTML = `<p class="sub">Não consegui agora. Tente de novo.</p>`; }
+  btn.disabled = false;
+}
+
 // ---------- Banco ----------
 async function setLook(id, patch) {
   state.favs[id] = { ...(state.favs[id] || {}), ...patch };
@@ -1354,6 +1374,8 @@ document.addEventListener("click", async e => {
     state.sel = null; renderLooks(); renderFavs();
     return toast(`${ids.length} na wishlist (aba favoritos)`);
   }
+  if (d.regen) return regenLook(d.regen, el);
+  if (d.regenfoto) { const g = state.regen; if (!g) return; try { await state.db.collection("pedidos").add({ tipo: "regerar", substitui: g.de, nome: g.nome || "", pecas: g.pecas, criadoEm: todayISO(), status: "novo" }); el.disabled = true; el.textContent = "✓ pedido salvo"; toast("Pedido salvo: me fale “gera os pedidos” no chat"); } catch { toast("Não consegui salvar"); } return; }
   if (el.id === "weekBtn") return openWeek();
   if (el.id === "weekGo") return buildWeek(el);
   if (el.id === "pfMark") { if (!state.db) return toast("Abra logada no claude.ai para favoritar"); state.pfMark = !state.pfMark; if (state.pfMark) state.cat = "todas"; return renderPieces(); }

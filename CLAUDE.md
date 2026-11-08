@@ -80,3 +80,9 @@ Faça commit e push depois de cada alteração.
   Frio (máx ≤ 17 °C) → suéter + casaco/sobretudo, meia-calça se for saia. Chuva → calçado SÓ bota (SAP-06/07) ou tênis de couro (SAP-03 Veja, SAP-09 Samba), nunca sapato/sapatilha/slingback nem camurça (SAP-04); evitar SAI-01; preferir parka.
 - Não repetir a mesma peça principal na semana; variar saia/calça.
 - Responder com tabela dia | previsão | look (códigos + nomes) e oferecer gerar a imagem (grade de 5, uma geração).
+
+## Regerar look (botão no app)
+- Ao abrir um look no app há "↻ regerar este look": o app (capability `sample`) sugere outra combinação com as peças dela.
+  Se ela tocar "📸 quero a foto deste", grava em `pedidos` (`tipo: "regerar"`, `substitui: <id do look>`, `pecas`, `status: "novo"`).
+- Quando ela disser "gera os pedidos": leia `pedidos` com status "novo" (ArtifactData), gere UMA imagem com até 6 pedidos,
+  substitua a foto de cada look `substitui` (mesmo id, assim favoritos ficam), atualize `pecas` em LOOKS e marque o pedido `status: "feito"`.
