@@ -13,7 +13,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | VES-04 | Vestido de malha com letreiro (Lança Perfume) | Preto com letras brancas | Malha canelada, estampa "LANÇA PERFUME" em letras brancas grandes repetidas por todo o vestido, gola alta baixa, manga curta, justo, midi | ✅ |
 | VES-05 | Vestido longo de tricô listrado (Viviane Furrier) | Preto com listras off-white | Tricô fino, listras horizontais largas off-white espaçadas, decote com acabamento off-white, manga longa, longo, caimento reto | ✅ |
 | VES-02 | Vestido-suéter de tricô gola alta (Zara) | Marrom acinzentado mescla | Tricô macio, gola alta dobrada, mangas bufantes com punho, caimento solto e reto, CURTO (acima do joelho) | ✅ |
-| VES-01 | Vestido sem manga de lã | Cinza chumbo mescla | Lã batida, decote redondo, sem manga, recorte na cintura, saia levemente evasê, forro caramelo (comprimento a confirmar) | ✅ |
+| VES-01 | Vestido sem manga de lã (Zara) | Cinza chumbo mescla | Lã batida, gola redonda alta rente ao pescoço (não é decote V), sem manga, recorte na cintura, saia levemente evasê, forro caramelo, CURTO: um pouco acima do joelho | ✅ |
 
 ## Saias
 
