@@ -55,6 +55,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLU-16 | Blusa de tule transparente | Preta | Tule fino transparente, justa, manga longa, gola média alta. Usar sempre com top/regata preta por baixo (estampa a confirmar) | ✅ |
 | BLU-17 | Camiseta canelada com debrum (Morena Rosa) | Preta com debrum branco | Malha canelada justa, manga curta, gola redonda e barra das mangas com debrum branco | ✅ |
 | BLU-18 | Camiseta gola alta manga curta (Zara) | Cinza mescla | Malha canelada fina, gola alta baixa (mock neck), manga curta, justa, comprimento curto na cintura | ✅ |
+| BLU-37 | Body de veludo molhado com costas de tule | Preto | Veludo amassado (crushed velvet) com brilho, gola redonda, manga longa, justo; costas em tule preto transparente; body (sempre por dentro) | ✅ |
 | SUE-01 | Suéter Future Knit (Insider) | Taupe (bege acinzentado) | Tricô macio levemente felpudo, gola redonda, punhos e barra canelados, caimento reto, comprimento no quadril | ✅ |
 | BLU-19 | Regata gola alta Tech (Insider) | Azul petróleo | Malha tecnológica lisa e fosca, gola alta, mini manga caída no ombro, caimento reto ajustado | ✅ |
 | BLU-23 | Regata gola alta Tech (Insider) | Preta | Mesma modelagem da BLU-19 | ✅ |
