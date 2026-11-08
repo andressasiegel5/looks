@@ -30,6 +30,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | CAL-03 | Calça wide leg de alfaiataria (H&M) | Off-white | Cintura alta, vinco frontal, perna larga levemente flare, longa cobrindo o sapato, botão de metal | ✅ |
 | CAL-04 | Calça de alfaiataria larga (H&M) | Cinza mescla claro | Cintura alta, passantes, perna larga e longa, tecido mesclado | ✅ |
 | CAL-05 | Calça de alfaiataria larga | Marrom escuro (café) | Mesmo modelo da CAL-04: cintura alta, passantes, perna larga e longa | ✅ |
+| CAL-06 | Calça pantalona texturizada (conjunto com BLU-38) | Caramelo acobreado | Malha texturizada ondulada (tipo crepe/seersucker), cintura alta, perna bem larga e longa, fluida. Conjunto com a blusa BLU-38 | ✅ |
 | CAL-01 | Calça wide leg de couro sintético | Marrom café | Zara, R$ 279. Wide leg longa, cintura alta, pences frontais | 🛒 |
 | CAL-02 | Calça pantalona com pregas | Cinza-chumbo | Zara, R$ 359. Alfaiataria fluida, pregas, perna larga e comprida | 🛒 |
 
@@ -56,6 +57,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLU-17 | Camiseta canelada com debrum (Morena Rosa) | Preta com debrum branco | Malha canelada justa, manga curta, gola redonda e barra das mangas com debrum branco | ✅ |
 | BLU-18 | Camiseta gola alta manga curta (Zara) | Cinza mescla | Malha canelada fina, gola alta baixa (mock neck), manga curta, justa, comprimento curto na cintura | ✅ |
 | BLU-37 | Body de veludo molhado com costas de tule | Preto | Veludo amassado (crushed velvet) com brilho, gola redonda, manga longa, justo; costas em tule preto transparente; body (sempre por dentro) | ✅ |
+| BLU-38 | Blusa texturizada (conjunto com CAL-06) | Caramelo acobreado | Malha texturizada ondulada (tipo crepe/seersucker), gola redonda, manga curta com ombro levemente caído, caimento reto, comprimento no quadril. Conjunto com a pantalona CAL-06 | ✅ |
 | SUE-01 | Suéter Future Knit (Insider) | Taupe (bege acinzentado) | Tricô macio levemente felpudo, gola redonda, punhos e barra canelados, caimento reto, comprimento no quadril | ✅ |
 | BLU-19 | Regata gola alta Tech (Insider) | Azul petróleo | Malha tecnológica lisa e fosca, gola alta, mini manga caída no ombro, caimento reto ajustado | ✅ |
 | BLU-23 | Regata gola alta Tech (Insider) | Preta | Mesma modelagem da BLU-19 | ✅ |
