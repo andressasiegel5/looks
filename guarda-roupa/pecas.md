@@ -48,6 +48,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | CAL-15 | Calça jeans skinny | Preta | Jeans preto com elastano, cintura alta, justa, longa (sem foto) | ✅ |
 | CAL-16 | Calça wide leg de linho com fenda na barra | Amarelo-manteiga claro | Linho/viscose com brilho suave, cintura alta com passantes, perna larga e fluida, longa, barra com fenda lateral arredondada (abertura curva na lateral) | ✅ |
 | CAL-17 | Calça pantalona de sarja fluida | Marrom canela (terracota amarronzado) | Sarja leve de viscose, cintura alta, perna larga e reta, longa, caimento fluido | ✅ |
+| CAL-18 | Calça reta espinha de peixe (Zara) | Cinza mescla (preto e branco) | Alfaiataria em espinha de peixe miúda cinza, cintura alta, bolso traseiro embutido, perna reta, comprimento um pouco mais curto (no tornozelo) | ✅ |
 | CAL-01 | Calça wide leg de couro sintético | Marrom café | Zara, R$ 279. Wide leg longa, cintura alta, pences frontais | 🛒 |
 | CAL-02 | Calça pantalona com pregas | Cinza-chumbo | Zara, R$ 359. Alfaiataria fluida, pregas, perna larga e comprida | 🛒 |
 

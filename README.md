@@ -65,6 +65,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Calça de linho amarelo-manteiga — com as suas peças, 6 looks](looks/2026-11-calca-linho-manteiga/) ✨
 - [Calça pantalona marrom canela — com as suas peças, 6 looks](looks/2026-11-calca-marrom-canela/) ✨
 - [Saia micro plissada preto e off-white — com as suas peças, 6 looks](looks/2026-11-saia-plissada-pb/) ✨
+- [Calça reta cinza espinha de peixe (Zara) — com as suas peças, 6 looks](looks/2026-11-calca-reta-cinza-zara/) ✨
 - [Suéter felpudo creme (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-creme-zara/) ✨
 - [Suéter felpudo marinho (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-marinho-zara/) ✨
 - [Colete espinha de peixe bege (Emme) — com as suas peças, 6 looks](looks/2026-11-colete-espinha-bege/) ✨
@@ -225,3 +226,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Calça de linho amarelo-manteiga com fenda — street style](prompts/2026-11-09-calca-linho-manteiga-street-style.md)
 - [Calça pantalona marrom canela — street style](prompts/2026-11-09-calca-marrom-canela-street-style.md)
 - [Saia micro plissada preto e off-white — street style](prompts/2026-11-09-saia-plissada-pb-street-style.md)
+- [Calça reta cinza espinha de peixe (Zara) — street style](prompts/2026-11-09-calca-reta-cinza-zara-street-style.md)
