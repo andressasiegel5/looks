@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Parka preta — com as suas peças, 6 looks](looks/2026-11-parka-preta/) ✨
 - [Camiseta preta com debrum — com as suas peças, 6 looks](looks/2026-11-camiseta-debrum-preta/) ✨
 - [Calça marrom escuro — com as suas peças, 6 looks](looks/2026-11-calca-marrom/) ✨
 - [Coletes preto curto e creme — com as suas peças, 6 looks](looks/2026-11-coletes-preto-e-creme/) ✨
@@ -75,3 +76,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Coletes preto curto e creme — street style](prompts/2026-11-07-coletes-preto-e-creme-street-style.md)
 - [Calça de alfaiataria marrom escuro — street style](prompts/2026-11-07-calca-marrom-street-style.md)
 - [Camiseta preta com debrum (Morena Rosa) — street style](prompts/2026-11-08-camiseta-debrum-preta-street-style.md)
+- [Parka preta com capuz de pelo (Amaro) — street style](prompts/2026-11-08-parka-preta-street-style.md)
