@@ -37,6 +37,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | CAL-07 | Calça flare de malha (Lucy in the Sky, conjunto com CAS-06) | Creme | Malha encorpada lisa, cintura alta, ajustada no quadril, perna flare longa | ✅ |
 | CAL-08 | Calça de alfaiataria espinha de peixe | Marrom e bege (tweed) | Tweed espinha de peixe (herringbone) marrom café com bege, cintura alta, bolso traseiro com lapela e botão, perna reta e longa | ✅ |
 | CAL-09 | Short de alfaiataria risca de giz (Simone) | Cinza mescla com riscas brancas | Malha de alfaiataria mesclada, riscas de giz brancas finas, cintura alta com passantes, pregas na frente, perna larga, comprimento no meio da coxa, tam. M. **Tem elástico franzido atrás**: usar sempre com blusa POR FORA ou terceira peça longa cobrindo a cintura | ✅ |
+| CAL-10 | Short de alfaiataria acetinado (Calvin Klein) | Preto | Tecido acetinado com brilho suave, cintura alta com cós largo, pregas na frente, fechamento lateral com tira de ilhoses e plaquinha metálica prateada, comprimento curto (meio da coxa) | ✅ |
 | CAL-01 | Calça wide leg de couro sintético | Marrom café | Zara, R$ 279. Wide leg longa, cintura alta, pences frontais | 🛒 |
 | CAL-02 | Calça pantalona com pregas | Cinza-chumbo | Zara, R$ 359. Alfaiataria fluida, pregas, perna larga e comprida | 🛒 |
 
