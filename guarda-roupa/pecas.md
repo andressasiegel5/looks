@@ -151,3 +151,11 @@ Os prompts pedem "sapato simples e discreto, em tom neutro".
 | ACE-01 | Cinto fino | Caramelo | Fivela dourada | ❓ |
 | ACE-02 | Cinto fino | Preto | Fivela dourada | ❓ |
 | ACE-03 | Brinco argola | Dourado | Médio | ❓ |
+| BOL-01 | Bolsa estruturada | Vinho / bordô | Couro sintético texturizado, formato tote estruturado | ✅ |
+| BOL-02 | Bolsa de mão croco | Caramelo | Couro sintético com textura croco, alças de mão arredondadas, tote média | ✅ |
+| BOL-03 | Bolsa transversal pequena | Azul royal / cobalto | Couro macio, formato câmera retangular, alça transversal fina | ✅ |
+| BOL-04 | Mini bolsa retangular com zíper | Preta | Material rígido brilhante, zíper ao redor, alça transversal | ✅ |
+| BOL-05 | Bolsa de ombro estruturada | Off-white | Couro sintético liso, ferragens douradas, alça curta de ombro | ✅ |
+| BOL-06 | Mini bolsa matelassê | Preta | Couro sintético com matelassê em chevron, alça curta de contas marrom | ✅ |
+| BOL-07 | Bolsa de palha trançada | Marrom café | Ráfia/palha trançada marrom, alça de tecido franzido marrom (tipo scrunchie), formato baguete | ✅ |
+| BOL-08 | Bolsa meia-lua | Nude / rosa claro | Couro sintético saffiano, formato meia-lua, ferragens douradas, alça transversal | ✅ |

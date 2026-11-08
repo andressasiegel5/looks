@@ -24,7 +24,8 @@ para o ChatGPT criar imagens. Converse sempre em português.
 4. Salve o prompt em `prompts/AAAA-MM-DD-<tema>.md` (texto após "Prompt pronto para colar:"), linke no README, rode
    `python3 app/build_prompts.py` (a aba Prompts foi removida do app a pedido dela; os prompts ficam só no repositório).
    Na resposta, mostre o prompt **dentro de um bloco de código** (```), que tem botão de copiar na conversa.
-5. **Sem sapatos no acervo por enquanto**: não escolha sapato; no prompt peça "sapato simples e discreto, em tom neutro".
+5. **Bolsas dela (BOL-01 a BOL-08)**: nos looks, use uma dessas bolsas (cor/estilo do catálogo), não invente outras.
+6. **Sem sapatos no acervo por enquanto**: não escolha sapato; no prompt peça "sapato simples e discreto, em tom neutro".
 6. **Proporção**: peça ampla em cima (ex.: JAQ-02) pede parte de baixo reta ou ajustada; nunca com peça de volume (ex.: SAI-01). Na página isso fica nas listas `AMPLAS` e `COM_VOLUME`.
 7. Foco: trabalho (escritório). Considere clima/ocasião se ela informar.
 
