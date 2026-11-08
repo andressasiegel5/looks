@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Blusa com babados (Anselmi) — com as suas peças, 6 looks](looks/2026-11-blusa-babados-anselmi/) ✨
 - [Vestido-suéter curto (Zara) — com as suas peças, 6 looks](looks/2026-11-vestido-sueter-zara/) ✨
 - [Camisa-jaqueta Max Mara — com as suas peças, 6 looks](looks/2026-11-camisa-jaqueta-maxmara/) ✨
 - [Parka leve verde-oliva (Zara) — com as suas peças, 6 looks](looks/2026-11-parka-oliva-zara/) ✨
@@ -127,3 +128,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Parka leve verde-oliva (Zara) — street style](prompts/2026-11-09-parka-oliva-zara-street-style.md)
 - [Camisa-jaqueta off-white (Max Mara) — street style](prompts/2026-11-09-camisa-jaqueta-maxmara-street-style.md)
 - [Vestido-suéter curto de tricô (Zara) — street style](prompts/2026-11-09-vestido-sueter-zara-street-style.md)
+- [Blusa canelada com babados (Anselmi) — street style](prompts/2026-11-09-blusa-babados-anselmi-street-style.md)
