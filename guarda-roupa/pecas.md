@@ -63,6 +63,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLU-22 | Tech T-shirt gola V (Insider) | Preta | Malha tecnológica lisa e fosca, decote V, manga curta, caimento reto ajustado | ✅ |
 | BLU-24 | Blusa de tricô canelado com babados (Anselmi) | Off-white | Tricô canelado justo, gola alta com babado, babados em V no peito, punhos com babado, manga longa | ✅ |
 | BLU-25 | Colete/blusa de tricô aberto | Off-white | Tricô de ponto grosso, decote redondo, sem manga (cava ampla caída), barra canelada, curto e reto. Usar por cima de blusa ou camiseta | ✅ |
+| BLU-26 | Blusa listrada manga curta (Emme) | Off-white com listras pretas | Malha canelada macia, listras pretas finas, gola redonda, manga curta, caimento reto levemente solto | ✅ |
 | CAM-01 | Camisa social | Branca | Algodão, manga longa (usar dobrada ou com nó na cintura) | ❓ |
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
