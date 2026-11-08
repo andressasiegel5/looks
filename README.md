@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Conjunto tricô caramelo — com as suas peças, 6 looks](looks/2026-11-conjunto-trico-caramelo/) ✨
 - [Camiseta boxy bege — com as suas peças, 6 looks](looks/2026-11-camiseta-boxy-taupe/) ✨
 - [Blusa listrada P&B (Emme) — com as suas peças, 6 looks](looks/2026-11-blusa-listrada-pb/) ✨
 - [Camisa de linho off-white (Amaro) — com as suas peças, 6 looks](looks/2026-11-camisa-linho-offwhite/) ✨
@@ -143,3 +144,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Camisa de linho off-white (Amaro) — street style](prompts/2026-11-09-camisa-linho-offwhite-amaro-street-style.md)
 - [Blusa listrada preta e branca (Emme) — street style](prompts/2026-11-09-blusa-listrada-pb-street-style.md)
 - [Camiseta boxy bege acinzentado — street style](prompts/2026-11-09-camiseta-boxy-taupe-street-style.md)
+- [Conjunto cardigã + regata caramelo — street style](prompts/2026-11-09-conjunto-trico-caramelo-street-style.md)
