@@ -75,6 +75,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLU-35 | Body canelado manga bufante (Iorane) | Preto | Malha canelada, decote quadrado, mangas bufantes 3/4 franzidas no ombro e com elástico no punho, body (sempre por dentro) | ✅ |
 | BLU-36 | Regata de veludo gola alta (Zara) | Preta | Veludo molhado macio, gola alta, sem manga, justa | ✅ |
 | SUE-02 | Suéter de tricô felpudo (Zara) | Azul-marinho | Tricô macio felpudo (tipo alpaca/mohair), gola redonda, manga raglã longa, caimento reto levemente solto | ✅ |
+| SUE-03 | Suéter de tricô felpudo gola alta baixa (Zara) | Off-white / creme | Tricô macio felpudo, gola alta baixa (mock neck), manga longa, barra e punhos canelados, caimento reto | ✅ |
 | CAM-01 | Camisa social | Branca | Algodão, manga longa (usar dobrada ou com nó na cintura) | ❓ |
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
