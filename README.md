@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Regata canelada preta (Shoulder) — com as suas peças, 6 looks](looks/2026-11-regata-canelada-shoulder/) ✨
 - [Regata tricô gola alta preta — com as suas peças, 6 looks](looks/2026-11-regata-trico-gola-alta-preta/) ✨
 - [Regata muscle preta (Insider) — com as suas peças, 6 looks](looks/2026-11-regata-muscle-preta/) ✨
 - [Regata decote V chumbo — com as suas peças, 6 looks](looks/2026-11-regata-decote-v-chumbo/) ✨
@@ -157,3 +158,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Regata decote V cinza chumbo — street style](prompts/2026-11-09-regata-decote-v-chumbo-street-style.md)
 - [Regata muscle preta (Insider) — street style](prompts/2026-11-09-regata-muscle-preta-street-style.md)
 - [Regata de tricô gola alta preta — street style](prompts/2026-11-09-regata-trico-gola-alta-preta-street-style.md)
+- [Regata canelada preta (Shoulder) — street style](prompts/2026-11-09-regata-canelada-shoulder-street-style.md)

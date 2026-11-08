@@ -71,6 +71,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLU-31 | Regata canelada decote V | Cinza chumbo mescla | Malha canelada fina, decote V, alça larga, caimento reto ajustado | ✅ |
 | BLU-32 | Regata muscle de viscose (Insider) | Preta | Viscose macia fosca, gola redonda, cavas largas, caimento reto levemente solto, curta | ✅ |
 | BLU-33 | Regata de tricô canelado gola alta | Preta | Tricô canelado encorpado, gola alta baixa (mock neck), sem manga com cava americana, justa, comprimento no quadril | ✅ |
+| BLU-34 | Regata canelada cava americana (Shoulder) | Preta | Malha canelada com forro, gola redonda, cava nadador, justa, comprimento longo no quadril | ✅ |
 | CAM-01 | Camisa social | Branca | Algodão, manga longa (usar dobrada ou com nó na cintura) | ❓ |
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
