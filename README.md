@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Regata muscle preta (Insider) — com as suas peças, 6 looks](looks/2026-11-regata-muscle-preta/) ✨
 - [Regata decote V chumbo — com as suas peças, 6 looks](looks/2026-11-regata-decote-v-chumbo/) ✨
 - [Blusa transpassada preta (Emme) — com as suas peças, 6 looks](looks/2026-11-blusa-transpassada-preta/) ✨
 - [Blusa raglã preta (Vista-me) — com as suas peças, 6 looks](looks/2026-11-blusa-raglan-preta/) ✨
@@ -153,3 +154,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Blusa de tricô raglã preta (Vista-me) — street style](prompts/2026-11-09-blusa-raglan-preta-street-style.md)
 - [Blusa transpassada preta (Emme) — street style](prompts/2026-11-09-blusa-transpassada-preta-street-style.md)
 - [Regata decote V cinza chumbo — street style](prompts/2026-11-09-regata-decote-v-chumbo-street-style.md)
+- [Regata muscle preta (Insider) — street style](prompts/2026-11-09-regata-muscle-preta-street-style.md)
