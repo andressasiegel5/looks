@@ -37,6 +37,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 
 ## Coleções
 
+- [Blazer curto xadrez — com as suas peças, 6 looks](looks/2026-11-blazer-curto-xadrez/) ✨
 - [Jaqueta utilitária preta — com as suas peças, 6 looks](looks/2026-11-jaqueta-utilitaria-preta/) ✨
 - [Bomber off-white (Zara) — com as suas peças, 5 looks](looks/2026-11-bomber-couro-offwhite/) ✨
 - [Casaquinho bouclé (Lemoncola) — com as suas peças, 6 looks](looks/2026-11-casaquinho-boucle/) ✨
@@ -119,3 +120,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Casaquinho de bouclé com paetês (Lemoncola) — street style](prompts/2026-11-09-casaquinho-boucle-street-style.md)
 - [Bomber de couro sintético off-white (Zara) — street style](prompts/2026-11-09-bomber-couro-offwhite-street-style.md)
 - [Jaqueta utilitária preta — street style](prompts/2026-11-09-jaqueta-utilitaria-preta-street-style.md)
+- [Blazer curto xadrez — street style](prompts/2026-11-09-blazer-curto-xadrez-street-style.md)
