@@ -109,6 +109,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | SUE-11 | Suéter de tricô grosso gola alta baixa | Rosa queimado (rosé terroso / pêssego escuro) | Tricô de algodão encorpado em ponto inglês, gola alta baixa (mock neck) canelada, ombro caído, manga até o cotovelo, barra canelada, caimento reto levemente solto | ✅ |
 | SUE-12 | Suéter de tricô fino (Shoulder) | Camelo / caramelo claro | Tricô fino liso de viscose, gola redonda canelada, manga longa, caimento reto, tam. M | ✅ |
 | SUE-13 | Suéter canelado color block (Banana Republic) | Creme e cinza médio | Tricô canelado macio levemente felpudo, blocos grandes: parte de cima creme e parte de baixo/laterais cinza médio, gola redonda alta, manga longa, caimento reto | ✅ |
+| CAM-11 | Camisa listrada branco sobre branco (Zara) | Branca | Algodão com listras finas em relevo tom sobre tom, gola de camisa, punho com botão, corte reto levemente solto | ✅ |
 | CAM-01 | Camisa social | Branca | Algodão, manga longa (usar dobrada ou com nó na cintura) | ❓ |
 | CAM-02 | Camisa social | Azul claro | Algodão, manga longa | ❓ |
 | CAM-03 | Camisa / blusa | Azul marinho | Gola V, tecido fluido | ❓ |
@@ -157,6 +158,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | CAS-06 | Casaco-capa de tricô (Lucy in the Sky, conjunto com CAL-07) | Creme | Blusa-capa de malha encorpada lisa creme, gola alta, MANGA CURTA (a capa cobre ombros e braços até o cotovelo), faixa do mesmo tecido amarrada na cintura, comprimento no quadril. É quente: no frio, usar com blusa de manga longa por baixo | ✅ |
 | CAS-07 | Casaco sobretudo sem gola (Lauren Ralph Lauren) | Rosa antigo (rosé empoeirado) | Lã batida/sarja encorpada, decote redondo sem gola com recorte assimétrico, fechamento com botões de pressão encapados, forro rosé, comprimento abaixo do joelho, caimento reto | ✅ 💰 provável venda: evitar nos looks |
 | CAS-08 | Casaco de tricô grosso oversized | Cinza-claro perolado mescla (greige) | Tricô grosso bem felpudo (fio com pelinhos, tipo mohair), aberto sem botões, ombro caído, mangas longas largas com punho canelado, comprimento no quadril/coxa. **Peça ampla**: com parte de baixo reta ou justa | ✅ |
+| CAS-09 | Casaco longo ajustado gola padre (Zara ZW) | Cinza mescla | 100% lã (sarja fina), longo até a canela, ajustado com recortes, gola padre alta sem lapela, 8 botões pretos, bolsos com lapela. Tam. M. Quente: serve no frio | ✅ |
 | CAS-05 | Parka leve/camisa utilitária (Zara) | Verde-oliva | Tecido fluido tipo sarja de viscose, gola alta de camisa, botões de pressão dourados, bolsos com lapela, cordão na cintura, mangas dobráveis com presilha, comprimento no meio da coxa | ✅ |
 | TRE-01 | Trench coat | Bege | Clássico com faixa | ❓ |
 
@@ -173,6 +175,7 @@ Cadastrados a partir do que ela contou (sem foto ainda: pedir foto para confirma
 | SAP-04 | Tênis Stella (Larroude) | Camurça marrom caramelo com couro off-white | Tênis retrô baixo de camurça caramelo, faixa curva e calcanhar off-white, furinhos laterais, cadarço off-white, sola branca fina. Casual | ✅ |
 | SAP-08 | Sapatilha slingback | Marrom claro (caramelo/nude) | Sapatilha baixa com tira de elástico atrás do calcanhar. Escritório e dias amenos/quentes | ✅ |
 | SAP-09 | Tênis Adidas Samba | Branco com 3 listras pretas | Clássico: couro branco, 3 listras pretas, biqueira de camurça cinza-clara, sola de borracha caramelo (gum). Casual | ✅ |
+| SAP-11 | Bota cano alto (Zara) | Preta | Couro sintético levemente craquelado, cano reto até abaixo do joelho, bico quadrado, salto alto bloco fino (~9 cm). Evitar chuva forte | ✅ |
 | SAP-05 | Sapato de bico fino com salto bloco | Preto | Salto médio bloco, bico fino. Mais arrumado: escritório, saia lápis, alfaiataria | ✅ |
 | SAP-06 | Bota cano médio/baixo | Marrom | Cano baixo-médio (ankle boot). Dias frios, com calça ou saia midi + meia-calça | ✅ |
 | SAP-07 | Bota cano médio/baixo | Preta | Cano baixo-médio (ankle boot). Dias frios, com calça ou saia + meia-calça | ✅ |

@@ -26,7 +26,7 @@ para o ChatGPT criar imagens. Converse sempre em português.
    Na resposta, mostre o prompt **dentro de um bloco de código** (```), que tem botão de copiar na conversa.
 5. **Bolsas dela (BOL-01 a BOL-09)**: nos looks, use uma dessas bolsas (cor/estilo do catálogo), não invente outras.
 6. **Sapatos dela (SAP-02 a SAP-07)**: escolha entre eles. Escritório: sapato preto de bico com salto bloco (SAP-05), slingback café croco (SAP-02), slingback prata (SAP-10) ou sapatilha slingback marrom clara (SAP-08, boa para dias quentes);
-   frio/chuva: botas cano baixo marrom (SAP-06) ou preta (SAP-07); casual/sexta: tênis Veja branco (SAP-03), tênis Stella Larroude (SAP-04) ou Adidas Samba (SAP-09).
+   frio: bota cano alto SAP-11 (salto alto; não em chuva forte), botas cano baixo marrom (SAP-06) ou preta (SAP-07); casual/sexta: tênis Veja branco (SAP-03), tênis Stella Larroude (SAP-04) ou Adidas Samba (SAP-09).
    O loafer SAP-01 está caindo do pé: não usar até ela avisar que resolveu.
 6. **Proporção**: peça ampla em cima (ex.: JAQ-02) pede parte de baixo reta ou ajustada; nunca com peça de volume (ex.: SAI-01). Na página isso fica nas listas `AMPLAS` e `COM_VOLUME`.
 7. Foco: trabalho (escritório). Considere clima/ocasião se ela informar.
@@ -109,3 +109,7 @@ Faça commit e push depois de cada alteração.
   em `looks/_catalogo/gNN.png`; `python3 scripts/catalogo.py recortar` corta em `app/img/pecas/cat-<código>.jpg`.
 - Subir como assets e pôr o `/_blob/` no mapa `CAT` em `app/index.html` (a foto real continua em `IMG`, aparece em "ver a foto real").
 - Peça nova: gerar a foto de catálogo junto (cabe numa grade com outras).
+
+## Looks usados
+- Botões "👗 usei hoje" (aba semana) e "vou usar hoje" (ficha do look) gravam `usos: [datas]` em `looks/<id>`.
+- Ao montar a semana / trocar opção: evitar looks usados nos últimos 21 dias (ler `looks` com ArtifactData).
