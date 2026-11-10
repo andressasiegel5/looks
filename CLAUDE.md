@@ -113,3 +113,5 @@ Faça commit e push depois de cada alteração.
 ## Looks usados
 - Botões "👗 usei hoje" (aba semana) e "vou usar hoje" (ficha do look) gravam `usos: [datas]` em `looks/<id>`.
 - Ao montar a semana / trocar opção: evitar looks usados nos últimos 21 dias (ler `looks` com ArtifactData).
+- Uso por peças (quando a combinação não tem foto no app): coleção `usos/<data>` com `pecas: [códigos]`. Ler junto com `looks.usos`
+  ao montar a semana e evitar repetir a mesma combinação (parte de cima + parte de baixo) por 21 dias.
