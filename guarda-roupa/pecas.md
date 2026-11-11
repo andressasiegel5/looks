@@ -20,7 +20,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | Código | Peça | Cor | Detalhes | Status |
 |---|---|---|---|---|
 | SAI-02 | Saia midi slip estampa animal (H&M) | Creme com risquinhos marrom-escuros miúdos | Estampa animal muito miúda e densa. Cetim fluido, corte enviesado rente ao corpo, cintura alta com elástico, comprimento até o meio da canela | 📦 a caminho (ainda não chegou) |
-| SAI-03 | Saia midi transpassada de linho | Verde-menta (sálvia) | Envelope com nó na lateral, barra assimétrica, cintura alta, linho, comprimento midi | ✅ |
+| SAI-03 | Saia midi transpassada de linho | Verde-menta (sálvia) | Envelope com nó na lateral, barra assimétrica, cintura alta, linho, comprimento midi | 🎁 não usa mais (fora dos looks) |
 | SAI-04 | Saia curta com barra de pégasos (Lança Perfume) | Azul-marinho médio com barra bege-dourada | Sarja de alfaiataria, reta, curta (acima do joelho); faixa larga de cetim bege-dourado na barra com aplicações de pégasos (cavalos alados) em metal dourado rosé | ✅ |
 | SAI-05 | Saia lápis de malha (bandage) | Preta | Malha encorpada com nervuras horizontais sutis em relevo, cintura alta, justa no corpo, comprimento até o joelho | ✅ |
 | SAI-06 | Saia lápis de alfaiataria | Cinza chumbo mescla | Tecido tipo flanela/lã fria mesclado, pences na cintura, zíper atrás, cintura alta, justa no corpo, comprimento até o joelho | ✅ |

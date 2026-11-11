@@ -35,7 +35,7 @@ para o ChatGPT criar imagens. Converse sempre em português.
 - Adicione na tabela da categoria certa em `guarda-roupa/pecas.md`, com o próximo código livre.
 - **CAS-03 (casaco Shoulder) é marrom acinzentado ESCURO**, não bege (os looks antigos saíram bege e foram removidos).
 - **CAM-06 (camisa Max Mara) é muito larga e longa**: nunca por dentro; só aberta como terceira peça ou como vestido-camisa.
-- Peças marcadas "🎁 vai doar" (JAQ-03 jaqueta de camurça) saíram do app e não entram em nenhum look.
+- Peças marcadas "🎁 vai doar"/"não usa mais" (JAQ-03 jaqueta de camurça, SAI-03 saia verde envelope) saíram do app e não entram em nenhum look.
 - Peças marcadas "🏃 só exercício" (corta-ventos JAQ-10, JAQ-11) não entram em looks de trabalho; no app têm `tenho: "exercicio"`.
 - Se ela mandar foto, descreva a peça a partir da foto. Fotos do armário: cadastre SÓ a peça em evidência (no centro/em foco);
   ignore as peças dos lados e não pergunte sobre elas.
