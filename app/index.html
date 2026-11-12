@@ -167,7 +167,7 @@ dialog::backdrop { background: rgb(10 10 10 / .5); }
 
   <section id="view-semana" hidden>
     <div class="wrap" style="gap:18px">
-      <h1>minha semana</h1>
+      <h1>look de hoje</h1>
       <p class="sub" id="semanaInfo"></p>
       <div id="semanaDias" style="display:flex;flex-direction:column;gap:22px"></div>
     </div>
@@ -198,7 +198,7 @@ dialog::backdrop { background: rgb(10 10 10 / .5); }
 <nav class="bar" aria-label="Seções"><div class="in">
   <a href="#mood" data-tab="mood">mood</a>
   <a href="#looks" data-tab="looks">looks</a>
-  <a href="#semana" data-tab="semana">semana</a>
+  <a href="#semana" data-tab="semana">hoje</a>
   <a href="#pecas" data-tab="pecas">peças</a>
 </div></nav>
 
@@ -1307,6 +1307,7 @@ function climaOk(pecas, extras, d) {
   const mangaLongaPorBaixo = pecas.some(c => BY[c] && BY[c].cat === "top" && /manga longa/i.test(BY[c].det + " " + BY[c].nome));
   const quente = pecas.some(c => c.startsWith("SUE-") || QUENTES.includes(c) || (c === "CAS-06" && mangaLongaPorBaixo)) || (extras || []).some(x => /suéter|tricô grosso/i.test(x));
   if ((d.max <= 19 || d.min <= 10) && !quente) return false;
+  if (d.max >= 24 && pecas.some(c => c.startsWith("SUE-") || c.startsWith("CAS-") || ["VES-02","BLU-37","JAQ-07","CAL-07","CAL-19"].includes(c))) return false;
   return true;
 }
 function pickReplacement(id, relax = 0) {
@@ -1323,7 +1324,7 @@ function pickReplacement(id, relax = 0) {
     const ult = ((state.favs[l.id] || {}).usos || []).slice(-1)[0];
     if (relax < 1 && ult && (Date.now() - new Date(ult + "T12:00")) < 21 * 864e5) return false;
     const naSemana = SEMANA.dias.flatMap(x => x.opcoes).filter(o => o.id !== id).flatMap(o => semOpt(o.id).pecas).filter(c => BY[c] && !["acessorio","sapato"].includes(BY[c].cat));
-    if (relax < 1 && l.pecas.some(c => naSemana.filter(x => x === c).length >= 2)) return false;
+    if (l.pecas.some(c => !["acessorio","sapato"].includes(BY[c]?.cat) && naSemana.filter(x => x === c).length >= 2)) return false;
     const doDia = d.opcoes.filter(o => o.id !== id).flatMap(o => semOpt(o.id).pecas).filter(c => BY[c] && !["acessorio","sapato"].includes(BY[c].cat));
     if (relax < 2 && l.pecas.some(c => doDia.includes(c) && (c.startsWith("SUE-") || BY[c].cat === "top"))) return false;
     if (d.max >= 24 && l.pecas.some(c => c.startsWith("CAS-"))) return false;
@@ -1348,12 +1349,15 @@ function rolarSemana() {
   const cl = (state.clima && state.clima.dias) || {};
   SEMANA.dias = SEMANA.dias.filter(d => d.iso >= hoje);
   const d = new Date(); d.setHours(12, 0, 0, 0);
-  while (SEMANA.dias.length < 5) {
+  const N_DIAS = 1, N_OPC = 10;
+  SEMANA.dias = SEMANA.dias.slice(0, N_DIAS);
+  SEMANA.dias.forEach(x => { for (let k = x.opcoes.length + 1; k <= N_OPC; k++) { const o = { id: `auto-${x.iso}-${k}`, nome: "", pecas: [], extras: [], img: "" }; x.opcoes.push(o); SEM_OPC[o.id] = { ...o, dia: x }; } });
+  while (SEMANA.dias.length < N_DIAS) {
     const iso = d.toLocaleDateString("sv-SE"); const wd = d.getDay();
     if (wd >= 1 && wd <= 5 && iso >= hoje && !SEMANA.dias.some(x => x.iso === iso)) {
       const c = cl[iso] || {};
       const dia = { iso, dia: DIAS[wd - 1], max: c.max ?? 20, min: c.min ?? 12, chuva: !!c.chuva, semPrevisao: !cl[iso], opcoes: [] };
-      for (let k = 1; k <= 3; k++) { const o = { id: `auto-${iso}-${k}`, nome: "", pecas: [], extras: [], img: "" }; dia.opcoes.push(o); SEM_OPC[o.id] = { ...o, dia }; }
+      for (let k = 1; k <= N_OPC; k++) { const o = { id: `auto-${iso}-${k}`, nome: "", pecas: [], extras: [], img: "" }; dia.opcoes.push(o); SEM_OPC[o.id] = { ...o, dia }; }
       SEMANA.dias.push(dia);
     }
     d.setDate(d.getDate() + 1);
@@ -1364,10 +1368,10 @@ function renderSemana() {
   rolarSemana();
   fixVetados();
   const esc2 = state.escolhas || {};
-  $("semanaInfo").textContent = `Curitiba · 3 opções por dia · toque numa foto para ver as peças e escolher`;
+  $("semanaInfo").textContent = `Curitiba · opções para hoje · toque numa foto para ver as peças`;
   $("semanaDias").innerHTML = SEMANA.dias.map(d => `<div>
     <div class="row" style="align-items:baseline"><h2 style="font-size:20px;text-transform:capitalize">${esc(d.dia)}</h2><span class="sub">${d.semPrevisao ? "previsão pendente" : `${d.max}° / ${d.min}°${d.chuva ? " · 🌧 chuva" : ""}`}</span></div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px">${d.opcoes.map(o0 => semOpt(o0.id)).map(o => `<button class="tile ${esc2[d.iso] === o.id ? "sel" : ""}" type="button" data-wopt="${o.id}" style="padding:0"><img src="${o.img}" alt="" loading="lazy" style="aspect-ratio:3/4;object-fit:cover;width:100%">${esc2[d.iso] === o.id ? `<span class="check">✓</span>` : ""}<span class="t"><small>${esc(o.nome)}</small></span></button>`).join("")}</div></div>`).join("");
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px">${d.opcoes.map(o0 => semOpt(o0.id)).filter(o => o.img).map(o => `<button class="tile ${esc2[d.iso] === o.id ? "sel" : ""}" type="button" data-wopt="${o.id}" style="padding:0"><img src="${o.img}" alt="" loading="lazy" style="aspect-ratio:3/4;object-fit:cover;width:100%">${esc2[d.iso] === o.id ? `<span class="check">✓</span>` : ""}<span class="t"><small>${esc(o.nome)}</small></span></button>`).join("")}</div></div>`).join("");
 }
 function showWOpt(id) {
   const o = semOpt(id); const d = o.dia; const escolhido = (state.escolhas || {})[d.iso] === id;

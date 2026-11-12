@@ -104,6 +104,10 @@ Faça commit e push depois de cada alteração.
   Botão "✕ não gostei, trocar" troca a opção por outro look existente (função `pickReplacement`, lista `SEM_FORA`); sem gerar imagem.
   Ao vetar peça nova, adicionar o código em `SEM_FORA`.
 
+## Aba "hoje" (antiga semana)
+- A pedido dela, a aba mostra só HOJE com até 10 opções (`N_DIAS = 1, N_OPC = 10` em `rolarSemana`). Peças não repetem mais de 2x nas opções.
+- Dia quente (máx ≥ 24 °C): `climaOk` tira suéter, casaco, vestido-suéter, veludo, legging, flare de malha.
+
 ## Semana rolante
 - A aba semana mostra só de hoje em diante e completa até 5 dias úteis (função `rolarSemana`): dias novos ganham 3 looks
   existentes escolhidos por `pickReplacement` (ids `auto-<iso>-N`), clima de `clima/atual` (sem previsão: 20°/12°, "previsão pendente").
