@@ -1296,7 +1296,7 @@ const SEMANA = /*SEMANA*/{"inicio": "2026-11-09", "dias": [{"iso": "2026-11-09",
 const SEM_OPC = Object.fromEntries(SEMANA.dias.flatMap(d => d.opcoes.map(o => [o.id, { ...o, dia: d }])));
 const SEM_INVALIDAS = ["w1109-21"]; // opções base com foto errada
 const A_CAMINHO = ["CAL-03","CAL-04","CAL-05","SAI-01","SAI-02"]; // 📦 compradas, ainda não chegaram
-const SEM_FORA = ["SAI-03", ...A_CAMINHO, ...(SEMANA.evitar || []), "JAQ-01","JAQ-04","JAQ-05","CAS-07","CAS-02","CAL-14","CAL-15","BLU-38","CAL-06","CAL-08","CAL-09","CAL-10","CAL-11","JAQ-10","JAQ-11","JAQ-03"];
+const SEM_FORA = ["SAI-03", ...A_CAMINHO, "JAQ-01","JAQ-04","JAQ-05","CAS-07","CAS-02","CAL-14","CAL-15","BLU-38","CAL-06","CAL-08","CAL-09","CAL-10","CAL-11","JAQ-10","JAQ-11","JAQ-03"];
 function semOpt(id) {
   const base = SEM_OPC[id]; const t = (state.trocas || {})[id]; if (!t) return base;
   const l = LOOKS.find(x => x.id === t); if (!l) return base;
@@ -1319,6 +1319,7 @@ function pickReplacement(id, relax = 0) {
     const layer = l.pecas.some(c => BY[c] && BY[c].cat === "terceira");
     if (!layer && !(relax >= 2 && l.pecas.some(c => c.startsWith("SUE-")))) return false;
     if (!climaOk(l.pecas, l.extras, d)) return false;
+    if (d.iso <= _FIM_BASE && l.pecas.some(c => (SEMANA.evitar || []).includes(c))) return false;
     const ult = ((state.favs[l.id] || {}).usos || []).slice(-1)[0];
     if (relax < 1 && ult && (Date.now() - new Date(ult + "T12:00")) < 21 * 864e5) return false;
     const naSemana = SEMANA.dias.flatMap(x => x.opcoes).filter(o => o.id !== id).flatMap(o => semOpt(o.id).pecas).filter(c => BY[c] && !["acessorio","sapato"].includes(BY[c].cat));
@@ -1336,16 +1337,36 @@ function fixVetados() {
   let mudou = false;
   SEMANA.dias.forEach(d => d.opcoes.forEach(o => {
     const so = semOpt(o.id);
-    if ((SEM_INVALIDAS.includes(o.id) && !(state.trocas || {})[o.id]) || so.pecas.some(c => SEM_FORA.includes(c)) || !climaOk(so.pecas, so.extras, d)) { const n = pickReplacement(o.id); if (n) { state.trocas = { ...(state.trocas || {}), [o.id]: n.id }; mudou = true; } }
+    if (!so.img || (SEM_INVALIDAS.includes(o.id) && !(state.trocas || {})[o.id]) || (d.iso <= _FIM_BASE && so.pecas.some(c => (SEMANA.evitar || []).includes(c))) || so.pecas.some(c => SEM_FORA.includes(c)) || !climaOk(so.pecas, so.extras, d)) { const n = pickReplacement(o.id); if (n) { state.trocas = { ...(state.trocas || {}), [o.id]: n.id }; mudou = true; } }
   }));
   if (mudou && state.db) state.db.doc("semana/" + SEMANA.inicio).set({ escolhas: state.escolhas || {}, trocas: state.trocas, excluidos: state.excluidos || [] }).catch(() => {});
 }
+// Dias visíveis: só de hoje em diante; completa com os próximos dias úteis usando looks existentes.
+const _FIM_BASE = SEMANA.dias[SEMANA.dias.length - 1].iso;
+function rolarSemana() {
+  const hoje = todayISO();
+  const cl = (state.clima && state.clima.dias) || {};
+  SEMANA.dias = SEMANA.dias.filter(d => d.iso >= hoje);
+  const d = new Date(); d.setHours(12, 0, 0, 0);
+  while (SEMANA.dias.length < 5) {
+    const iso = d.toLocaleDateString("sv-SE"); const wd = d.getDay();
+    if (wd >= 1 && wd <= 5 && iso >= hoje && !SEMANA.dias.some(x => x.iso === iso)) {
+      const c = cl[iso] || {};
+      const dia = { iso, dia: DIAS[wd - 1], max: c.max ?? 20, min: c.min ?? 12, chuva: !!c.chuva, semPrevisao: !cl[iso], opcoes: [] };
+      for (let k = 1; k <= 3; k++) { const o = { id: `auto-${iso}-${k}`, nome: "", pecas: [], extras: [], img: "" }; dia.opcoes.push(o); SEM_OPC[o.id] = { ...o, dia }; }
+      SEMANA.dias.push(dia);
+    }
+    d.setDate(d.getDate() + 1);
+  }
+  SEMANA.dias.forEach(x => { if (cl[x.iso]) { x.max = cl[x.iso].max; x.min = cl[x.iso].min; x.chuva = !!cl[x.iso].chuva; x.semPrevisao = false; } });
+}
 function renderSemana() {
+  rolarSemana();
   fixVetados();
   const esc2 = state.escolhas || {};
   $("semanaInfo").textContent = `Curitiba · 3 opções por dia · toque numa foto para ver as peças e escolher`;
   $("semanaDias").innerHTML = SEMANA.dias.map(d => `<div>
-    <div class="row" style="align-items:baseline"><h2 style="font-size:20px;text-transform:capitalize">${esc(d.dia)}</h2><span class="sub">${d.max}° / ${d.min}°${d.chuva ? " · 🌧 chuva" : ""}</span></div>
+    <div class="row" style="align-items:baseline"><h2 style="font-size:20px;text-transform:capitalize">${esc(d.dia)}</h2><span class="sub">${d.semPrevisao ? "previsão pendente" : `${d.max}° / ${d.min}°${d.chuva ? " · 🌧 chuva" : ""}`}</span></div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px">${d.opcoes.map(o0 => semOpt(o0.id)).map(o => `<button class="tile ${esc2[d.iso] === o.id ? "sel" : ""}" type="button" data-wopt="${o.id}" style="padding:0"><img src="${o.img}" alt="" loading="lazy" style="aspect-ratio:3/4;object-fit:cover;width:100%">${esc2[d.iso] === o.id ? `<span class="check">✓</span>` : ""}<span class="t"><small>${esc(o.nome)}</small></span></button>`).join("")}</div></div>`).join("");
 }
 function showWOpt(id) {
@@ -1371,6 +1392,7 @@ async function initDb() {
   state.db = db; renderFavs();
   db.collection("looks").onSnapshot(snap => { const f = {}; snap.docs.forEach(d => f[d.id] = d.data()); state.favs = f; renderHero(); renderLooks(); renderFavs(); }, () => {});
   db.doc("semana/" + SEMANA.inicio).onSnapshot(snap => { const sd = (snap && snap.exists && snap.data()) || {}; state.escolhas = sd.escolhas || {}; state.trocas = sd.trocas || {}; state.excluidos = sd.excluidos || []; renderSemana(); }, () => {});
+  db.doc("clima/atual").onSnapshot(snap => { state.clima = (snap && snap.exists && snap.data()) || null; renderSemana(); }, () => {});
   db.collection("pecas").onSnapshot(snap => { const f = {}; snap.docs.forEach(d => f[d.id] = d.data()); state.pfav = f; renderPieces(); }, () => {});
   db.collection("ideias").orderBy("criadoEm", "desc").onSnapshot(snap => { state.ideas = snap.docs.map(d => ({ id: d.id, ...d.data() })); renderFavs(); }, () => {});
 }
