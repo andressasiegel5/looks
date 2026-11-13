@@ -129,4 +129,5 @@ Faça commit e push depois de cada alteração.
 
 ## Ocasiões especiais
 - Aba looks tem o seletor "✨ ocasiões especiais": looks cuja coleção começa com "✨" (`l.especial`). Eles NÃO aparecem no mood, nas listas de trabalho nem na aba hoje.
+- Cada coleção especial tem um guia em `GUIAS[colecao]` (cabelo, brincos, colar, maquiagem, sapato, bolsa, frio, detalhes), mostrado na ficha do look.
 - VES-06 (vestido longo de cetim preto frente-única, Zara) é peça de festa: está em `SEM_FORA`. Coleções de festa: ids `fN-0X`, constante com nome "✨ …".

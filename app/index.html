@@ -433,6 +433,7 @@ const C65 = "Colete bege · com as suas peças";
 const C66 = "Suéter marinho · com as suas peças";
 const C67 = "Suéter creme · com as suas peças";
 const S1 = "Semana 9–13 nov";
+const GUIAS = {"✨ Jantar · vestido de cetim preto": {"Cabelo": ["⭐ Coque baixo polido na nuca, risca no meio ou sem risca: mostra as costas e o colar", "Rabo de cavalo baixo polido: mais leve, também deixa as costas livres", "Solto liso com risca no meio, atrás dos ombros: só se o colar for discreto"], "Brincos": ["⭐ Argolas douradas médias (3 a 4 cm): clássico com coque", "Brincos pendentes dourados longos e finos: mais festa", "Pérolas pendentes: delicado, combina com colar de pérolas nas costas", "Use UM ponto de atenção na frente: brinco grande = sem colar na frente"], "Colar": ["⭐ Colar de costas (back necklace): corrente fina descendo pela coluna, gota ou pingente na ponta", "Mesmo metal dos brincos (dourado esquenta com seu cabelo cobre; prata fica mais moderno)", "Confira que não enrosca no botão da nuca"], "Maquiagem": ["⭐ Pele luminosa + boca vermelha clássica ou vinho, olho limpo com rímel", "Ou olho esfumado marrom/cobre + boca nude rosada", "Sobrancelha penteada e um iluminador nos ombros/costas fica lindo com as costas nuas"], "Sapato": ["⭐ Slingback prata salto bloco (SAP-10): moderno e confortável", "Sapato preto de bico com salto bloco (SAP-05): clássico", "Se o pé ainda doer: prefira o de salto bloco mais baixo"], "Bolsa": ["⭐ Carteira envelope preta Jorge Bischoff (BOL-09)", "Mini bolsa preta matelassê com alça de contas (BOL-06)"], "Frio / chegada": ["⭐ Casaco cinza longo (CAS-09) jogado nos ombros, tirar no restaurante", "Blazer creme (BLA-08) ou preto trespassado (BLA-05) nos ombros"], "Unhas e detalhes": ["Unhas vermelhas/vinho (se a boca for nude) ou nude (se a boca for vermelha)", "Perfume nas costas/nuca 😉"]}};
 const F1 = "✨ Jantar · vestido de cetim preto";
 const C105 = "Compras novas Zara · com as suas peças";
 const C104 = "Casaco marrom Shoulder · com as suas peças";
@@ -1164,7 +1165,9 @@ function openSheet(html) { $("sheetBody").innerHTML = html; if (!sheet.open) she
 const head = (title, eyebrow) => `<div class="sheet-head"><div><span class="badge">${esc(eyebrow)}</span><h2 id="sheetTitle">${esc(title)}</h2></div><button class="close" type="button" data-close aria-label="Fechar">×</button></div>`;
 function showLook(id) {
   const l = LOOKS.find(x => x.id === id); const f = state.favs[id] || {}; const usos = f.usos || [];
-  openSheet(`${head(l.nome, l.colecao)}<img class="big" src="${l.img}" alt="${esc(l.nome)}">
+  const guia = GUIAS[l.colecao];
+  const guiaHtml = guia ? `<h2 style="font-size:18px;margin-top:6px">✨ guia completo da ocasião</h2>${Object.entries(guia).map(([k, v]) => `<div class="card"><b>${esc(k)}</b><ul style="margin:6px 0 0;padding-left:18px">${v.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>`).join("")}` : "";
+  openSheet(`${head(l.nome, l.colecao)}<img class="big" src="${l.img}" alt="${esc(l.nome)}">${guiaHtml}
     <div class="rail">${[...l.pecas.map(pieceCard), ...l.extras.map(ghostCard)].join("")}</div>
     <p class="sub" style="margin:0">${usos.length ? `Usado ${usos.length}× · última vez em ${new Date(usos[usos.length - 1] + "T12:00").toLocaleDateString("pt-BR")}` : "Ainda não usado."}</p>
     ${state.db ? `<div class="actions"><button class="btn" type="button" data-fav="${id}">${f.favorito ? "♥ favorito" : "♡ favoritar"}</button>
