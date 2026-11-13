@@ -167,7 +167,9 @@ dialog::backdrop { background: rgb(10 10 10 / .5); }
 
   <section id="view-semana" hidden>
     <div class="wrap" style="gap:18px">
-      <h1>look de hoje</h1>
+      <h1>o que vestir</h1>
+      <div class="chips" id="diaChips"></div>
+      <label class="toggle"><input type="checkbox" id="soTenis"> 🩹 pé machucado: só looks com tênis confortável</label>
       <p class="sub" id="semanaInfo"></p>
       <div id="semanaDias" style="display:flex;flex-direction:column;gap:22px"></div>
     </div>
@@ -1025,7 +1027,7 @@ const lookIsMine = l => garmentExtras(l).length === 0 && l.pecas.every(c => isMi
 LOOKS.forEach(l => { l.moods = moodsOf(l); l.mine = lookIsMine(l); });
 
 // ---------- Estado ----------
-const state = { mood: "todos", mode: "mine", order: [], pos: 0, looksMood: "todos", cat: "todas", favs: {}, pfav: {}, ideas: [], db: null, onlyMine: true };
+const state = { soTenis: (() => { try { return !!localStorage.getItem("soTenis"); } catch { return false; } })(), mood: "todos", mode: "mine", order: [], pos: 0, looksMood: "todos", cat: "todas", favs: {}, pfav: {}, ideas: [], db: null, onlyMine: true };
 const $ = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
 const pick = arr => arr[Math.floor(Math.random() * arr.length)];
@@ -1303,7 +1305,16 @@ function semOpt(id) {
   return { ...base, nome: l.nome, pecas: l.pecas, extras: l.extras, img: l.img, lookId: l.id };
 }
 const QUENTES = ["CAS-09","CAS-03","CAS-08","CAS-07","CAS-02"];
+const SALTO = ["SAP-02","SAP-05","SAP-08","SAP-10","SAP-11","SAP-01"];
+const PEDE_SALTO = ["SAI-05","SAI-06","SAI-04"]; // saias lápis/curtas pedem salto ou bota
+function tenisOk(pecas, extras) {
+  if (!state.soTenis) return true;
+  if (pecas.some(c => SALTO.includes(c) || PEDE_SALTO.includes(c))) return false;
+  if ((extras || []).some(x => /salto|bota|scarpin|slingback/i.test(x))) return false;
+  return true;
+}
 function climaOk(pecas, extras, d) {
+  if (!tenisOk(pecas, extras)) return false;
   const mangaLongaPorBaixo = pecas.some(c => BY[c] && BY[c].cat === "top" && /manga longa/i.test(BY[c].det + " " + BY[c].nome));
   const quente = pecas.some(c => c.startsWith("SUE-") || QUENTES.includes(c) || (c === "CAS-06" && mangaLongaPorBaixo)) || (extras || []).some(x => /suéter|tricô grosso/i.test(x));
   if ((d.max <= 19 || d.min <= 10) && !quente) return false;
@@ -1346,10 +1357,11 @@ function fixVetados() {
 const _FIM_BASE = SEMANA.dias[SEMANA.dias.length - 1].iso;
 function rolarSemana() {
   const hoje = todayISO();
+  { const t = new Date(); if (t.getDay() === 0 || t.getDay() === 6) SEMANA.dias = SEMANA.dias.filter(x => x.iso > hoje); }
   const cl = (state.clima && state.clima.dias) || {};
   SEMANA.dias = SEMANA.dias.filter(d => d.iso >= hoje);
   const d = new Date(); d.setHours(12, 0, 0, 0);
-  const N_DIAS = 1, N_OPC = 10;
+  const N_DIAS = 2, N_OPC = 10;
   SEMANA.dias = SEMANA.dias.slice(0, N_DIAS);
   SEMANA.dias.forEach(x => { for (let k = x.opcoes.length + 1; k <= N_OPC; k++) { const o = { id: `auto-${x.iso}-${k}`, nome: "", pecas: [], extras: [], img: "" }; x.opcoes.push(o); SEM_OPC[o.id] = { ...o, dia: x }; } });
   while (SEMANA.dias.length < N_DIAS) {
@@ -1368,8 +1380,13 @@ function renderSemana() {
   rolarSemana();
   fixVetados();
   const esc2 = state.escolhas || {};
-  $("semanaInfo").textContent = `Curitiba · opções para hoje · toque numa foto para ver as peças`;
-  $("semanaDias").innerHTML = SEMANA.dias.map(d => `<div>
+  $("semanaInfo").textContent = `Curitiba · 10 opções · toque numa foto para ver as peças${state.soTenis ? " · use tênis (Veja ou Samba)" : ""}`;
+  if (!state.diaSel || !SEMANA.dias.some(x => x.iso === state.diaSel)) state.diaSel = SEMANA.dias[0]?.iso;
+  const amanha = (() => { const t = new Date(); t.setDate(t.getDate() + 1); return t.toLocaleDateString("sv-SE"); })();
+  const rot = d => d.iso === todayISO() ? "hoje" : d.iso === amanha ? "amanhã" : d.dia;
+  $("diaChips").innerHTML = SEMANA.dias.map(d => `<button class="chip" type="button" data-diasel="${d.iso}" aria-pressed="${d.iso === state.diaSel}">${rot(d)}</button>`).join("");
+  $("soTenis").checked = !!state.soTenis;
+  $("semanaDias").innerHTML = SEMANA.dias.filter(d => d.iso === state.diaSel).map(d => `<div>
     <div class="row" style="align-items:baseline"><h2 style="font-size:20px;text-transform:capitalize">${esc(d.dia)}</h2><span class="sub">${d.semPrevisao ? "previsão pendente" : `${d.max}° / ${d.min}°${d.chuva ? " · 🌧 chuva" : ""}`}</span></div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px">${d.opcoes.map(o0 => semOpt(o0.id)).filter(o => o.img).map(o => `<button class="tile ${esc2[d.iso] === o.id ? "sel" : ""}" type="button" data-wopt="${o.id}" style="padding:0"><img src="${o.img}" alt="" loading="lazy" style="aspect-ratio:3/4;object-fit:cover;width:100%">${esc2[d.iso] === o.id ? `<span class="check">✓</span>` : ""}<span class="t"><small>${esc(o.nome)}</small></span></button>`).join("")}</div></div>`).join("");
 }
@@ -1432,6 +1449,7 @@ document.addEventListener("click", async e => {
   if (d.regen) return regenLook(d.regen, el);
   if (d.regenfoto) { const g = state.regen; if (!g) return; try { await state.db.collection("pedidos").add({ tipo: "regerar", substitui: g.de, nome: g.nome || "", pecas: g.pecas, criadoEm: todayISO(), status: "novo" }); el.disabled = true; el.textContent = "✓ pedido salvo"; toast("Pedido salvo: me fale “gera os pedidos” no chat"); } catch { toast("Não consegui salvar"); } return; }
   if (d.wopt) return showWOpt(d.wopt);
+  if (d.diasel) { state.diaSel = d.diasel; return renderSemana(); }
   if (d.wusei) {
     if (!state.db) return toast("Abra logada no claude.ai para marcar");
     const o = semOpt(d.wusei); const key = o.lookId || d.wusei; const u = (state.favs[key] || {}).usos || [];
@@ -1533,6 +1551,7 @@ function go(step) {
   h.addEventListener("mousedown", e => { e.preventDefault(); start(e.clientX, e.clientY); });
   addEventListener("mousemove", e => move(e.clientX, e.clientY)); addEventListener("mouseup", end);
 })();
+$("soTenis").addEventListener("change", e => { state.soTenis = e.target.checked; try { localStorage.setItem("soTenis", state.soTenis ? "1" : ""); } catch {} renderSemana(); });
 $("onlyMine").addEventListener("change", e => { state.onlyMine = e.target.checked; try { localStorage.setItem("onlyMine", state.onlyMine ? "1" : "0"); } catch {} });
 sheet.addEventListener("click", e => { if (e.target === sheet) sheet.close(); });
 

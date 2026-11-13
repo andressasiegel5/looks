@@ -105,7 +105,9 @@ Faça commit e push depois de cada alteração.
   Ao vetar peça nova, adicionar o código em `SEM_FORA`.
 
 ## Aba "hoje" (antiga semana)
-- A pedido dela, a aba mostra só HOJE com até 10 opções (`N_DIAS = 1, N_OPC = 10` em `rolarSemana`). Peças não repetem mais de 2x nas opções.
+- Mostra chips "hoje" e o próximo dia útil (`N_DIAS = 2`), 10 opções cada; fim de semana mostra só os próximos dias úteis.
+- Toggle "🩹 pé machucado" (`state.soTenis`, localStorage): só looks sem salto/bota e sem saia lápis/curta; usar tênis (Veja ou Samba).
+- (antes: só HOJE com até 10 opções; Peças não repetem mais de 2x nas opções.
 - Dia quente (máx ≥ 24 °C): `climaOk` tira suéter, casaco, vestido-suéter, veludo, legging, flare de malha.
 
 ## Semana rolante
