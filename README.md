@@ -75,6 +75,7 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Camisa Max Mara como vestido-camisa](looks/2026-11-maxmara-vestido-camisa/) ✨
 - [Casaco de tricô marrom (Shoulder) — cor certa](looks/2026-11-casaco-marrom-shoulder/) ✨
 - [Compras novas Zara (casaco cinza, bota, camisa listrada)](looks/2026-11-compras-novas-zara/) ✨
+- [✨ Ocasião especial: jantar com vestido de cetim preto](looks/2026-11-festa-vestido-cetim/)
 - [📅 Semana 9–13 nov](looks/2026-11-semana-09-13/) ✨
 - [Suéter felpudo creme (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-creme-zara/) ✨
 - [Suéter felpudo marinho (Zara) — com as suas peças, 6 looks](looks/2026-11-sueter-marinho-zara/) ✨
@@ -245,3 +246,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Suéter chenille cropped — street style](prompts/2026-11-09-sueter-chenille-cropped-street-style.md)
 - [Max Mara como vestido-camisa — street style](prompts/2026-11-09-maxmara-vestido-camisa-street-style.md)
 - [Compras novas Zara — street style](prompts/2026-11-09-compras-novas-zara.md)
+- [Festa: vestido de cetim preto](prompts/2026-11-14-festa-vestido-cetim-preto.md)
