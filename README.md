@@ -247,3 +247,4 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Max Mara como vestido-camisa — street style](prompts/2026-11-09-maxmara-vestido-camisa-street-style.md)
 - [Compras novas Zara — street style](prompts/2026-11-09-compras-novas-zara.md)
 - [Festa: vestido de cetim preto](prompts/2026-11-14-festa-vestido-cetim-preto.md)
+- [Morina · trabalho (21/11)](looks/2026-11-morina-trabalho/)
