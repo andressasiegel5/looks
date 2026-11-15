@@ -8,3 +8,5 @@
 4. Laila + lápis caramelo: BLU-41, SAP-05, BOL-02, Saia lápis caramelo, Blazer chocolate
 5. Clarice + suéter nos ombros: VES-07, SAP-10, BOL-06, Suéter creme nos ombros
 6. Elsa + casaco camelo: BLU-39, SAP-07, BOL-05, Calça preta reta, Casaco camelo
+
+Removidos a pedido (ela não tem a saia): 4. Laila + lápis caramelo (m3-04)

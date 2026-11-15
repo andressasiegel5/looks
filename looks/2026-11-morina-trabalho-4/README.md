@@ -8,3 +8,5 @@
 4. Clarice + casaco cinza: VES-07, SAP-07, BOL-06, Meia-calça preta, Casaco cinza longo
 5. Cetim + blazer off-white: SAI-11, SAP-05, BOL-01, Gola alta chocolate, Blazer off-white
 6. Elsa + calça cinza: BLU-39, SAP-10, BOL-05, Calça larga cinza
+
+Removidos a pedido (ela não tem a saia): 3. Laila + plissada (m4-03)
