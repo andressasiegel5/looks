@@ -248,3 +248,8 @@ para não precisar pensar no que vestir de manhã para o trabalho.
 - [Compras novas Zara — street style](prompts/2026-11-09-compras-novas-zara.md)
 - [Festa: vestido de cetim preto](prompts/2026-11-14-festa-vestido-cetim-preto.md)
 - [Morina · trabalho (21/11)](looks/2026-11-morina-trabalho/)
+- [Morina · trabalho-2 (21/11)](looks/2026-11-morina-trabalho-2/)
+- [Morina · trabalho-3 (21/11)](looks/2026-11-morina-trabalho-3/)
+- [Morina · trabalho-4 (21/11)](looks/2026-11-morina-trabalho-4/)
+- [Morina · trabalho-5 (21/11)](looks/2026-11-morina-trabalho-5/)
+- [Morina · especiais (21/11)](looks/2026-11-morina-especiais/)
