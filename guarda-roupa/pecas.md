@@ -13,8 +13,8 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | VES-04 | Vestido de malha com letreiro (Lança Perfume) | Preto com letras brancas | Malha canelada, estampa "LANÇA PERFUME" em letras brancas grandes repetidas por todo o vestido, gola alta baixa, manga curta, justo, midi | ✅ |
 | VES-05 | Vestido longo de tricô listrado (Viviane Furrier) | Preto com listras off-white | Tricô fino, listras horizontais largas off-white espaçadas, decote com acabamento off-white, manga longa, longo, caimento reto | ✅ |
 | VES-06 | Vestido longo frente-única de cetim (Zara) | Preto | Cetim fluido, frente-única com gola alta fechada por botão discreto na nuca, costas totalmente nuas até a cintura, longo até o tornozelo, caimento reto enviesado. ✨ Festa (fora do trabalho) | ✅ ✨ festa |
-| VES-07 | Vestido Power Clarice (Morina) | Chocolate (marrom escuro) | Malha encorpada tipo power/canelada, gola redonda, sem manga, justo, midi abaixo do joelho, fenda lateral com botões | 📦 chega 21/11 |
-| VES-08 | Vestido de tule Cristina (Morina) | Preto com estampa animal/oncinha em tons de bege e marrom | Tule translúcido estampado com forro curto, gola alta frente-única, sem manga, justo, midi. ✨ Festa | 📦 chega 21/11 |
+| VES-07 | Vestido Power Clarice (Morina) | Chocolate (marrom escuro) | Malha encorpada tipo power/canelada, gola redonda, sem manga, justo, midi abaixo do joelho, fenda lateral com botões | ✅ chegou 19/11 |
+| VES-08 | Vestido de tule Cristina (Morina) | Preto com estampa animal/oncinha em tons de bege e marrom | Tule translúcido estampado com forro curto, gola alta frente-única, sem manga, justo, midi. ✨ Festa | ✅ chegou 19/11 |
 | VES-02 | Vestido-suéter de tricô gola alta (Zara) | Marrom acinzentado mescla | Tricô macio, gola alta dobrada, mangas bufantes com punho, caimento solto e reto, CURTO (acima do joelho) | ✅ |
 | VES-01 | Vestido sem manga de lã (Zara) | Cinza chumbo mescla | Lã batida, gola redonda alta rente ao pescoço (não é decote V), sem manga, recorte na cintura, saia levemente evasê, forro caramelo, CURTO: um pouco acima do joelho | ✅ |
 
@@ -31,7 +31,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | SAI-08 | Saia transpassada com fivela (Max Mara) | Preta | Malha crepe encorpada fosca, cintura alta com pequena fivela metálica prateada, transpasse diagonal com debrum de cetim preto brilhante na borda, pence/costura frontal, caimento reto, comprimento midi | ✅ |
 | SAI-09 | Saia plissada estampada | Preto e off-white | Plissado miúdo (micro plissê) com estampa floral abstrata em pinceladas preto e off-white, cós largo de elástico preto, caimento reto, comprimento até o joelho | ✅ |
 | SAI-10 | Saia plissada midi | Preta | Crepe fluido com pregas largas marcadas (plissado faca), cós de elástico, caimento solto que balança ao andar, comprimento midi | ✅ |
-| SAI-11 | Saia de cetim Nathalia (Morina) | Off-white pérola | Cetim acetinado fluido com brilho, cintura alta, corte enviesado, longa até o tornozelo. ✨ Mais festa; no trabalho só com suéter/blazer | 📦 chega 21/11 |
+| SAI-11 | Saia de cetim Nathalia (Morina) | Off-white pérola | Cetim acetinado fluido com brilho, cintura alta, corte enviesado, longa até o tornozelo. ✨ Mais festa; no trabalho só com suéter/blazer | ✅ chegou 19/11 |
 | SAI-01 | Saia midi em camadas | Creme / off-white | Babados plissados em 5 camadas, tecido leve (tipo chiffon/tule), cintura alta, comprimento abaixo do joelho | ✅ |
 
 ## Calças
@@ -55,7 +55,7 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | CAL-17 | Calça pantalona de sarja fluida | Marrom canela (terracota amarronzado) | Sarja leve de viscose, cintura alta, perna larga e reta, longa, caimento fluido | ✅ |
 | CAL-18 | Calça reta espinha de peixe (Zara) | Cinza mescla (preto e branco) | Alfaiataria em espinha de peixe miúda cinza, cintura alta, bolso traseiro embutido, perna reta, comprimento um pouco mais curto (no tornozelo) | ✅ |
 | CAL-19 | Legging de malha encorpada com vinco | Marrom chocolate | Malha encorpada tipo ponto roma (não é de academia), costura/vinco frontal, cintura alta, justa, longa | ✅ |
-| CAL-20 | Calça xadrez Edna (Morina) | Marrom (xadrez miúdo marrom e caramelo) | Alfaiataria xadrez príncipe de gales miúdo marrom, cintura alta, pregas, perna reta/levemente afunilada, longa | 📦 chega 21/11 |
+| CAL-20 | Calça xadrez Edna (Morina) | Marrom (xadrez miúdo marrom e caramelo) | Alfaiataria xadrez príncipe de gales miúdo marrom, cintura alta, pregas, perna reta/levemente afunilada, longa | ✅ chegou 19/11 |
 | CAL-01 | Calça wide leg de couro sintético | Marrom café | Zara, R$ 279. Wide leg longa, cintura alta, pences frontais | 🛒 |
 | CAL-02 | Calça pantalona com pregas | Cinza-chumbo | Zara, R$ 359. Alfaiataria fluida, pregas, perna larga e comprida | 🛒 |
 
@@ -83,9 +83,9 @@ Descreva cor, tecido, modelagem e comprimento — quanto mais detalhe, mais fiel
 | BLU-18 | Camiseta gola alta manga curta (Zara) | Cinza mescla | Malha canelada fina, gola alta baixa (mock neck), manga curta, justa, comprimento curto na cintura | ✅ |
 | BLU-37 | Body de veludo molhado com costas de tule | Preto | Veludo amassado (crushed velvet) com brilho, gola redonda, manga longa, justo; costas em tule preto transparente; body (sempre por dentro) | ✅ |
 | BLU-38 | Blusa texturizada (conjunto com CAL-06) | Caramelo acobreado | Malha texturizada ondulada (tipo crepe/seersucker), gola redonda, manga curta com ombro levemente caído, caimento reto, comprimento no quadril. Conjunto com a pantalona CAL-06 | ✅ 🏠 fim de semana (não é de trabalho) |
-| BLU-39 | Blusa Elsa (Morina) | Marrom | Poliamida fluida, gola alta canoa, sem manga com ombro estruturado, corpo franzido e barra/cós ajustado no quadril (efeito blusa-body) | 📦 chega 21/11 |
-| BLU-40 | Blusa de renda Mulan (Morina) | Chocolate / marrom rosado | Renda de tricô texturizada, decote ombro a ombro (ombros de fora) com gola dobrada larga, manga 3/4 justa, curta na cintura | 📦 chega 21/11 |
-| BLU-41 | Blusa canelada Laila (Morina) | Off-white | Malha canelada justa, gola redonda alta, cava americana (regata), comprimento na cintura | 📦 chega 21/11 |
+| BLU-39 | Blusa Elsa (Morina) | Marrom | Poliamida fluida, gola alta canoa, sem manga com ombro estruturado, corpo franzido e barra/cós ajustado no quadril (efeito blusa-body) | ✅ chegou 19/11 |
+| BLU-40 | Blusa de renda Mulan (Morina) | Chocolate / marrom rosado | Renda de tricô texturizada, decote ombro a ombro (ombros de fora) com gola dobrada larga, manga 3/4 justa, curta na cintura | ✅ chegou 19/11 |
+| BLU-41 | Blusa canelada Laila (Morina) | Off-white | Malha canelada justa, gola redonda alta, cava americana (regata), comprimento na cintura | ✅ chegou 19/11 |
 | SUE-01 | Suéter Future Knit (Insider) | Taupe (bege acinzentado) | Tricô macio levemente felpudo, gola redonda, punhos e barra canelados, caimento reto, comprimento no quadril | ✅ |
 | BLU-19 | Regata gola alta Tech (Insider) | Azul petróleo | Malha tecnológica lisa e fosca, gola alta, mini manga caída no ombro, caimento reto ajustado | ✅ |
 | BLU-23 | Regata gola alta Tech (Insider) | Preta | Mesma modelagem da BLU-19 | ✅ |

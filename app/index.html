@@ -1357,7 +1357,7 @@ const SEMANA = /*SEMANA*/{"inicio": "2026-11-09", "dias": [{"iso": "2026-11-09",
 const SEM_OPC = Object.fromEntries(SEMANA.dias.flatMap(d => d.opcoes.map(o => [o.id, { ...o, dia: d }])));
 const SEM_INVALIDAS = ["w1109-21"]; // opções base com foto errada
 const A_CAMINHO = [];
-const CHEGA = {"CAL-20":"2026-11-21","SAI-11":"2026-11-21","BLU-39":"2026-11-21","BLU-40":"2026-11-21","BLU-41":"2026-11-21","VES-07":"2026-11-21","VES-08":"2026-11-21"}; // usar só a partir da data // 📦 compradas, ainda não chegaram
+const CHEGA = {}; // Morina chegou 19/11 // usar só a partir da data // 📦 compradas, ainda não chegaram
 const SEM_FORA = ["VES-08", "VES-06", "SAI-03", ...A_CAMINHO, "JAQ-01","JAQ-04","JAQ-05","CAS-07","CAS-02","CAL-14","CAL-15","BLU-38","CAL-06","CAL-08","CAL-09","CAL-10","CAL-11","JAQ-10","JAQ-11","JAQ-03"];
 function semOpt(id) {
   const base = SEM_OPC[id]; const t = (state.trocas || {})[id]; if (!t) return base;
